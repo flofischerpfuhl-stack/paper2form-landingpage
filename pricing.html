@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paper2Form Pricing - Choose the plan that fits your needs.">
+    <title>Pricing — Paper2Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        /* Pricing-specific styles */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 0;
+            border: 2px solid var(--black);
+        }
+
+        .pricing-card {
+            padding: var(--space-xl);
+            background: var(--white);
+            border-right: 2px solid var(--black);
+            text-align: center;
+            position: relative;
+        }
+
+        .pricing-card:last-child {
+            border-right: none;
+        }
+
+        @media (max-width: 900px) {
+            .pricing-card {
+                border-right: none;
+                border-bottom: 2px solid var(--black);
+            }
+
+            .pricing-card:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .pricing-card.featured {
+            background: var(--yellow);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--black);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .pricing-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--gray-mid);
+        }
+
+        .pricing-description {
+            color: var(--gray-mid);
+            margin-bottom: var(--space-lg);
+            font-size: 0.95rem;
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin-bottom: var(--space-lg);
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed var(--black);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features li::before {
+            content: '→';
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.svg" alt="Paper2Form">
+                <span>Paper2Form</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+
+            <a href="index.html#download" class="btn btn-primary nav-cta">Get the App</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="tag tag-green fade-in">Plans</span>
+            <h1 class="fade-in stagger-1">Simple, <span class="highlight">Transparent</span> Pricing</h1>
+            <p class="fade-in stagger-2">Start free, upgrade when you need more.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-bordered">
+        <div class="container">
+            <div class="pricing-grid fade-in">
+
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-name">Free</div>
+                    <div class="pricing-price">€0 <span>/month</span></div>
+                    <p class="pricing-description">Get started with the basics</p>
+                    <ul class="pricing-features">
+                        <li>5 scans per month</li>
+                        <li>Google Forms integration</li>
+                        <li>Basic OCR recognition</li>
+                        <li>Community support</li>
+                    </ul>
+                    <a href="index.html#download" class="btn btn-outline">Download Free</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-name">Pro</div>
+                    <div class="pricing-price">€9 <span>/month</span></div>
+                    <p class="pricing-description">For professionals and small teams</p>
+                    <ul class="pricing-features">
+                        <li>Unlimited scans</li>
+                        <li>Google + Microsoft Forms</li>
+                        <li>Advanced AI recognition</li>
+                        <li>Batch processing</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="index.html#download" class="btn btn-primary">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price">Custom</div>
+                    <p class="pricing-description">For organizations with specific needs</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Pro</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated support</li>
+                        <li>SLA guarantee</li>
+                        <li>Volume licensing</li>
+                    </ul>
+                    <a href="mailto:sales@paper2form.app" class="btn btn-outline">Contact Sales</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section features section-bordered">
+        <div class="container">
+            <div class="features-header">
+                <span class="tag tag-cyan fade-in">FAQ</span>
+                <h2 class="fade-in stagger-1">Common <span class="highlight">Questions</span></h2>
+            </div>
+
+            <div class="content-section">
+                <div class="prose fade-in">
+                    <h3>Can I cancel anytime?</h3>
+                    <p>Yes! You can cancel your subscription at any time. Your access continues until the end of your
+                        billing period.</p>
+
+                    <h3>Is there a free trial?</h3>
+                    <p>The Pro plan includes a 14-day free trial. No credit card required to start.</p>
+
+                    <h3>What payment methods do you accept?</h3>
+                    <p>Payments are handled through the App Store and Google Play, so you can use any payment method
+                        they support.</p>
+
+                    <h3>Do you offer discounts for teams?</h3>
+                    <p>Yes! Contact us for volume licensing and team discounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section">
+        <div class="container">
+            <h2 class="fade-in">Ready to <span
+                    style="background: var(--yellow); color: var(--black); padding: 0 0.25em;">Start</span>?</h2>
+            <p class="fade-in stagger-1">Download Paper2Form and try it free today.</p>
+            <div class="fade-in stagger-2">
+                <a href="index.html#download" class="btn btn-secondary">Download Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <span>© 2026 Paper2Form. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="privacy.html" class="footer-link">Privacy</a>
+                    <a href="terms.html" class="footer-link">Terms</a>
+                    <a href="imprint.html" class="footer-link">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

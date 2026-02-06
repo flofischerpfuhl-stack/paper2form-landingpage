@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Paper2Form.">
+    <title>Privacy Policy — Paper2Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.svg" alt="Paper2Form">
+                <span>Paper2Form</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="tutorial.html" class="nav-link" data-i18n="nav_tutorial">Tutorial</a></li>
+                <li><a href="pricing.html" class="nav-link" data-i18n="nav_pricing">Pricing</a></li>
+            </ul>
+
+            <a href="index.html#download" class="btn btn-primary nav-cta" data-i18n="nav_cta">Get the App</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="tag tag-pink fade-in">Legal</span>
+            <h1 class="fade-in stagger-1">Privacy <span class="highlight">Policy</span></h1>
+            <p class="fade-in stagger-2">Last updated: February 2026</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="section section-sm section-bordered">
+        <div class="container content-section">
+            <div class="prose fade-in">
+
+                <h2>1. Introduction</h2>
+                <p>Paper2Form ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
+                    explains how we collect, use, and safeguard your information when you use our mobile application.
+                </p>
+
+                <h2>2. Information We Collect</h2>
+
+                <h3>2.1 Information You Provide</h3>
+                <ul>
+                    <li><strong>Account Data:</strong> When signing in with Google or Microsoft, we receive basic
+                        profile information (email, name) to enable form integration.</li>
+                    <li><strong>Scanned Documents:</strong> Images you scan are processed by our AI service to extract
+                        text. Documents are not permanently stored on our servers.</li>
+                </ul>
+
+                <h3>2.2 Automatically Collected</h3>
+                <ul>
+                    <li><strong>Device Identifier:</strong> We collect a persistent device ID (Android ID or iOS
+                        Keychain UUID) to manage usage quotas and prevent abuse.</li>
+                    <li><strong>Usage Data:</strong> We track API call counts (daily and total) to enforce subscription
+                        limits.</li>
+                    <li><strong>Anonymous Authentication:</strong> We use Firebase anonymous sign-in to link your device
+                        to a user identifier for quota management.</li>
+                </ul>
+
+                <h2>3. How We Use Your Information</h2>
+                <ul>
+                    <li>Provide and maintain our document scanning service</li>
+                    <li>Authenticate with Google Forms and Microsoft Forms</li>
+                    <li>Process documents using AI for text extraction</li>
+                    <li>Manage subscription limits and usage quotas</li>
+                    <li>Improve the app experience</li>
+                </ul>
+
+                <h2>4. AI Document Processing</h2>
+                <p>When you scan a document, the image is sent to <strong>Google Firebase Vertex AI</strong> for
+                    analysis. Key points:</p>
+                <ul>
+                    <li><strong>Regional Processing:</strong> You can choose EU-based servers (europe-west1) for GDPR
+                        compliance.</li>
+                    <li><strong>No Training:</strong> Your documents are NOT used to train AI models.</li>
+                    <li><strong>Temporary Processing:</strong> Images are processed in real-time and not retained after
+                        analysis.</li>
+                </ul>
+
+                <h2>5. Third-Party Services</h2>
+                <p>We use the following third-party services:</p>
+
+                <h3>Google Services</h3>
+                <ul>
+                    <li><strong>Firebase Vertex AI:</strong> AI-powered document text extraction (<a
+                            href="https://firebase.google.com/support/privacy" target="_blank">Privacy</a>)</li>
+                    <li><strong>Firebase Authentication:</strong> Anonymous user identification for quota management
+                    </li>
+                    <li><strong>Cloud Firestore:</strong> Secure storage of usage quotas and device data</li>
+                    <li><strong>Firebase Remote Config:</strong> Feature flags and app configuration</li>
+                    <li><strong>Google Sign-In:</strong> OAuth authentication for Google Forms access (<a
+                            href="https://policies.google.com/privacy" target="_blank">Privacy</a>)</li>
+                    <li><strong>Google Forms API:</strong> Fetching form structure and submitting responses</li>
+                    <li><strong>Google Drive API:</strong> Accessing restricted forms you own</li>
+                </ul>
+
+                <h3>Microsoft Services</h3>
+                <ul>
+                    <li><strong>Microsoft Forms:</strong> Form submission via in-app browser (WebView). We do not use
+                        Microsoft APIs directly; authentication is handled through Microsoft's standard web login (<a
+                            href="https://privacy.microsoft.com/" target="_blank">Privacy</a>)</li>
+                </ul>
+
+                <h3>Payment Services</h3>
+                <ul>
+                    <li><strong>RevenueCat:</strong> Subscription management and in-app purchases (<a
+                            href="https://www.revenuecat.com/privacy" target="_blank">Privacy</a>)</li>
+                    <li><strong>Apple App Store:</strong> Payment processing for iOS (<a
+                            href="https://www.apple.com/legal/privacy/" target="_blank">Privacy</a>)</li>
+                    <li><strong>Google Play:</strong> Payment processing for Android (<a
+                            href="https://policies.google.com/privacy" target="_blank">Privacy</a>)</li>
+                </ul>
+
+                <h2>6. Data Storage & Retention</h2>
+                <ul>
+                    <li><strong>Device Data:</strong> Device ID and usage counts stored in Cloud Firestore</li>
+                    <li><strong>OAuth Tokens:</strong> Stored securely on your device only (not on our servers)</li>
+                    <li><strong>Documents:</strong> Never stored on our servers — processed in real-time only</li>
+                    <li><strong>Retention:</strong> Usage data retained while your account is active</li>
+                </ul>
+
+                <h2>7. Your Rights (GDPR)</h2>
+                <p>If you are in the European Union, you have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Correct inaccurate data</li>
+                    <li>Delete your data ("right to be forgotten")</li>
+                    <li>Export your data in a portable format</li>
+                    <li>Withdraw consent at any time</li>
+                    <li>Object to processing</li>
+                </ul>
+                <p>To exercise these rights, contact us at the email below.</p>
+
+                <h2>8. Security</h2>
+                <ul>
+                    <li>All data transmitted via TLS 1.3 encryption</li>
+                    <li>OAuth tokens stored in secure device storage (Keychain/Keystore)</li>
+                    <li>No server-side document storage</li>
+                    <li>Firebase Security Rules protect Firestore data</li>
+                </ul>
+
+                <h2>9. Children's Privacy</h2>
+                <p>Paper2Form is not intended for children under 13. We do not knowingly collect personal information
+                    from children under 13.</p>
+
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via
+                    the app or our website.</p>
+
+                <h2>11. Contact</h2>
+                <p>Questions about this Privacy Policy? Email us at <a
+                        href="mailto:privacy@paper2form.app">privacy@paper2form.app</a></p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <span data-i18n="footer_copyright">© 2026 Paper2Form. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy</a>
+                    <a href="terms.html" class="footer-link" data-i18n="footer_terms">Terms</a>
+                    <a href="imprint.html" class="footer-link" data-i18n="footer_imprint">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

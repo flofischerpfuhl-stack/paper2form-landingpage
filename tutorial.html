@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how to use Paper2Form to digitize paper documents into Google Forms and Microsoft Forms.">
+    <title>Tutorial — Paper2Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <style>
+        /* Expandable Tutorial Steps */
+        .tutorial-step {
+            cursor: pointer;
+        }
+
+        .tutorial-step-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-md) var(--space-lg);
+            border-bottom: none;
+        }
+
+        .tutorial-step-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .tutorial-step-toggle {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--black);
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: transform 0.3s ease, background 0.2s ease;
+        }
+
+        .tutorial-step.expanded .tutorial-step-toggle {
+            background: var(--yellow);
+            transform: rotate(45deg);
+        }
+
+        .tutorial-step-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding: 0 var(--space-lg);
+        }
+
+        .tutorial-step.expanded .tutorial-step-body {
+            max-height: 2000px;
+            /* Large enough for any content */
+            padding: 0 var(--space-lg) var(--space-lg);
+        }
+
+        .tutorial-step-content {
+            padding-top: var(--space-md);
+            border-top: 1px dashed var(--black);
+        }
+
+        .tutorial-step-content p {
+            margin-bottom: var(--space-md);
+        }
+
+        .tutorial-screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .tutorial-screenshot {
+            background: var(--light-gray);
+            border: 2px solid var(--black);
+            aspect-ratio: 16/10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-mid);
+            font-size: 0.9rem;
+        }
+
+        .tutorial-screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Color code steps */
+        .tutorial-step:nth-child(1) .tutorial-step-header {
+            background: var(--cyan);
+        }
+
+        .tutorial-step:nth-child(2) .tutorial-step-header {
+            background: var(--yellow);
+        }
+
+        .tutorial-step:nth-child(3) .tutorial-step-header {
+            background: var(--pink);
+        }
+
+        .tutorial-step:nth-child(4) .tutorial-step-header {
+            background: var(--green);
+        }
+
+        .tutorial-step:nth-child(5) .tutorial-step-header {
+            background: var(--sky);
+        }
+
+        .tutorial-step:nth-child(1) .tutorial-step-body {
+            background: var(--cyan);
+        }
+
+        .tutorial-step:nth-child(2) .tutorial-step-body {
+            background: var(--yellow);
+        }
+
+        .tutorial-step:nth-child(3) .tutorial-step-body {
+            background: var(--pink);
+        }
+
+        .tutorial-step:nth-child(4) .tutorial-step-body {
+            background: var(--green);
+        }
+
+        .tutorial-step:nth-child(5) .tutorial-step-body {
+            background: var(--sky);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.svg" alt="Paper2Form">
+                <span>Paper2Form</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+
+            <a href="index.html#download" class="btn btn-primary nav-cta">Get the App</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="tag tag-cyan fade-in">Learn</span>
+            <h1 class="fade-in stagger-1">Getting <span class="highlight">Started</span></h1>
+            <p class="fade-in stagger-2">Master Paper2Form in five simple steps. Click each step to expand.</p>
+        </div>
+    </section>
+
+    <!-- Tutorial Content -->
+    <section class="section section-bordered">
+        <div class="container">
+            <div class="tutorial-steps">
+
+                <!-- Step 1 -->
+                <div class="tutorial-step fade-in" data-step="1">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 1</span>
+                            <h3>Download & Install</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>Get Paper2Form from the App Store or Google Play. Installation takes just seconds.</p>
+                            <ul class="prose">
+                                <li>Open your device's app store</li>
+                                <li>Search for "Paper2Form"</li>
+                                <li>Tap Install and wait for download</li>
+                                <li>Launch the app and complete onboarding</li>
+                            </ul>
+                            <div class="tutorial-screenshots">
+                                <div class="tutorial-screenshot">📱 Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">📲 Screenshot placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="tutorial-step fade-in" data-step="2">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 2</span>
+                            <h3>Connect Your Forms</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>Link your Google or Microsoft account to access your forms securely.</p>
+                            <ul class="prose">
+                                <li>Navigate to the "Forms" tab</li>
+                                <li>Tap "Add Form" and choose your provider</li>
+                                <li>Authenticate with your account</li>
+                                <li>Select which forms to import</li>
+                            </ul>
+                            <div class="tutorial-screenshots">
+                                <div class="tutorial-screenshot">🔗 Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">✅ Screenshot placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="tutorial-step fade-in" data-step="3">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 3</span>
+                            <h3>Scan Your Document</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>Use your camera to capture any paper document. Our AI handles the rest.</p>
+                            <ul class="prose">
+                                <li>Tap the camera button</li>
+                                <li>Position your document in frame</li>
+                                <li>Hold steady for auto-capture</li>
+                                <li>Review and confirm the scan</li>
+                            </ul>
+                            <div class="tutorial-screenshots">
+                                <div class="tutorial-screenshot">📷 Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">📄 Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">✨ Screenshot placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="tutorial-step fade-in" data-step="4">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 4</span>
+                            <h3>Review Field Mapping</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>Our AI automatically maps extracted text to your form fields.</p>
+                            <ul class="prose">
+                                <li>View the extracted text</li>
+                                <li>Check AI-suggested mappings</li>
+                                <li>Tap any field to edit or reassign</li>
+                                <li>Use "Auto-match" for smart suggestions</li>
+                            </ul>
+                            <div class="tutorial-screenshots">
+                                <div class="tutorial-screenshot">🎯 Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">✏️ Screenshot placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="tutorial-step fade-in" data-step="5">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 5</span>
+                            <h3>Submit & Done</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>When satisfied, submit directly to your form. The response is recorded instantly.</p>
+                            <ul class="prose">
+                                <li>Tap "Submit to Form"</li>
+                                <li>Select the destination form</li>
+                                <li>Confirm submission</li>
+                                <li>View success confirmation</li>
+                            </ul>
+                            <div class="tutorial-screenshots">
+                                <div class="tutorial-screenshot">✅ Screenshot placeholder</div>
+                                <div class="tutorial-screenshot">🎉 Screenshot placeholder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="section features section-bordered">
+        <div class="container">
+            <div class="features-header">
+                <span class="tag tag-yellow fade-in">Tips</span>
+                <h2 class="fade-in stagger-1">Get the <span class="highlight">Best</span> Results</h2>
+            </div>
+
+            <div class="steps-grid fade-in stagger-2">
+                <div class="step">
+                    <div class="step-number">💡</div>
+                    <h3>Good Lighting</h3>
+                    <p>Natural light works best. Avoid harsh shadows and reflections.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">📄</div>
+                    <h3>Flat Surface</h3>
+                    <p>Place documents on a contrasting surface for best edge detection.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">🔄</div>
+                    <h3>Batch Scanning</h3>
+                    <p>Process multiple pages in succession for efficient bulk work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section">
+        <div class="container">
+            <h2 class="fade-in">Ready to <span
+                    style="background: var(--yellow); color: var(--black); padding: 0 0.25em;">Start</span>?</h2>
+            <p class="fade-in stagger-1">Download Paper2Form and digitize your first document today.</p>
+            <div class="fade-in stagger-2">
+                <a href="index.html#download" class="btn btn-secondary">Download Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <span>© 2026 Paper2Form. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="privacy.html" class="footer-link">Privacy</a>
+                    <a href="terms.html" class="footer-link">Terms</a>
+                    <a href="imprint.html" class="footer-link">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Expandable tutorial steps
+        document.querySelectorAll('.tutorial-step').forEach(step => {
+            const header = step.querySelector('.tutorial-step-header');
+            header.addEventListener('click', () => {
+                // Close all other steps
+                document.querySelectorAll('.tutorial-step').forEach(s => {
+                    if (s !== step) s.classList.remove('expanded');
+                });
+                // Toggle current step
+                step.classList.toggle('expanded');
+            });
+        });
+
+        // Expand first step by default
+        document.querySelector('.tutorial-step')?.classList.add('expanded');
+    </script>
+</body>
+
+</html>
