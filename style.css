@@ -24,9 +24,9 @@
     --peach: #FFDAB3;
     --sky: #B8E0FF;
 
-    /* Primary action */
-    --blue: #5B4CFF;
-    --blue-dark: #4638E0;
+    /* Primary action - Navy blue matching app */
+    --blue: #000080;
+    --blue-dark: #000066;
 
     /* Text and borders */
     --black: #141414;
