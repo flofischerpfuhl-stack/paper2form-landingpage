@@ -233,13 +233,17 @@ p {
 }
 
 .nav-cta {
+    margin-left: auto;
+}
+
+/* Hide mobile CTA on desktop */
+.nav-cta-mobile {
     display: none;
 }
 
-@media (min-width: 768px) {
-    .nav-cta {
-        display: inline-flex;
-    }
+/* Always show lang-selector next to CTA on desktop */
+.nav-inner .lang-selector {
+    margin-left: var(--space-md);
 }
 
 /* Mobile nav */
@@ -275,10 +279,26 @@ p {
         padding: var(--space-md);
         background: var(--white);
         border-bottom: var(--border-width) solid var(--border);
+        gap: var(--space-sm);
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    /* Hide desktop CTA, show mobile CTA inside nav-links */
+    .nav-inner>.nav-cta {
+        display: none;
+    }
+
+    .nav-cta-mobile {
+        display: block;
+    }
+
+    .nav-cta-mobile .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -341,7 +361,7 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 100px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(180deg, var(--sky) 0%, var(--white) 100%);
@@ -1015,26 +1035,17 @@ p {
 }
 
 @media (max-width: 768px) {
-    .lang-selector {
-        order: -1;
-        margin-bottom: var(--space-sm);
-        width: 100%;
+
+    /* Keep lang selector compact on mobile */
+    .nav-inner .lang-selector {
+        margin-left: auto;
+        margin-right: var(--space-sm);
     }
 
     .lang-selector select {
-        width: 100%;
-        padding: 0.75rem;
-        font-size: 0.9rem;
-    }
-
-    /* Hide language selector from nav-inner on mobile, 
-       it will be shown inside nav-links instead */
-    .nav-inner>.lang-selector {
-        display: none;
-    }
-
-    .nav-links .lang-selector {
-        display: flex;
+        padding: 0.4rem 0.6rem;
+        padding-right: 1.5rem;
+        font-size: 0.8rem;
     }
 }
 
