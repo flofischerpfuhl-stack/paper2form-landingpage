@@ -148,9 +148,19 @@ p {
 
 .highlight {
     background: var(--yellow);
-    padding: 0 0.25em;
+    padding: 0.1em 0.25em;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+    line-height: 1.6;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
+    /* Ensure vertical alignment */
+    margin-left: var(--space-xl);
+    /* Add spacing from logo */
 }
 
 .text-center {
@@ -218,6 +228,8 @@ p {
 .nav-links {
     display: flex;
     gap: var(--space-lg);
+    align-items: center;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -230,15 +242,6 @@ p {
 
 .nav-link:hover {
     color: var(--accent);
-}
-
-.nav-cta {
-    margin-left: auto;
-}
-
-/* Hide mobile CTA on desktop */
-.nav-cta-mobile {
-    display: none;
 }
 
 /* Always show lang-selector next to CTA on desktop */
@@ -255,6 +258,8 @@ p {
     border: none;
     cursor: pointer;
     padding: 8px;
+    margin-left: auto;
+    /* Push to right on mobile */
 }
 
 .nav-toggle span {
@@ -289,16 +294,6 @@ p {
     /* Hide desktop CTA, show mobile CTA inside nav-links */
     .nav-inner>.nav-cta {
         display: none;
-    }
-
-    .nav-cta-mobile {
-        display: block;
-    }
-
-    .nav-cta-mobile .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
     }
 }
 
@@ -362,9 +357,23 @@ p {
     display: flex;
     align-items: center;
     padding-top: 100px;
+    /* Base padding */
     position: relative;
     overflow: hidden;
     background: linear-gradient(180deg, var(--sky) 0%, var(--white) 100%);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 140px;
+        /* Increased padding for mobile to prevent overlap */
+        align-items: flex-start;
+        /* Align closer to top on mobile */
+    }
+
+    .hero-content {
+        margin-top: var(--space-xl);
+    }
 }
 
 .hero-grid {

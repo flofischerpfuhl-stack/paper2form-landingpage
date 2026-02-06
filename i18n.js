@@ -704,12 +704,8 @@ function initI18n() {
     const navInner = document.querySelector('.nav-inner');
     if (navInner) {
         const langSelector = createLanguageSelector();
-        const navCta = navInner.querySelector('.nav-cta');
-        if (navCta) {
-            navInner.insertBefore(langSelector, navCta);
-        } else {
-            navInner.appendChild(langSelector);
-        }
+        // Append to the end of nav-inner (far right)
+        navInner.appendChild(langSelector);
     }
 
     // Set document language
