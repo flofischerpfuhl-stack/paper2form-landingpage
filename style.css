@@ -244,6 +244,11 @@ p {
     color: var(--accent);
 }
 
+.nav-links .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
 /* Always show lang-selector next to CTA on desktop */
 .nav-inner .lang-selector {
     margin-left: var(--space-md);
@@ -258,8 +263,16 @@ p {
     border: none;
     cursor: pointer;
     padding: 8px;
-    margin-left: auto;
-    /* Push to right on mobile */
+    margin-left: var(--space-sm);
+    /* Space from lang selector */
+}
+
+@media (max-width: 768px) {
+
+    /* Push lang selector to the right on mobile */
+    .nav-inner .lang-selector {
+        margin-left: auto;
+    }
 }
 
 .nav-toggle span {

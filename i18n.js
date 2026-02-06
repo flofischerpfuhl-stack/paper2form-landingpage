@@ -704,8 +704,14 @@ function initI18n() {
     const navInner = document.querySelector('.nav-inner');
     if (navInner) {
         const langSelector = createLanguageSelector();
-        // Append to the end of nav-inner (far right)
-        navInner.appendChild(langSelector);
+        const navToggle = document.getElementById('navToggle');
+
+        // Insert before toggle if it exists (so toggle is rightmost on mobile)
+        if (navToggle) {
+            navInner.insertBefore(langSelector, navToggle);
+        } else {
+            navInner.appendChild(langSelector);
+        }
     }
 
     // Set document language
