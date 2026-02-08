@@ -625,6 +625,12 @@ p {
     text-align: center;
     border-right: var(--border-width) solid var(--border);
     position: relative;
+    transition: var(--transition-base);
+    background: var(--white);
+}
+
+.step:hover {
+    background: var(--yellow);
 }
 
 .step:last-child {

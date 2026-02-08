@@ -78,60 +78,38 @@ const TRANSLATIONS = {
         it: 'Integrazione fotocamera avanzata con rilevamento automatico dei bordi e correzione della prospettiva.',
         pt: 'Integração de câmera avançada com detecção automática de bordas e correção de perspectiva.'
     },
-    feature_ocr_title: {
-        en: 'Intelligent OCR', de: 'Intelligentes OCR', fr: 'OCR intelligent', es: 'OCR inteligente', it: 'OCR intelligente', pt: 'OCR inteligente'
+    feature_ai_title: {
+        en: 'AI Form Recognition', de: 'KI-Formularerkennung', fr: 'Reconnaissance IA', es: 'Reconocimiento con IA', it: 'Riconoscimento IA', pt: 'Reconhecimento com IA'
     },
-    feature_ocr_desc: {
-        en: 'AI-powered text recognition that works offline with support for multiple languages.',
-        de: 'KI-gestützte Texterkennung, die offline funktioniert und mehrere Sprachen unterstützt.',
-        fr: 'Reconnaissance de texte alimentée par IA qui fonctionne hors ligne avec support multilingue.',
-        es: 'Reconocimiento de texto impulsado por IA que funciona sin conexión con soporte para múltiples idiomas.',
-        it: 'Riconoscimento del testo basato su IA che funziona offline con supporto per più lingue.',
-        pt: 'Reconhecimento de texto com IA que funciona offline com suporte para vários idiomas.'
-    },
-    feature_mapping_title: {
-        en: 'Smart Field Mapping', de: 'Intelligente Feldzuordnung', fr: 'Mappage intelligent', es: 'Mapeo inteligente', it: 'Mappatura intelligente', pt: 'Mapeamento inteligente'
-    },
-    feature_mapping_desc: {
-        en: 'Automatically matches extracted data to your form fields using fuzzy logic and neural networks.',
-        de: 'Ordnet extrahierte Daten automatisch Ihren Formularfeldern zu mit Fuzzy-Logik und neuronalen Netzen.',
-        fr: 'Associe automatiquement les données extraites à vos champs de formulaire avec logique floue et réseaux neuronaux.',
-        es: 'Asocia automáticamente los datos extraídos a los campos de formulario usando lógica difusa y redes neuronales.',
-        it: 'Associa automaticamente i dati estratti ai campi del modulo usando logica fuzzy e reti neurali.',
-        pt: 'Associa automaticamente os dados extraídos aos campos do formulário usando lógica fuzzy e redes neurais.'
+    feature_ai_desc: {
+        en: 'Gemini AI reads handwritten and printed text from your scanned documents.',
+        de: 'Gemini KI liest handgeschriebenen und gedruckten Text aus Ihren gescannten Dokumenten.',
+        fr: 'L\'IA Gemini lit le texte manuscrit et imprimé de vos documents numérisés.',
+        es: 'La IA Gemini lee texto manuscrito e impreso de sus documentos escaneados.',
+        it: 'L\'IA Gemini legge testo manoscritto e stampato dai tuoi documenti scansionati.',
+        pt: 'A IA Gemini lê texto manuscrito e impresso de seus documentos digitalizados.'
     },
     feature_integration_title: {
-        en: 'Seamless Integration', de: 'Nahtlose Integration', fr: 'Intégration transparente', es: 'Integración perfecta', it: 'Integrazione perfetta', pt: 'Integração perfeita'
+        en: 'Google & Microsoft Forms', de: 'Google & Microsoft Forms', fr: 'Google & Microsoft Forms', es: 'Google y Microsoft Forms', it: 'Google e Microsoft Forms', pt: 'Google e Microsoft Forms'
     },
     feature_integration_desc: {
-        en: 'Native support for Google Forms and Microsoft Forms. Export data where you need it.',
-        de: 'Native Unterstützung für Google Forms und Microsoft Forms. Exportieren Sie Daten, wo Sie sie brauchen.',
-        fr: 'Support natif pour Google Forms et Microsoft Forms. Exportez les données où vous en avez besoin.',
-        es: 'Soporte nativo para Google Forms y Microsoft Forms. Exporte datos donde los necesite.',
-        it: 'Supporto nativo per Google Forms e Microsoft Forms. Esporta i dati dove ti servono.',
-        pt: 'Suporte nativo para Google Forms e Microsoft Forms. Exporte dados onde precisar.'
+        en: 'Submit scanned data directly to your forms with one tap.',
+        de: 'Senden Sie gescannte Daten mit einem Tippen direkt an Ihre Formulare.',
+        fr: 'Soumettez les données numérisées directement à vos formulaires en un clic.',
+        es: 'Envíe datos escaneados directamente a sus formularios con un toque.',
+        it: 'Invia i dati scansionati direttamente ai tuoi moduli con un tocco.',
+        pt: 'Envie dados digitalizados diretamente para seus formulários com um toque.'
     },
-    feature_privacy_title: {
-        en: 'Privacy First', de: 'Datenschutz zuerst', fr: 'Confidentialité d\'abord', es: 'Privacidad primero', it: 'Privacy prima di tutto', pt: 'Privacidade em primeiro lugar'
+    feature_batch_title: {
+        en: 'Batch Scanning', de: 'Stapelverarbeitung', fr: 'Numérisation par lot', es: 'Escaneo por lotes', it: 'Scansione batch', pt: 'Digitalização em lote'
     },
-    feature_privacy_desc: {
-        en: 'All processing happens on-device. Your sensitive documents never leave your phone.',
-        de: 'Alle Verarbeitung erfolgt auf dem Gerät. Ihre sensiblen Dokumente verlassen nie Ihr Telefon.',
-        fr: 'Tout le traitement se fait sur l\'appareil. Vos documents sensibles ne quittent jamais votre téléphone.',
-        es: 'Todo el procesamiento ocurre en el dispositivo. Sus documentos sensibles nunca salen de su teléfono.',
-        it: 'Tutta l\'elaborazione avviene sul dispositivo. I tuoi documenti sensibili non lasciano mai il telefono.',
-        pt: 'Todo o processamento acontece no dispositivo. Seus documentos sensíveis nunca saem do seu telefone.'
-    },
-    feature_offline_title: {
-        en: 'Offline Ready', de: 'Offline-fähig', fr: 'Fonctionne hors ligne', es: 'Funciona sin conexión', it: 'Funziona offline', pt: 'Funciona offline'
-    },
-    feature_offline_desc: {
-        en: 'Works without internet connection. Sync when you\'re back online.',
-        de: 'Funktioniert ohne Internetverbindung. Synchronisieren Sie, wenn Sie wieder online sind.',
-        fr: 'Fonctionne sans connexion internet. Synchronisez quand vous êtes de nouveau en ligne.',
-        es: 'Funciona sin conexión a internet. Sincronice cuando vuelva a estar en línea.',
-        it: 'Funziona senza connessione internet. Sincronizza quando torni online.',
-        pt: 'Funciona sem conexão com a internet. Sincronize quando estiver online novamente.'
+    feature_batch_desc: {
+        en: 'Scan multiple pages and submit them all at once.',
+        de: 'Scannen Sie mehrere Seiten und senden Sie alle auf einmal ab.',
+        fr: 'Numérisez plusieurs pages et soumettez-les toutes en une fois.',
+        es: 'Escanee múltiples páginas y envíelas todas de una vez.',
+        it: 'Scansiona più pagine e inviale tutte insieme.',
+        pt: 'Digitalize várias páginas e envie todas de uma vez.'
     },
 
     // How It Works
@@ -466,89 +444,115 @@ const TRANSLATIONS = {
         it: 'Inizia gratis, aggiorna quando hai bisogno di più.',
         pt: 'Comece grátis, faça upgrade quando precisar de mais.'
     },
-    pricing_free_name: {
-        en: 'Free', de: 'Kostenlos', fr: 'Gratuit', es: 'Gratis', it: 'Gratis', pt: 'Grátis'
+    pricing_basic_name: {
+        en: 'Basic', de: 'Basic', fr: 'Basique', es: 'Básico', it: 'Base', pt: 'Básico'
     },
-    pricing_free_desc: {
-        en: 'Get started with the basics',
-        de: 'Starten Sie mit den Grundlagen',
-        fr: 'Commencez avec les bases',
-        es: 'Comience con lo básico',
-        it: 'Inizia con le basi',
-        pt: 'Comece com o básico'
+    pricing_basic_desc: {
+        en: 'For occasional use',
+        de: 'Für gelegentliche Nutzung',
+        fr: 'Pour une utilisation occasionnelle',
+        es: 'Para uso ocasional',
+        it: 'Per uso occasionale',
+        pt: 'Para uso ocasional'
     },
-    pricing_free_f1: {
-        en: '5 scans per month', de: '5 Scans pro Monat', fr: '5 numérisations par mois', es: '5 escaneos por mes', it: '5 scansioni al mese', pt: '5 digitalizações por mês'
+    pricing_basic_price: {
+        en: '$2 <span>/month</span>', de: '2€ <span>/Monat</span>'
     },
-    pricing_free_f2: {
-        en: 'Google Forms integration', de: 'Google Forms Integration', fr: 'Intégration Google Forms', es: 'Integración con Google Forms', it: 'Integrazione Google Forms', pt: 'Integração Google Forms'
+    pricing_basic_f1: {
+        en: '4 scans per day', de: '4 Scans pro Tag'
     },
-    pricing_free_f3: {
-        en: 'Basic OCR recognition', de: 'Einfache OCR-Erkennung', fr: 'Reconnaissance OCR de base', es: 'Reconocimiento OCR básico', it: 'Riconoscimento OCR base', pt: 'Reconhecimento OCR básico'
+    pricing_basic_f2: {
+        en: 'Google Forms integration', de: 'Google Forms Integration'
     },
-    pricing_free_f4: {
-        en: 'Community support', de: 'Community-Support', fr: 'Support communautaire', es: 'Soporte comunitario', it: 'Supporto della community', pt: 'Suporte da comunidade'
+    pricing_basic_f3: {
+        en: 'Basic OCR recognition', de: 'Einfache OCR-Erkennung'
     },
-    pricing_pro_name: {
-        en: 'Pro', de: 'Pro', fr: 'Pro', es: 'Pro', it: 'Pro', pt: 'Pro'
+    pricing_basic_f4: {
+        en: 'Community support', de: 'Community-Support'
     },
-    pricing_pro_badge: {
+    pricing_premium_name: {
+        en: 'Premium', de: 'Premium', fr: 'Premium', es: 'Premium', it: 'Premium', pt: 'Premium'
+    },
+    pricing_premium_badge: {
         en: 'Most Popular', de: 'Am beliebtesten', fr: 'Le plus populaire', es: 'Más popular', it: 'Più popolare', pt: 'Mais popular'
     },
-    pricing_pro_desc: {
-        en: 'For professionals and small teams',
-        de: 'Für Profis und kleine Teams',
-        fr: 'Pour les professionnels et petites équipes',
-        es: 'Para profesionales y equipos pequeños',
-        it: 'Per professionisti e piccoli team',
-        pt: 'Para profissionais e pequenas equipes'
+    pricing_premium_desc: {
+        en: 'For regular users',
+        de: 'Für regelmäßige Nutzer',
+        fr: 'Pour les utilisateurs réguliers',
+        es: 'Para usuarios habituales',
+        it: 'Per utenti abituali',
+        pt: 'Para usuários regulares'
     },
-    pricing_pro_f1: {
-        en: 'Unlimited scans', de: 'Unbegrenzte Scans', fr: 'Numérisations illimitées', es: 'Escaneos ilimitados', it: 'Scansioni illimitate', pt: 'Digitalizações ilimitadas'
+    pricing_premium_price: {
+        en: '$20 <span>/month</span>', de: '20€ <span>/Monat</span>'
     },
-    pricing_pro_f2: {
-        en: 'Google + Microsoft Forms', de: 'Google + Microsoft Forms', fr: 'Google + Microsoft Forms', es: 'Google + Microsoft Forms', it: 'Google + Microsoft Forms', pt: 'Google + Microsoft Forms'
+    pricing_premium_f1: {
+        en: '40 scans per day', de: '40 Scans pro Tag'
     },
-    pricing_pro_f3: {
-        en: 'Advanced AI recognition', de: 'Erweiterte KI-Erkennung', fr: 'Reconnaissance IA avancée', es: 'Reconocimiento IA avanzado', it: 'Riconoscimento IA avanzato', pt: 'Reconhecimento IA avançado'
+    pricing_premium_f2: {
+        en: 'Google + Microsoft Forms', de: 'Google + Microsoft Forms'
     },
-    pricing_pro_f4: {
-        en: 'Batch processing', de: 'Stapelverarbeitung', fr: 'Traitement par lots', es: 'Procesamiento por lotes', it: 'Elaborazione batch', pt: 'Processamento em lote'
+    pricing_premium_f3: {
+        en: 'Advanced AI recognition', de: 'Erweiterte KI-Erkennung'
     },
-    pricing_pro_f5: {
-        en: 'Priority support', de: 'Prioritäts-Support', fr: 'Support prioritaire', es: 'Soporte prioritario', it: 'Supporto prioritario', pt: 'Suporte prioritário'
+    pricing_premium_f4: {
+        en: 'Priority support', de: 'Prioritäts-Support'
     },
-    pricing_pro_cta: {
+    pricing_premium_cta: {
         en: 'Start Free Trial', de: 'Kostenlos testen', fr: 'Essai gratuit', es: 'Prueba gratis', it: 'Prova gratis', pt: 'Teste grátis'
+    },
+    pricing_business_name: {
+        en: 'Business', de: 'Business', fr: 'Affaires', es: 'Negocios', it: 'Business', pt: 'Negócios'
+    },
+    pricing_business_desc: {
+        en: 'For small teams and power users',
+        de: 'Für kleine Teams und Power-User',
+        fr: 'Pour les petites équipes et les utilisateurs avancés',
+        es: 'Para pequeños equipos y usuarios avanzados',
+        it: 'Per piccoli team e utenti esperti',
+        pt: 'Para pequenas equipes e usuários avançados'
+    },
+    pricing_business_price: {
+        en: '$80 <span>/month</span>', de: '80€ <span>/Monat</span>'
+    },
+    pricing_business_f1: {
+        en: '400 scans per day', de: '400 Scans pro Tag'
+    },
+    pricing_business_f2: {
+        en: 'Team management', de: 'Team-Management'
+    },
+    pricing_business_f3: {
+        en: 'API Access', de: 'API-Zugriff'
+    },
+    pricing_business_f4: {
+        en: 'Dedicated support', de: 'Dedizierter Support'
     },
     pricing_enterprise_name: {
         en: 'Enterprise', de: 'Enterprise', fr: 'Entreprise', es: 'Empresarial', it: 'Enterprise', pt: 'Empresarial'
     },
     pricing_enterprise_price: {
-        en: 'Custom', de: 'Individuell', fr: 'Sur mesure', es: 'Personalizado', it: 'Personalizzato', pt: 'Personalizado'
+        en: '$200 <span>/month</span>', de: '200€ <span>/Monat</span>'
     },
     pricing_enterprise_desc: {
-        en: 'For organizations with specific needs',
-        de: 'Für Organisationen mit spezifischen Anforderungen',
-        fr: 'Pour les organisations aux besoins spécifiques',
-        es: 'Para organizaciones con necesidades específicas',
-        it: 'Per organizzazioni con esigenze specifiche',
-        pt: 'Para organizações com necessidades específicas'
+        en: 'For large organizations',
+        de: 'Für große Organisationen',
+        fr: 'Pour les grandes organisations',
+        es: 'Para grandes organizaciones',
+        it: 'Per grandi organizzazioni',
+        pt: 'Para grandes organizações'
     },
     pricing_enterprise_f1: {
-        en: 'Everything in Pro', de: 'Alles aus Pro', fr: 'Tout dans Pro', es: 'Todo en Pro', it: 'Tutto in Pro', pt: 'Tudo do Pro'
+        en: '1200 scans per day', de: '1200 Scans pro Tag'
     },
     pricing_enterprise_f2: {
-        en: 'Custom integrations', de: 'Individuelle Integrationen', fr: 'Intégrations personnalisées', es: 'Integraciones personalizadas', it: 'Integrazioni personalizzate', pt: 'Integrações personalizadas'
+        en: 'Custom integrations', de: 'Individuelle Integrationen'
     },
     pricing_enterprise_f3: {
-        en: 'Dedicated support', de: 'Dedizierter Support', fr: 'Support dédié', es: 'Soporte dedicado', it: 'Supporto dedicato', pt: 'Suporte dedicado'
+        en: 'SLA guarantee', de: 'SLA-Garantie'
     },
     pricing_enterprise_f4: {
-        en: 'SLA guarantee', de: 'SLA-Garantie', fr: 'Garantie SLA', es: 'Garantía SLA', it: 'Garanzia SLA', pt: 'Garantia SLA'
-    },
-    pricing_enterprise_f5: {
-        en: 'Volume licensing', de: 'Volumenlizenzen', fr: 'Licences en volume', es: 'Licencias por volumen', it: 'Licenze volume', pt: 'Licenciamento por volume'
+        en: 'Volume licensing', de: 'Volumenlizenzen'
     },
     pricing_enterprise_cta: {
         en: 'Contact Sales', de: 'Vertrieb kontaktieren', fr: 'Contacter les ventes', es: 'Contactar ventas', it: 'Contatta vendite', pt: 'Contatar vendas'
@@ -560,48 +564,48 @@ const TRANSLATIONS = {
         en: 'Common Questions', de: 'Häufige Fragen', fr: 'Questions fréquentes', es: 'Preguntas frecuentes', it: 'Domande frequenti', pt: 'Perguntas frequentes'
     },
     pricing_faq1_q: {
-        en: 'Can I cancel anytime?', de: 'Kann ich jederzeit kündigen?', fr: 'Puis-je annuler à tout moment?', es: '¿Puedo cancelar en cualquier momento?', it: 'Posso annullare in qualsiasi momento?', pt: 'Posso cancelar a qualquer momento?'
+        en: 'How does the free version work?', de: 'Wie funktioniert die kostenlose Version?', fr: 'Comment fonctionne la version gratuite?', es: '¿Cómo funciona la versión gratuita?', it: 'Come funziona la versione gratuita?', pt: 'Como funciona a versão gratuita?'
     },
     pricing_faq1_a: {
-        en: 'Yes! You can cancel your subscription at any time. Your access continues until the end of your billing period.',
-        de: 'Ja! Sie können Ihr Abonnement jederzeit kündigen. Ihr Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums bestehen.',
-        fr: 'Oui! Vous pouvez annuler votre abonnement à tout moment. Votre accès continue jusqu\'à la fin de votre période de facturation.',
-        es: '¡Sí! Puede cancelar su suscripción en cualquier momento. Su acceso continúa hasta el final de su período de facturación.',
-        it: 'Sì! Puoi annullare il tuo abbonamento in qualsiasi momento. Il tuo accesso continua fino alla fine del periodo di fatturazione.',
-        pt: 'Sim! Você pode cancelar sua assinatura a qualquer momento. Seu acesso continua até o final do período de cobrança.'
+        en: 'You get 3 free scans per day without any subscription. Upgrade anytime for more.',
+        de: 'Sie erhalten 3 kostenlose Scans pro Tag ohne Abonnement. Upgraden Sie jederzeit für mehr.',
+        fr: 'Vous obtenez 3 scans gratuits par jour sans abonnement. Passez à la version supérieure à tout moment.',
+        es: 'Obtiene 3 escaneos gratuitos por día sin suscripción. Actualice en cualquier momento para más.',
+        it: 'Ottieni 3 scansioni gratuite al giorno senza abbonamento. Aggiorna in qualsiasi momento per di più.',
+        pt: 'Você recebe 3 digitalizações gratuitas por dia sem assinatura. Faça upgrade a qualquer momento.'
     },
     pricing_faq2_q: {
-        en: 'Is there a free trial?', de: 'Gibt es eine kostenlose Testversion?', fr: 'Y a-t-il un essai gratuit?', es: '¿Hay una prueba gratuita?', it: 'C\'è una prova gratuita?', pt: 'Há uma avaliação gratuita?'
+        en: 'Can I cancel my subscription?', de: 'Kann ich mein Abonnement kündigen?', fr: 'Puis-je annuler mon abonnement?', es: '¿Puedo cancelar mi suscripción?', it: 'Posso annullare il mio abbonamento?', pt: 'Posso cancelar minha assinatura?'
     },
     pricing_faq2_a: {
-        en: 'The Pro plan includes a 14-day free trial. No credit card required to start.',
-        de: 'Der Pro-Plan beinhaltet eine 14-tägige kostenlose Testversion. Keine Kreditkarte erforderlich.',
-        fr: 'Le forfait Pro comprend un essai gratuit de 14 jours. Aucune carte de crédit requise.',
-        es: 'El plan Pro incluye una prueba gratuita de 14 días. No se requiere tarjeta de crédito.',
-        it: 'Il piano Pro include una prova gratuita di 14 giorni. Nessuna carta di credito richiesta.',
-        pt: 'O plano Pro inclui uma avaliação gratuita de 14 dias. Sem necessidade de cartão de crédito.'
+        en: 'Yes! Cancel anytime through the App Store or Google Play. Your access continues until the billing period ends.',
+        de: 'Ja! Kündigen Sie jederzeit über den App Store oder Google Play. Ihr Zugang bleibt bis zum Ende des Abrechnungszeitraums.',
+        fr: 'Oui! Annulez à tout moment via l\'App Store ou Google Play. Votre accès continue jusqu\'à la fin de la période de facturation.',
+        es: '¡Sí! Cancele en cualquier momento a través de App Store o Google Play. Su acceso continúa hasta que finalice el período de facturación.',
+        it: 'Sì! Annulla in qualsiasi momento tramite App Store o Google Play. Il tuo accesso continua fino alla fine del periodo di fatturazione.',
+        pt: 'Sim! Cancele a qualquer momento pela App Store ou Google Play. Seu acesso continua até o fim do período de cobrança.'
     },
     pricing_faq3_q: {
-        en: 'What payment methods do you accept?', de: 'Welche Zahlungsmethoden akzeptieren Sie?', fr: 'Quels modes de paiement acceptez-vous?', es: '¿Qué métodos de pago aceptan?', it: 'Quali metodi di pagamento accettate?', pt: 'Quais métodos de pagamento vocês aceitam?'
+        en: 'Which form services are supported?', de: 'Welche Formulardienste werden unterstützt?', fr: 'Quels services de formulaires sont pris en charge?', es: '¿Qué servicios de formularios son compatibles?', it: 'Quali servizi di moduli sono supportati?', pt: 'Quais serviços de formulários são suportados?'
     },
     pricing_faq3_a: {
-        en: 'Payments are handled through the App Store and Google Play, so you can use any payment method they support.',
-        de: 'Zahlungen werden über den App Store und Google Play abgewickelt, sodass Sie jede von ihnen unterstützte Zahlungsmethode nutzen können.',
-        fr: 'Les paiements sont gérés via l\'App Store et Google Play, vous pouvez donc utiliser n\'importe quel mode de paiement qu\'ils prennent en charge.',
-        es: 'Los pagos se manejan a través de App Store y Google Play, por lo que puede usar cualquier método de pago que admitan.',
-        it: 'I pagamenti sono gestiti tramite App Store e Google Play, quindi puoi usare qualsiasi metodo di pagamento che supportano.',
-        pt: 'Os pagamentos são processados pela App Store e Google Play, então você pode usar qualquer método de pagamento que eles suportam.'
+        en: 'Paper2Form works with Google Forms and Microsoft Forms. Sign in with your account to connect.',
+        de: 'Paper2Form funktioniert mit Google Forms und Microsoft Forms. Melden Sie sich mit Ihrem Konto an, um sich zu verbinden.',
+        fr: 'Paper2Form fonctionne avec Google Forms et Microsoft Forms. Connectez-vous avec votre compte pour vous connecter.',
+        es: 'Paper2Form funciona con Google Forms y Microsoft Forms. Inicie sesión con su cuenta para conectarse.',
+        it: 'Paper2Form funziona con Google Forms e Microsoft Forms. Accedi con il tuo account per connetterti.',
+        pt: 'Paper2Form funciona com Google Forms e Microsoft Forms. Faça login com sua conta para conectar.'
     },
     pricing_faq4_q: {
-        en: 'Do you offer discounts for teams?', de: 'Bieten Sie Rabatte für Teams an?', fr: 'Offrez-vous des réductions pour les équipes?', es: '¿Ofrecen descuentos para equipos?', it: 'Offrite sconti per i team?', pt: 'Vocês oferecem descontos para equipes?'
+        en: 'How does the AI processing work?', de: 'Wie funktioniert die KI-Verarbeitung?', fr: 'Comment fonctionne le traitement par IA?', es: '¿Cómo funciona el procesamiento de IA?', it: 'Come funziona l\'elaborazione IA?', pt: 'Como funciona o processamento de IA?'
     },
     pricing_faq4_a: {
-        en: 'Yes! Contact us for volume licensing and team discounts.',
-        de: 'Ja! Kontaktieren Sie uns für Volumenlizenzen und Teamrabatte.',
-        fr: 'Oui! Contactez-nous pour les licences en volume et les réductions d\'équipe.',
-        es: '¡Sí! Contáctenos para licencias por volumen y descuentos para equipos.',
-        it: 'Sì! Contattaci per licenze volume e sconti per team.',
-        pt: 'Sim! Entre em contato para licenciamento por volume e descontos para equipes.'
+        en: 'Your scanned images are processed by Google\'s Gemini AI in EU data centers. We don\'t store your documents.',
+        de: 'Ihre gescannten Bilder werden von Googles Gemini KI in EU-Rechenzentren verarbeitet. Wir speichern Ihre Dokumente nicht.',
+        fr: 'Vos images numérisées sont traitées par l\'IA Gemini de Google dans des centres de données européens. Nous ne stockons pas vos documents.',
+        es: 'Sus imágenes escaneadas son procesadas por la IA Gemini de Google en centros de datos de la UE. No almacenamos sus documentos.',
+        it: 'Le tue immagini scansionate vengono elaborate dall\'IA Gemini di Google in data center UE. Non memorizziamo i tuoi documenti.',
+        pt: 'Suas imagens digitalizadas são processadas pela IA Gemini do Google em data centers da UE. Não armazenamos seus documentos.'
     },
 
     // Language Selector
@@ -651,7 +655,10 @@ function setLanguage(lang) {
 function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        el.textContent = t(key);
+        const translation = t(key);
+        if (translation) {
+            el.innerHTML = translation;
+        }
     });
 
     // Handle placeholders

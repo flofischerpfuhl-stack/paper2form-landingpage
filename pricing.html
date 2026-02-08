@@ -12,7 +12,7 @@
         /* Pricing-specific styles */
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 0;
             border: 2px solid var(--black);
         }
@@ -44,6 +44,14 @@
             background: var(--yellow);
         }
 
+        .pricing-card:hover {
+            background: var(--yellow);
+        }
+
+        .pricing-card.featured:hover {
+            background: var(--cyan);
+        }
+
         .pricing-badge {
             position: absolute;
             top: -1px;
@@ -69,6 +77,7 @@
             font-weight: 800;
             line-height: 1;
             margin-bottom: var(--space-xs);
+            white-space: nowrap;
         }
 
         .pricing-price span {
@@ -145,53 +154,45 @@
         <div class="container">
             <div class="pricing-grid fade-in">
 
-                <!-- Free Plan -->
+                <!-- Basic Plan -->
                 <div class="pricing-card">
-                    <div class="pricing-name" data-i18n="pricing_free_name">Free</div>
-                    <div class="pricing-price">€0 <span>/month</span></div>
-                    <p class="pricing-description" data-i18n="pricing_free_desc">Get started with the basics</p>
+                    <div class="pricing-name" data-i18n="pricing_basic_name">Basic</div>
+                    <div class="pricing-price" data-i18n="pricing_basic_price">$2 <span>/month</span></div>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_free_f1">5 scans per month</li>
-                        <li data-i18n="pricing_free_f2">Google Forms integration</li>
-                        <li data-i18n="pricing_free_f3">Basic OCR recognition</li>
-                        <li data-i18n="pricing_free_f4">Community support</li>
+                        <li data-i18n="pricing_basic_f1">4 scans per day</li>
                     </ul>
-                    <a href="index.html#download" class="btn btn-outline" data-i18n="tutorial_cta_button">Download
-                        Free</a>
+                    <a href="index.html#download" class="btn btn-outline" data-i18n="nav_cta">Get the App</a>
                 </div>
 
-                <!-- Pro Plan -->
+                <!-- Premium Plan -->
                 <div class="pricing-card featured">
-                    <div class="pricing-badge" data-i18n="pricing_pro_badge">Most Popular</div>
-                    <div class="pricing-name" data-i18n="pricing_pro_name">Pro</div>
-                    <div class="pricing-price">€9 <span>/month</span></div>
-                    <p class="pricing-description" data-i18n="pricing_pro_desc">For professionals and small teams</p>
+                    <div class="pricing-badge" data-i18n="pricing_premium_badge">Most Popular</div>
+                    <div class="pricing-name" data-i18n="pricing_premium_name">Premium</div>
+                    <div class="pricing-price" data-i18n="pricing_premium_price">$20 <span>/month</span></div>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_pro_f1">Unlimited scans</li>
-                        <li data-i18n="pricing_pro_f2">Google + Microsoft Forms</li>
-                        <li data-i18n="pricing_pro_f3">Advanced AI recognition</li>
-                        <li data-i18n="pricing_pro_f4">Batch processing</li>
-                        <li data-i18n="pricing_pro_f5">Priority support</li>
+                        <li data-i18n="pricing_premium_f1">40 scans per day</li>
                     </ul>
-                    <a href="index.html#download" class="btn btn-primary" data-i18n="pricing_pro_cta">Start Free
-                        Trial</a>
+                    <a href="index.html#download" class="btn btn-primary" data-i18n="nav_cta">Get the App</a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-name" data-i18n="pricing_business_name">Business</div>
+                    <div class="pricing-price" data-i18n="pricing_business_price">$80 <span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing_business_f1">400 scans per day</li>
+                    </ul>
+                    <a href="index.html#download" class="btn btn-outline" data-i18n="nav_cta">Get the App</a>
                 </div>
 
                 <!-- Enterprise Plan -->
                 <div class="pricing-card">
                     <div class="pricing-name" data-i18n="pricing_enterprise_name">Enterprise</div>
-                    <div class="pricing-price" data-i18n="pricing_enterprise_price">Custom</div>
-                    <p class="pricing-description" data-i18n="pricing_enterprise_desc">For organizations with specific
-                        needs</p>
+                    <div class="pricing-price" data-i18n="pricing_enterprise_price">$200 <span>/month</span></div>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_enterprise_f1">Everything in Pro</li>
-                        <li data-i18n="pricing_enterprise_f2">Custom integrations</li>
-                        <li data-i18n="pricing_enterprise_f3">Dedicated support</li>
-                        <li data-i18n="pricing_enterprise_f4">SLA guarantee</li>
-                        <li data-i18n="pricing_enterprise_f5">Volume licensing</li>
+                        <li data-i18n="pricing_enterprise_f1">1200 scans per day</li>
                     </ul>
-                    <a href="mailto:sales@paper2form.app" class="btn btn-outline"
-                        data-i18n="pricing_enterprise_cta">Contact Sales</a>
+                    <a href="index.html#download" class="btn btn-outline" data-i18n="nav_cta">Get the App</a>
                 </div>
 
             </div>
