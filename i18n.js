@@ -456,7 +456,7 @@ const TRANSLATIONS = {
         pt: 'Para uso ocasional'
     },
     pricing_basic_price: {
-        en: '$2 <span>/month</span>', de: '2€ <span>/Monat</span>'
+        en: '$2 <span>/month</span>', de: '$2 <span>/month</span>'
     },
     pricing_basic_f1: {
         en: '4 scans per day', de: '4 Scans pro Tag'
@@ -485,7 +485,7 @@ const TRANSLATIONS = {
         pt: 'Para usuários regulares'
     },
     pricing_premium_price: {
-        en: '$20 <span>/month</span>', de: '20€ <span>/Monat</span>'
+        en: '$20 <span>/month</span>', de: '$20 <span>/month</span>'
     },
     pricing_premium_f1: {
         en: '40 scans per day', de: '40 Scans pro Tag'
@@ -514,7 +514,7 @@ const TRANSLATIONS = {
         pt: 'Para pequenas equipes e usuários avançados'
     },
     pricing_business_price: {
-        en: '$100 <span>/month</span>', de: '100€ <span>/Monat</span>'
+        en: '$100 <span>/month</span>', de: '$100 <span>/month</span>'
     },
     pricing_business_f1: {
         en: '400 scans per day', de: '400 Scans pro Tag'
@@ -532,7 +532,7 @@ const TRANSLATIONS = {
         en: 'Enterprise', de: 'Enterprise', fr: 'Entreprise', es: 'Empresarial', it: 'Enterprise', pt: 'Empresarial'
     },
     pricing_enterprise_price: {
-        en: '$200 <span>/month</span>', de: '200€ <span>/Monat</span>'
+        en: '$200 <span>/month</span>', de: '$200 <span>/month</span>'
     },
     pricing_enterprise_desc: {
         en: 'For large organizations',
