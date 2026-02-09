@@ -514,7 +514,7 @@ const TRANSLATIONS = {
         pt: 'Para pequenas equipes e usuários avançados'
     },
     pricing_business_price: {
-        en: '$80 <span>/month</span>', de: '80€ <span>/Monat</span>'
+        en: '$100 <span>/month</span>', de: '100€ <span>/Monat</span>'
     },
     pricing_business_f1: {
         en: '400 scans per day', de: '400 Scans pro Tag'
