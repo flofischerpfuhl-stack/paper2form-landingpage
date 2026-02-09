@@ -600,12 +600,12 @@ const TRANSLATIONS = {
         en: 'How does the AI processing work?', de: 'Wie funktioniert die KI-Verarbeitung?', fr: 'Comment fonctionne le traitement par IA?', es: '¿Cómo funciona el procesamiento de IA?', it: 'Come funziona l\'elaborazione IA?', pt: 'Como funciona o processamento de IA?'
     },
     pricing_faq4_a: {
-        en: 'Your scanned images are processed by Google\'s Gemini AI in EU data centers. We don\'t store your documents.',
-        de: 'Ihre gescannten Bilder werden von Googles Gemini KI in EU-Rechenzentren verarbeitet. Wir speichern Ihre Dokumente nicht.',
-        fr: 'Vos images numérisées sont traitées par l\'IA Gemini de Google dans des centres de données européens. Nous ne stockons pas vos documents.',
-        es: 'Sus imágenes escaneadas son procesadas por la IA Gemini de Google en centros de datos de la UE. No almacenamos sus documentos.',
-        it: 'Le tue immagini scansionate vengono elaborate dall\'IA Gemini di Google in data center UE. Non memorizziamo i tuoi documenti.',
-        pt: 'Suas imagens digitalizadas são processadas pela IA Gemini do Google em data centers da UE. Não armazenamos seus documentos.'
+        en: 'Your scanned images are processed by Google\'s Gemini AI in your chosen region (EU or US). We don\'t store your documents.',
+        de: 'Ihre gescannten Bilder werden von Googles Gemini KI in Ihrer gewählten Region (EU oder USA) verarbeitet. Wir speichern Ihre Dokumente nicht.',
+        fr: 'Vos images numérisées sont traitées par l\'IA Gemini de Google dans la région de votre choix (UE ou US). Nous ne stockons pas vos documents.',
+        es: 'Sus imágenes escaneadas son procesadas por la IA Gemini de Google en la región elegida (UE o EE.UU.). No almacenamos sus documentos.',
+        it: 'Le tue immagini scansionate vengono elaborate dall\'IA Gemini di Google nella regione scelta (UE o USA). Non memorizziamo i tuoi documenti.',
+        pt: 'Suas imagens digitalizadas são processadas pela IA Gemini do Google na região escolhida (UE ou EUA). Não armazenamos seus documentos.'
     },
 
     // Language Selector
