@@ -32,12 +32,12 @@ const TRANSLATIONS = {
         en: 'in Seconds', de: 'in Sekunden', fr: 'en Secondes', es: 'en Segundos', it: 'in Secondi', pt: 'em Segundos'
     },
     hero_desc: {
-        en: 'Transform handwritten documents into structured digital data. Our intelligent OCR technology works offline and integrates seamlessly with Google Forms and Microsoft Forms.',
-        de: 'Verwandeln Sie handschriftliche Dokumente in strukturierte digitale Daten. Unsere intelligente OCR-Technologie funktioniert offline und integriert sich nahtlos mit Google Forms und Microsoft Forms.',
-        fr: 'Transformez les documents manuscrits en données numériques structurées. Notre technologie OCR intelligente fonctionne hors ligne et s\'intègre parfaitement à Google Forms et Microsoft Forms.',
-        es: 'Transforma documentos escritos a mano en datos digitales estructurados. Nuestra tecnología OCR inteligente funciona sin conexión y se integra perfectamente con Google Forms y Microsoft Forms.',
-        it: 'Trasforma documenti scritti a mano in dati digitali strutturati. La nostra tecnologia OCR intelligente funziona offline e si integra perfettamente con Google Forms e Microsoft Forms.',
-        pt: 'Transforme documentos manuscritos em dados digitais estruturados. Nossa tecnologia OCR inteligente funciona offline e se integra perfeitamente ao Google Forms e Microsoft Forms.'
+        en: 'Transform handwritten documents into structured digital data. Our intelligent OCR technology processes your data securely in the cloud and integrates seamlessly with Google Forms and Microsoft Forms.',
+        de: 'Verwandeln Sie handschriftliche Dokumente in strukturierte digitale Daten. Unsere intelligente OCR-Technologie verarbeitet Ihre Daten sicher in der Cloud und integriert sich nahtlos mit Google Forms und Microsoft Forms.',
+        fr: 'Transformez les documents manuscrits en données numériques structurées. Notre technologie OCR intelligente traite vos données en toute sécurité dans le cloud et s\'intègre parfaitement à Google Forms et Microsoft Forms.',
+        es: 'Transforma documentos escritos a mano en datos digitales estructurados. Nuestra tecnología OCR inteligente procesa sus datos de forma segura en la nube y se integra perfectamente con Google Forms y Microsoft Forms.',
+        it: 'Trasforma documenti scritti a mano in dati digitali strutturati. La nostra tecnologia OCR intelligente elabora i tuoi dati in modo sicuro nel cloud e si integra perfettamente con Google Forms e Microsoft Forms.',
+        pt: 'Transforme documentos manuscritos em dados digitais estruturados. Nossa tecnologia OCR inteligente processa seus dados com segurança na nuvem e se integra perfeitamente ao Google Forms e Microsoft Forms.'
     },
     hero_cta_primary: {
         en: 'Get Started Free', de: 'Kostenlos starten', fr: 'Commencer gratuitement', es: 'Comenzar gratis', it: 'Inizia gratis', pt: 'Comece grátis'
