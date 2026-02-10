@@ -619,12 +619,12 @@ const TRANSLATIONS = {
         en: 'How does the free version work?', de: 'Wie funktioniert die kostenlose Version?', fr: 'Comment fonctionne la version gratuite?', es: '¿Cómo funciona la versión gratuita?', it: 'Come funziona la versione gratuita?', pt: 'Como funciona a versão gratuita?'
     },
     pricing_faq1_a: {
-        en: 'You get 5 free scans to test the app. Upgrade anytime for unlimited daily usage.',
-        de: 'Sie erhalten 5 kostenlose Scans zum Testen der App. Upgraden Sie jederzeit für unbegrenzte tägliche Nutzung.',
-        fr: 'Vous obtenez 5 scans gratuits pour tester l\'application. Passez à la version supérieure à tout moment.',
-        es: 'Obtiene 5 escaneos gratuitos para probar la aplicación. Actualice en cualquier momento.',
-        it: 'Ottieni 5 scansioni gratuite per testare l\'app. Aggiorna in qualsiasi momento.',
-        pt: 'Você recebe 5 digitalizações gratuitas para testar o aplicativo. Faça upgrade a qualquer momento.'
+        en: 'You get 5 free scans to test the app. Upgrade anytime for more daily scans.',
+        de: 'Sie erhalten 5 kostenlose Scans zum Testen der App. Upgraden Sie jederzeit für mehr tägliche Scans.',
+        fr: 'Vous obtenez 5 scans gratuits pour tester l\'application. Passez à la version supérieure à tout moment pour plus de scans quotidiens.',
+        es: 'Obtiene 5 escaneos gratuitos para probar la aplicación. Actualice en cualquier momento para obtener más escaneos diarios.',
+        it: 'Ottieni 5 scansioni gratuite per testare l\'app. Aggiorna in qualsiasi momento per più scansioni giornaliere.',
+        pt: 'Você recebe 5 digitalizações gratuitas para testar o aplicativo. Faça upgrade a qualquer momento para mais digitalizações diárias.'
     },
     pricing_faq2_q: {
         en: 'Can I cancel my subscription?', de: 'Kann ich mein Abonnement kündigen?', fr: 'Puis-je annuler mon abonnement?', es: '¿Puedo cancelar mi suscripción?', it: 'Posso annullare il mio abbonamento?', pt: 'Posso cancelar minha assinatura?'
