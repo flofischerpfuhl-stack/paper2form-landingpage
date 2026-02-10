@@ -141,6 +141,58 @@ const TRANSLATIONS = {
         it: 'Usa la fotocamera o importa dalla galleria. La nostra IA gestisce qualsiasi condizione di luce.',
         pt: 'Use sua câmera ou importe da galeria. Nossa IA lida com qualquer condição de iluminação.'
     },
+
+    // Privacy Section
+    privacy_sect_tag: {
+        en: 'Privacy', de: 'Datenschutz', fr: 'Confidentialité', es: 'Privacidad', it: 'Privacy', pt: 'Privacidade'
+    },
+    privacy_sect_title_1: {
+        en: 'Your Data', de: 'Ihre Daten', fr: 'Vos Données', es: 'Sus Datos', it: 'I Tuoi Dati', pt: 'Seus Dados'
+    },
+    privacy_sect_title_2: {
+        en: 'is Safe', de: 'sind sicher', fr: 'sont en sécurité', es: 'están seguros', it: 'sono al sicuro', pt: 'estão seguros'
+    },
+    privacy_sect_desc: {
+        en: 'We prioritize your privacy and data security above all else.',
+        de: 'Wir priorisieren Ihre Privatsphäre und Datensicherheit über alles andere.',
+        fr: 'Nous priorisons votre confidentialité et la sécurité de vos données avant tout.',
+        es: 'Priorizamos su privacidad y seguridad de datos por encima de todo.',
+        it: 'Diamo priorità alla tua privacy e alla sicurezza dei dati sopra ogni altra cosa.',
+        pt: 'Priorizamos sua privacidade e segurança de dados acima de tudo.'
+    },
+    privacy_point1_title: {
+        en: 'No Data Storage', de: 'Keine Datenspeicherung', fr: 'Pas de stockage', es: 'Sin almacenamiento', it: 'Nessuna memorizzazione', pt: 'Sem armazenamento'
+    },
+    privacy_point1_desc: {
+        en: 'Paper2Form never sees your data. When it is processed by the AI, it is not used for training and gets deleted as soon as possible.',
+        de: 'Paper2Form sieht Ihre Daten niemals. Bei der KI-Verarbeitung werden sie nicht zum Training verwendet und sofort gelöscht.',
+        fr: 'Paper2Form ne voit jamais vos données. L\'IA ne les utilise pas pour l\'entraînement et les supprime dès que possible.',
+        es: 'Paper2Form nunca ve sus datos. La IA no los usa para entrenamiento y se eliminan lo antes posible.',
+        it: 'Paper2Form non vede mai i tuoi dati. L\'IA non li usa per l\'addestramento e vengono eliminati il prima possibile.',
+        pt: 'Paper2Form nunca vê seus dados. A IA não os usa para treinamento e são excluídos o mais rápido possível.'
+    },
+    privacy_point2_title: {
+        en: 'Server Location', de: 'Serverstandort', fr: 'Emplacement serveur', es: 'Ubicación servidor', it: 'Posizione server', pt: 'Localização do servidor'
+    },
+    privacy_point2_desc: {
+        en: 'You can also choose the location of the server that processes it.',
+        de: 'Sie können den Standort des verarbeitenden Servers selbst wählen.',
+        fr: 'Vous pouvez également choisir l\'emplacement du serveur qui les traite.',
+        es: 'También puede elegir la ubicación del servidor que los procesa.',
+        it: 'Puoi anche scegliere la posizione del server che li elabora.',
+        pt: 'Você também pode escolher a localização do servidor que os processa.'
+    },
+    privacy_point3_title: {
+        en: 'GDPR Compliant', de: 'DSGVO-konform', fr: 'Conforme RGPD', es: 'Cumple RGPD', it: 'Conforme GDPR', pt: 'Compatível com RGPD'
+    },
+    privacy_point3_desc: {
+        en: 'In the EU, you can be completely GDPR compliant.',
+        de: 'In der EU können Sie vollkommen DSGVO-konform arbeiten.',
+        fr: 'Dans l\'UE, vous pouvez être entièrement conforme au RGPD.',
+        es: 'En la UE, puede cumplir completamente con el RGPD.',
+        it: 'Nell\'UE, puoi essere completamente conforme al GDPR.',
+        pt: 'Na UE, você pode estar totalmente em conformidade com o RGPD.'
+    },
     step2_title: {
         en: 'Auto-Extract Data', de: 'Daten automatisch extrahieren', fr: 'Extraction automatique', es: 'Extracción automática', it: 'Estrazione automatica', pt: 'Extração automática'
     },
