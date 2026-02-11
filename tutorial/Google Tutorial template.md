@@ -27,7 +27,7 @@
 3. under "performance" you can choose scan quality and resolution. higher values will mean better results but longer processing time *1 Screenshot Placeholder*
 
 # subscription
-1. choose a subscription that fits your needs. afte 5 test scans you will have to buy a subscription to coninue using the app. *1 Screenshot Placeholder*
+1. choose a subscription that fits your needs. afte 5 test scans you will have to buy a subscription to coninue using the app. *2 Screenshot Placeholder*
 2. if you plan on occanisonaly using the app for single documents we recomment the basic plan where you can process 4 documents every day
 3. if you plan on using daily with multiple documents we reccoment premium where you can process 40 documents every day
 4. if your in an office where you need to process many documents from many sources, or your the person a many documents need to go through every day, the business plan is right for you

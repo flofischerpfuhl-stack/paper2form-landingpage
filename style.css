@@ -1159,6 +1159,20 @@ p {
     /* Reduced from 250px (approx 20% smaller) */
 }
 
+.screenshot-group .tutorial-img.landscape {
+    max-width: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+    /* Force full width to stack */
+}
+
+@media (min-width: 768px) {
+    .screenshot-group .tutorial-img.landscape {
+        max-width: 800px;
+        /* Match single landscape size */
+    }
+}
+
 @media (max-width: 600px) {
     .screenshot-group {
         flex-direction: row;

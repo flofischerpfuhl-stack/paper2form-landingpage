@@ -424,6 +424,38 @@ const TRANSLATIONS = {
         it: 'Dopodiché, clicca semplicemente su "Invia" o assicurati che i permessi siano impostati. Se la persona che utilizza l\'app Paper2Form non è l\'autore del modulo, assicurati che abbia accesso aggiungendo il suo indirizzo Gmail o mantenendo il modulo pubblico. Inoltre, se non è l\'autore, devi copiare il link e inviarglielo.',
         pt: 'Depois disso, basta clicar em "Enviar" ou garantir que as permissões estejam definidas. Se a pessoa usando o aplicativo Paper2Form não for o autor do formulário, certifique-se de que ela tenha acesso adicionando seu endereço Gmail ou mantendo o formulário público. Além disso, se ela não for o autor, você precisa copiar o link e enviá-lo para ela.'
     },
+    // Microsoft Step 1
+    tutorial_ms_step1_p1: {
+        en: 'Go to <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.'
+    },
+    tutorial_ms_step1_p2: {
+        en: 'Create a new empty form.'
+    },
+    tutorial_ms_step1_p3: {
+        en: 'Create fields for the information you need from your paper documents. You can recreate all the fields from your physical form here, or you can pursue a more generalized unstructured approach. For example, you could create a Form for physical mail where one of your fields is "Summary of Content", and the AI will automatically summarize the letter you received.'
+    },
+    tutorial_ms_step1_p4: {
+        en: 'For this example, we\'ll stay with a more structured form. We want to digitize the answers to a volunteer registration form, so we create a field for every question in the paper form that is relevant to us.'
+    },
+    tutorial_ms_step1_p5: {
+        en: 'After that, we just need to click "Collect responses". If the person using the Paper2Form App is not the author of the Form, you need to ensure they have access, by either adding their Microsoft account or by keeping the form public.'
+    },
+    tutorial_ms_step1_p6: {
+        en: 'It is important that you activate a prefilled link. If the person using Paper2Form is not the author, you can copy the prefilled link and send it to them.'
+    },
+
+    // Microsoft Step 2
+    tutorial_ms_step2_p1: {
+        en: 'In the Paper2Form app, you need to login with your Microsoft Account in the WebView.'
+    },
+    tutorial_ms_step2_p2: {
+        en: 'To add the Form we just created, you can select it by browsing your forms in the webview and copying the prefilled link if you\'re the author. If not, you paste the link of the prefilled form.'
+    },
+
+    // Microsoft Step 3
+    tutorial_ms_step3_p3: {
+        en: 'After sending the first response, you can now link the responses to an Excel table. From now on, any new response will automatically appear here.'
+    },
 
     // Step 2
     tutorial_step2_title: {

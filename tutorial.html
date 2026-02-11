@@ -238,7 +238,10 @@
                             <p>1. <span data-i18n="tutorial_step6_p1">Choose a subscription that fits your needs. After
                                     5 test scans, you will have to buy a subscription to continue using the app.</span>
                             </p>
-                            <img src="tutorial/g21.png" alt="Subscription options" class="tutorial-img portrait">
+                            <div class="screenshot-group">
+                                <img src="tutorial/g21.png" alt="Subscription options 1" class="tutorial-img portrait">
+                                <img src="tutorial/g22.png" alt="Subscription options 2" class="tutorial-img portrait">
+                            </div>
 
                             <p>2. <span data-i18n="tutorial_step6_p2">If you plan on occasionally using the app for
                                     single documents, we recommend the Basic plan where you can process 4 documents
@@ -258,18 +261,212 @@
 
             </div>
 
-            <!-- Microsoft Tutorial (Placeholder) -->
+            <!-- Microsoft Tutorial -->
             <div id="microsoft-tutorial" class="tutorial-steps" style="display: none;">
+
+                <!-- Step 1 -->
                 <div class="tutorial-step fade-in" data-step="1">
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 1</span>
-                            <h3>Coming Soon</h3>
+                            <h3 data-i18n="tutorial_step1_title">Create Form</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_ms_step1_p1">Go to <a href="https://forms.cloud.microsoft/"
+                                        target="_blank">https://forms.cloud.microsoft/</a>.</span></p>
+
+                            <p>2. <span data-i18n="tutorial_ms_step1_p2">Create a new empty form.</span></p>
+                            <img src="tutorial/m1.png" alt="Create new form" class="tutorial-img landscape">
+
+                            <p>3. <span data-i18n="tutorial_ms_step1_p3">Create fields for the information you need from
+                                    your paper documents. You can recreate all the fields from your physical form here,
+                                    or you can pursue a more generalized unstructured approach. For example, you could
+                                    create a Form for physical mail where one of your fields is "Summary of Content",
+                                    and the AI will automatically summarize the letter you received.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m2.png" alt="Create fields 1" class="tutorial-img landscape">
+                                <img src="tutorial/m3.png" alt="Create fields 2" class="tutorial-img landscape">
+                            </div>
+
+                            <p>4. <span data-i18n="tutorial_ms_step1_p4">For this example, we'll stay with a more
+                                    structured form. We want to digitize the answers to a volunteer registration form,
+                                    so we create a field for every question in the paper form that is relevant to
+                                    us.</span></p>
+
+                            <p>5. <span data-i18n="tutorial_ms_step1_p5">After that, we just need to click "Collect
+                                    responses". If the person using the Paper2Form App is not the author of the Form,
+                                    you need to ensure they have access, by either adding their Microsoft account or by
+                                    keeping the form public.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m4.png" alt="Collect responses 1" class="tutorial-img landscape">
+                                <img src="tutorial/m5.png" alt="Collect responses 2" class="tutorial-img landscape">
+                            </div>
+
+                            <p>6. <span data-i18n="tutorial_ms_step1_p6">It is important that you activate a prefilled
+                                    link. If the person using Paper2Form is not the author, you can copy the prefilled
+                                    link and send it to them.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m6.png" alt="Prefilled link 1" class="tutorial-img landscape">
+                                <img src="tutorial/m7.png" alt="Prefilled link 2" class="tutorial-img landscape">
+                            </div>
                         </div>
                     </div>
-                    <div class="tutorial-step-body" style="max-height: 200px; padding: var(--space-lg);">
+                </div>
+
+                <!-- Step 2 -->
+                <div class="tutorial-step fade-in" data-step="2">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 2</span>
+                            <h3 data-i18n="tutorial_step2_title">Import Form</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p>The Microsoft tutorial is coming soon.</p>
+                            <p>1. <span data-i18n="tutorial_ms_step2_p1">In the Paper2Form app, you need to login with
+                                    your Microsoft Account in the WebView.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m8.png" alt="Microsoft Login 1" class="tutorial-img portrait">
+                                <img src="tutorial/m9.png" alt="Microsoft Login 2" class="tutorial-img portrait">
+                            </div>
+
+                            <p>2. <span data-i18n="tutorial_ms_step2_p2">To add the Form we just created, you can select
+                                    it by browsing your forms in the webview and copying the prefilled link if you're
+                                    the author. If not, you paste the link of the prefilled form.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m10.png" alt="Add Form 1" class="tutorial-img portrait">
+                                <img src="tutorial/m11.png" alt="Add Form 2" class="tutorial-img portrait">
+                                <img src="tutorial/m12.png" alt="Add Form 3" class="tutorial-img portrait">
+                                <img src="tutorial/m13.png" alt="Add Form 4" class="tutorial-img portrait">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="tutorial-step fade-in" data-step="3">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 3</span>
+                            <h3 data-i18n="tutorial_step3_title">Scan Document</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_step3_p1">Now you can fill out your form. Manual Fill lets
+                                    you type in the form by hand. Single Scan is the fastest, it just takes one photo
+                                    and fills out the form. If your document has multiple pages, or you want to process
+                                    multiple documents in parallel, you can choose "Scan (Multiple)".</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m14.png" alt="Scan options 1" class="tutorial-img portrait">
+                                <img src="tutorial/m15.png" alt="Scan options 2" class="tutorial-img portrait">
+                                <img src="tutorial/m16.png" alt="Scan options 3" class="tutorial-img portrait">
+                            </div>
+
+                            <p>2. <span data-i18n="tutorial_step3_p2">Once the photos are processed, you can verify and
+                                    correct any possible mistakes and then just click on send.</span></p>
+                            <img src="tutorial/m17.png" alt="Verify and send" class="tutorial-img portrait">
+
+                            <p>3. <span data-i18n="tutorial_ms_step3_p3">After sending the first response, you can now
+                                    link the responses to an Excel table. From now on, any new response will
+                                    automatically appear here.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m18.png" alt="Excel results 1" class="tutorial-img landscape">
+                                <img src="tutorial/m19.png" alt="Excel results 2" class="tutorial-img landscape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="tutorial-step fade-in" data-step="4">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 4</span>
+                            <h3 data-i18n="tutorial_step4_title">The Scans Tab</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_step4_p1">The picture will also automatically be added to
+                                    your scan tab.</span></p>
+
+                            <p>2. <span data-i18n="tutorial_step4_p2">Here you can take pictures when you're currently
+                                    offline for later processing.</span></p>
+                            <img src="tutorial/m20.png" alt="Offline scanning" class="tutorial-img portrait">
+
+                            <p>3. <span data-i18n="tutorial_step4_p3">Or you can select images from your gallery to
+                                    process.</span></p>
+                            <img src="tutorial/m21.png" alt="Gallery selection" class="tutorial-img portrait">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="tutorial-step fade-in" data-step="5">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 5</span>
+                            <h3 data-i18n="tutorial_step5_title">Settings</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_step5_p1">In the settings, you can choose which server
+                                    should process your pictures to extract the data. Your data is sent encrypted and
+                                    only stays on the server for processing as long as needed before it is deleted. Your
+                                    data is not used for training the AI.</span></p>
+                            <img src="tutorial/m22.png" alt="Server settings" class="tutorial-img portrait">
+
+                            <p>2. <span data-i18n="tutorial_step5_p2">You can also choose your theme preferences and
+                                    your language.</span></p>
+
+                            <p>3. <span data-i18n="tutorial_step5_p3">Under "Performance" you can choose scan quality
+                                    and resolution. Higher values will mean better results but longer processing
+                                    time.</span></p>
+                            <img src="tutorial/m23.png" alt="Performance settings" class="tutorial-img portrait">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="tutorial-step fade-in" data-step="6">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 6</span>
+                            <h3 data-i18n="tutorial_step6_title">Subscription</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_step6_p1">Choose a subscription that fits your needs. After
+                                    5 test scans, you will have to buy a subscription to continue using the app.</span>
+                            </p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/m24.png" alt="Subscription options 1" class="tutorial-img portrait">
+                                <img src="tutorial/m25.png" alt="Subscription options 2" class="tutorial-img portrait">
+                            </div>
+
+                            <p>2. <span data-i18n="tutorial_step6_p2">If you plan on occasionally using the app for
+                                    single documents, we recommend the Basic plan where you can process 4 documents
+                                    every day.</span></p>
+                            <p>3. <span data-i18n="tutorial_step6_p3">If you plan on using daily with multiple
+                                    documents, we recommend Premium where you can process 40 documents every day.</span>
+                            </p>
+                            <p>4. <span data-i18n="tutorial_step6_p4">If you're in an office where you need to process
+                                    many documents from many sources, or you're the person many documents need to go
+                                    through every day, the Business plan is right for you.</span></p>
+                            <p>5. <span data-i18n="tutorial_step6_p5">If you plan on digitizing a larger backlog of
+                                    paper documents, or have infrequent spikes in usage, we recommend the Enterprise
+                                    plan.</span></p>
                         </div>
                     </div>
                 </div>
