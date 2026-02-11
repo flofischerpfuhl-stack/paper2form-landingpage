@@ -426,35 +426,80 @@ const TRANSLATIONS = {
     },
     // Microsoft Step 1
     tutorial_ms_step1_p1: {
-        en: 'Go to <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.'
+        en: 'Go to <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.',
+        de: 'Gehen Sie zu <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.',
+        fr: 'Allez sur <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.',
+        es: 'Vaya a <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.',
+        it: 'Vai su <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.',
+        pt: 'Acesse <a href="https://forms.cloud.microsoft/" target="_blank">https://forms.cloud.microsoft/</a>.'
     },
     tutorial_ms_step1_p2: {
-        en: 'Create a new empty form.'
+        en: 'Create a new empty form.',
+        de: 'Erstellen Sie ein neues leeres Formular.',
+        fr: 'Créez un nouveau formulaire vide.',
+        es: 'Cree un nuevo formulario vacío.',
+        it: 'Crea un nuovo modulo vuoto.',
+        pt: 'Crie um novo formulário vazio.'
     },
     tutorial_ms_step1_p3: {
-        en: 'Create fields for the information you need from your paper documents. You can recreate all the fields from your physical form here, or you can pursue a more generalized unstructured approach. For example, you could create a Form for physical mail where one of your fields is "Summary of Content", and the AI will automatically summarize the letter you received.'
+        en: 'Create fields for the information you need from your paper documents. You can recreate all the fields from your physical form here, or you can pursue a more generalized unstructured approach. For example, you could create a Form for physical mail where one of your fields is "Summary of Content", and the AI will automatically summarize the letter you received.',
+        de: 'Erstellen Sie Felder für die Informationen, die Sie aus Ihren Papierdokumenten benötigen. Sie können alle Felder Ihres physischen Formulars hier nachbilden oder einen allgemeineren, unstrukturierten Ansatz verfolgen. Sie könnten zum Beispiel ein Formular für physische Post erstellen, bei dem eines Ihrer Felder "Zusammenfassung des Inhalts" ist, und die KI fasst den erhaltenen Brief automatisch zusammen.',
+        fr: 'Créez des champs pour les informations dont vous avez besoin à partir de vos documents papier. Vous pouvez recréer tous les champs de votre formulaire physique ici, ou vous pouvez poursuivre une approche non structurée plus généralisée. Par exemple, vous pourriez créer un formulaire pour le courrier physique où l\'un de vos champs est "Résumé du contenu", et l\'IA résumera automatiquement la lettre que vous avez reçue.',
+        es: 'Cree campos para la información que necesita de sus documentos en papel. Puede recrear todos los campos de su formulario físico aquí, o puede seguir un enfoque no estructurado más generalizado. Por ejemplo, podría crear un formulario para correo físico donde uno de sus campos sea "Resumen del contenido", y la IA resumirá automáticamente la carta que recibió.',
+        it: 'Crea campi per le informazioni di cui hai bisogno dai tuoi documenti cartacei. Puoi ricreare tutti i campi del tuo modulo fisico qui, o puoi seguire un approccio non strutturato più generalizzato. Ad esempio, potresti creare un modulo per la posta fisica in cui uno dei tuoi campi è "Riepilogo del contenuto", e l\'IA riassumerà automaticamente la lettera che hai ricevuto.',
+        pt: 'Crie campos para as informações que você precisa de seus documentos em papel. Você pode recriar todos os campos do seu formulário físico aqui, ou pode seguir uma abordagem não estruturada mais generalizada. Por exemplo, você poderia criar um formulário para correspondência física onde um dos seus campos é "Resumo do Conteúdo", e a IA resumirá automaticamente a carta que você recebeu.'
     },
     tutorial_ms_step1_p4: {
-        en: 'For this example, we\'ll stay with a more structured form. We want to digitize the answers to a volunteer registration form, so we create a field for every question in the paper form that is relevant to us.'
+        en: 'For this example, we\'ll stay with a more structured form. We want to digitize the answers to a volunteer registration form, so we create a field for every question in the paper form that is relevant to us.',
+        de: 'Für dieses Beispiel bleiben wir bei einem strukturierteren Formular. Wir wollen die Antworten eines Freiwilligen-Anmeldeformulars digitalisieren, also erstellen wir ein Feld für jede Frage im Papierformular, die für uns relevant ist.',
+        fr: 'Pour cet exemple, nous resterons avec un formulaire plus structuré. Nous voulons numériser les réponses à un formulaire d\'inscription de bénévoles, nous créons donc un champ pour chaque question du formulaire papier qui nous est pertinente.',
+        es: 'Para este ejemplo, nos quedaremos con un formulario más estructurado. Queremos digitalizar las respuestas a un formulario de registro de voluntarios, por lo que creamos un campo para cada pregunta en el formulario en papel que sea relevante para nosotros.',
+        it: 'Per questo esempio, rimarremo con un modulo più strutturato. Vogliamo digitalizzare le risposte a un modulo di registrazione volontari, quindi creiamo un campo per ogni domanda nel modulo cartaceo che è rilevante per noi.',
+        pt: 'Para este exemplo, ficaremos com um formulário mais estruturado. Queremos digitalizar as respostas de um formulário de inscrição de voluntários, então criamos um campo para cada pergunta no formulário de papel que é relevante para nós.'
     },
     tutorial_ms_step1_p5: {
-        en: 'After that, we just need to click "Collect responses". If the person using the Paper2Form App is not the author of the Form, you need to ensure they have access, by either adding their Microsoft account or by keeping the form public.'
+        en: 'After that, we just need to click "Collect responses". If the person using the Paper2Form App is not the author of the Form, you need to ensure they have access, by either adding their Microsoft account or by keeping the form public.',
+        de: 'Danach müssen wir nur noch auf "Antworten sammeln" klicken. Wenn die Person, die die Paper2Form App nutzt, nicht der Autor des Formulars ist, müssen Sie sicherstellen, dass sie Zugriff hat, indem Sie entweder ihr Microsoft-Konto hinzufügen oder das Formular öffentlich halten.',
+        fr: 'Ensuite, il suffit de cliquer sur "Collecter les réponses". Si la personne utilisant l\'application Paper2Form n\'est pas l\'auteur du formulaire, vous devez vous assurer qu\'elle y a accès, soit en ajoutant son compte Microsoft, soit en gardant le formulaire public.',
+        es: 'Después de eso, solo necesitamos hacer clic en "Recopilar respuestas". Si la persona que usa la aplicación Paper2Form no es el autor del formulario, debe asegurarse de que tenga acceso, ya sea agregando su cuenta de Microsoft o manteniendo el formulario público.',
+        it: 'Dopodiché, dobbiamo solo cliccare su "Raccogli risposte". Se la persona che utilizza l\'app Paper2Form non è l\'autore del modulo, devi assicurarti che abbia accesso, aggiungendo il suo account Microsoft o mantenendo il modulo pubblico.',
+        pt: 'Depois disso, só precisamos clicar em "Coletar respostas". Se a pessoa usando o aplicativo Paper2Form não for o autor do formulário, você precisa garantir que ela tenha acesso, adicionando sua conta Microsoft ou mantendo o formulário público.'
     },
     tutorial_ms_step1_p6: {
-        en: 'It is important that you activate a prefilled link. If the person using Paper2Form is not the author, you can copy the prefilled link and send it to them.'
+        en: 'It is important that you activate a prefilled link. If the person using Paper2Form is not the author, you can copy the prefilled link and send it to them.',
+        de: 'Es ist wichtig, dass Sie einen vorausgefüllten Link aktivieren. Wenn die Person, die Paper2Form nutzt, nicht der Autor ist, können Sie den vorausgefüllten Link kopieren und ihr senden.',
+        fr: 'Il est important que vous activiez un lien pré-rempli. Si la personne utilisant Paper2Form n\'est pas l\'auteur, vous pouvez copier le lien pré-rempli et le lui envoyer.',
+        es: 'Es importante que active un enlace prellenado. Si la persona que usa Paper2Form no es el autor, puede copiar el enlace prellenado y enviárselo.',
+        it: 'È importante attivare un link precompilato. Se la persona che utilizza Paper2Form non è l\'autore, puoi copiare il link precompilato e inviarglielo.',
+        pt: 'É importante que você ative um link pré-preenchido. Se a pessoa usando o Paper2Form não for o autor, você pode copiar o link pré-preenchido e enviá-lo para ela.'
     },
 
     // Microsoft Step 2
     tutorial_ms_step2_p1: {
-        en: 'In the Paper2Form app, you need to login with your Microsoft Account in the WebView.'
+        en: 'In the Paper2Form app, you need to login with your Microsoft Account in the WebView.',
+        de: 'In der Paper2Form App müssen Sie sich im WebView mit Ihrem Microsoft-Konto anmelden.',
+        fr: 'Dans l\'application Paper2Form, vous devez vous connecter avec votre compte Microsoft dans la WebView.',
+        es: 'En la aplicación Paper2Form, debe iniciar sesión con su cuenta de Microsoft en el WebView.',
+        it: 'Nell\'app Paper2Form, devi accedere con il tuo account Microsoft nella WebView.',
+        pt: 'No aplicativo Paper2Form, você precisa fazer login com sua conta Microsoft na WebView.'
     },
     tutorial_ms_step2_p2: {
-        en: 'To add the Form we just created, you can select it by browsing your forms in the webview and copying the prefilled link if you\'re the author. If not, you paste the link of the prefilled form.'
+        en: 'To add the Form we just created, you can select it by browsing your forms in the webview and copying the prefilled link if you\'re the author. If not, you paste the link of the prefilled form.',
+        de: 'Um das gerade erstellte Formular hinzuzufügen, können Sie es auswählen, indem Sie Ihre Formulare im WebView durchsuchen und den vorausgefüllten Link kopieren, wenn Sie der Autor sind. Wenn nicht, fügen Sie den Link des vorausgefüllten Formulars ein.',
+        fr: 'Pour ajouter le formulaire que nous venons de créer, vous pouvez le sélectionner en parcourant vos formulaires dans la webview et en copiant le lien pré-rempli si vous êtes l\'auteur. Sinon, vous collez le lien du formulaire pré-rempli.',
+        es: 'Para agregar el formulario que acabamos de crear, puede seleccionarlo navegando por sus formularios en el webview y copiando el enlace prellenado si es el autor. Si no, pegue el enlace del formulario prellenado.',
+        it: 'Per aggiungere il modulo che abbiamo appena creato, puoi selezionarlo sfogliando i tuoi moduli nella webview e copiando il link precompilato se sei l\'autore. In caso contrario, incolla il link del modulo precompilato.',
+        pt: 'Para adicionar o formulário que acabamos de criar, você pode selecioná-lo navegando em seus formulários na webview e copiando o link pré-preenchido se você for o autor. Se não, cole o link do formulário pré-preenchido.'
     },
 
     // Microsoft Step 3
     tutorial_ms_step3_p3: {
-        en: 'After sending the first response, you can now link the responses to an Excel table. From now on, any new response will automatically appear here.'
+        en: 'After sending the first response, you can now link the responses to an Excel table. From now on, any new response will automatically appear here.',
+        de: 'Nach dem Senden der ersten Antwort können Sie die Antworten nun mit einer Excel-Tabelle verknüpfen. Von nun an wird jede neue Antwort automatisch hier erscheinen.',
+        fr: 'Après avoir envoyé la première réponse, vous pouvez maintenant lier les réponses à un tableau Excel. Désormais, toute nouvelle réponse apparaîtra automatiquement ici.',
+        es: 'Después de enviar la primera respuesta, ahora puede vincular las respuestas a una tabla de Excel. A partir de ahora, cualquier nueva respuesta aparecerá automáticamente aquí.',
+        it: 'Dopo aver inviato la prima risposta, ora puoi collegare le risposte a una tabella Excel. D\'ora in avanti, ogni nuova risposta apparirà automaticamente qui.',
+        pt: 'Depois de enviar a primeira resposta, você pode vincular as respostas a uma tabela do Excel. A partir de agora, qualquer nova resposta aparecerá automaticamente aqui.'
     },
 
     // Step 2
