@@ -365,67 +365,217 @@ const TRANSLATIONS = {
         en: 'Getting Started', de: 'Erste Schritte', fr: 'Premiers pas', es: 'Primeros pasos', it: 'Per iniziare', pt: 'Primeiros passos'
     },
     tutorial_subtitle: {
-        en: 'Master Paper2Form in five simple steps. Click each step to expand.',
-        de: 'Meistern Sie Paper2Form in fünf einfachen Schritten. Klicken Sie auf jeden Schritt zum Erweitern.',
-        fr: 'Maîtrisez Paper2Form en cinq étapes simples. Cliquez sur chaque étape pour la développer.',
-        es: 'Domine Paper2Form en cinco sencillos pasos. Haga clic en cada paso para expandir.',
-        it: 'Padroneggia Paper2Form in cinque semplici passaggi. Clicca su ogni passaggio per espanderlo.',
-        pt: 'Domine Paper2Form em cinco passos simples. Clique em cada passo para expandir.'
+        en: 'Master Paper2Form in simple steps. Click each step to expand.',
+        de: 'Meistern Sie Paper2Form in einfachen Schritten. Klicken Sie zum Erweitern.',
+        fr: 'Maîtrisez Paper2Form en étapes simples. Cliquez pour développer.',
+        es: 'Domine Paper2Form en pasos sencillos. Haga clic para expandir.',
+        it: 'Padroneggia Paper2Form in semplici passaggi. Clicca per espandere.',
+        pt: 'Domine Paper2Form em passos simples. Clique para expandir.'
     },
+    // Step 1
     tutorial_step1_title: {
-        en: 'Download & Install', de: 'Herunterladen & Installieren', fr: 'Télécharger et installer', es: 'Descargar e instalar', it: 'Scarica e installa', pt: 'Baixar e instalar'
+        en: 'Create Form', de: 'Formular erstellen', fr: 'Créer un formulaire', es: 'Crear formulario', it: 'Crea modulo', pt: 'Criar formulário'
     },
-    tutorial_step1_desc: {
-        en: 'Get Paper2Form from the App Store or Google Play. Installation takes just seconds.',
-        de: 'Holen Sie sich Paper2Form aus dem App Store oder Google Play. Die Installation dauert nur Sekunden.',
-        fr: 'Obtenez Paper2Form sur l\'App Store ou Google Play. L\'installation ne prend que quelques secondes.',
-        es: 'Obtenga Paper2Form desde App Store o Google Play. La instalación solo toma segundos.',
-        it: 'Scarica Paper2Form dall\'App Store o Google Play. L\'installazione richiede solo pochi secondi.',
-        pt: 'Baixe Paper2Form na App Store ou Google Play. A instalação leva apenas segundos.'
+    tutorial_step1_p1: {
+        en: 'Go to <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.',
+        de: 'Gehen Sie zu <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.',
+        fr: 'Allez sur <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.',
+        es: 'Vaya a <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.',
+        it: 'Vai su <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.',
+        pt: 'Acesse <a href="https://docs.google.com/forms" target="_blank">https://docs.google.com/forms</a>.'
     },
+    tutorial_step1_p2: {
+        en: 'Create a new empty form.',
+        de: 'Erstellen Sie ein neues leeres Formular.',
+        fr: 'Créez un nouveau formulaire vide.',
+        es: 'Cree un nuevo formulario vacío.',
+        it: 'Crea un nuovo modulo vuoto.',
+        pt: 'Crie um novo formulário vazio.'
+    },
+    tutorial_step1_p3: {
+        en: 'Create fields for the information you need from your paper documents. You can recreate all the fields from your physical form here, or you can pursue a more generalized unstructured approach. For example, you could create a Form for physical mail where one of your fields is "Summary of Content", and the AI will automatically summarize the letter you received.',
+        de: 'Erstellen Sie Felder für die Informationen, die Sie aus Ihren Papierdokumenten benötigen. Sie können alle Felder Ihres physischen Formulars hier nachbilden oder einen allgemeineren, unstrukturierten Ansatz wählen. Zum Beispiel könnten Sie ein Formular für physische Post erstellen, bei dem eines Ihrer Felder "Zusammenfassung des Inhalts" ist, und die KI fasst den erhaltenen Brief automatisch zusammen.',
+        fr: 'Créez des champs pour les informations dont vous avez besoin à partir de vos documents papier. Vous pouvez recréer tous les champs de votre formulaire physique ici, ou adopter une approche non structurée plus générale. Par exemple, vous pouvez créer un formulaire pour le courrier physique où l\'un des champs est "Résumé du contenu", et l\'IA résumera automatiquement la lettre reçue.',
+        es: 'Cree campos para la información que necesita de sus documentos en papel. Puede recrear todos los campos de su formulario físico aquí o seguir un enfoque no estructurado más generalizado. Por ejemplo, podría crear un formulario para correo físico donde uno de sus campos sea "Resumen del contenido", y la IA resumirá automáticamente la carta que recibió.',
+        it: 'Crea campi per le informazioni necessarie dai tuoi documenti cartacei. Puoi ricreare tutti i campi del tuo modulo fisico qui, o seguire un approccio non strutturato più generalizzato. Ad esempio, potresti creare un modulo per la posta fisica in cui uno dei campi è "Riepilogo del contenuto" e l\'IA riassumerà automaticamente la lettera ricevuta.',
+        pt: 'Crie campos para as informações que você precisa de seus documentos em papel. Você pode recriar todos os campos do seu formulário físico aqui ou seguir uma abordagem não estruturada mais generalizada. Por exemplo, você poderia criar um formulário para correspondência física onde um de seus campos é "Resumo do Conteúdo", e a IA resumirá automaticamente a carta que você recebeu.'
+    },
+    tutorial_step1_p4: {
+        en: 'For this example, we\'ll stay with a more structured form. We want to digitize the answers to a volunteer registration form, so we create a field for every question in the paper form that is relevant to us.',
+        de: 'Für dieses Beispiel bleiben wir bei einem strukturierteren Formular. Wir wollen die Antworten eines Anmeldeformulars für Freiwillige digitalisieren, also erstellen wir für jede relevante Frage im Papierformular ein Feld.',
+        fr: 'Pour cet exemple, nous resterons avec un formulaire plus structuré. Nous voulons numériser les réponses à un formulaire d\'inscription de bénévoles, nous créons donc un champ pour chaque question du formulaire papier qui est pertinente pour nous.',
+        es: 'Para este ejemplo, nos quedaremos con un formulario más estructurado. Queremos digitalizar las respuestas a un formulario de registro de voluntarios, por lo que creamos un campo para cada pregunta en el formulario en papel que sea relevante para nosotros.',
+        it: 'Per questo esempio, rimarremo con un modulo più strutturato. Vogliamo digitalizzare le risposte a un modulo di registrazione volontari, quindi creiamo un campo per ogni domanda nel modulo cartaceo che è rilevante per noi.',
+        pt: 'Para este exemplo, ficaremos com um formulário mais estruturado. Queremos digitalizar as respostas de um formulário de inscrição de voluntários, então criamos um campo para cada pergunta no formulário em papel que seja relevante para nós.'
+    },
+    tutorial_step1_p5: {
+        en: 'We want to have all documents listed in a table, so in the responses tab click on "Link to Sheets" and select either a new or an already existing Sheets document.',
+        de: 'Wir wollen alle Dokumente in einer Tabelle aufgelistet haben, also klicken Sie im Tab "Antworten" auf "Mit Sheets verknüpfen" und wählen Sie entweder ein neues oder ein bereits bestehendes Sheets-Dokument.',
+        fr: 'Nous voulons avoir tous les documents listés dans un tableau, donc dans l\'onglet réponses cliquez sur "Lier à Sheets" et sélectionnez soit un nouveau document Sheets, soit un existant.',
+        es: 'Queremos tener todos los documentos listados en una tabla, así que en la pestaña de respuestas haga clic en "Vincular a Sheets" y seleccione un documento de Sheets nuevo o uno existente.',
+        it: 'Vogliamo avere tutti i documenti elencati in una tabella, quindi nella scheda risposte clicca su "Collega a Sheets" e seleziona un nuovo documento Sheets o uno già esistente.',
+        pt: 'Queremos ter todos os documentos listados em uma tabela, então na guia de respostas clique em "Vincular ao Sheets" e selecione um documento Sheets novo ou já existente.'
+    },
+    tutorial_step1_p6: {
+        en: 'After that, just click "Send" or ensure permissions are set. If the person using the Paper2Form App is not the author of the Form, ensure they have access by adding their Gmail address or keeping the form public. Also, if they are not the author, you need to copy the link and send it to them.',
+        de: 'Danach klicken Sie einfach auf "Senden" oder stellen sicher, dass die Berechtigungen gesetzt sind. Wenn die Person, die die Paper2Form App nutzt, nicht der Autor des Formulars ist, stellen Sie sicher, dass sie Zugriff hat, indem Sie ihre Gmail-Adresse hinzufügen oder das Formular öffentlich halten. Wenn sie nicht der Autor ist, müssen Sie außerdem den Link kopieren und ihnen senden.',
+        fr: 'Ensuite, cliquez simplement sur "Envoyer" ou assurez-vous que les permissions sont définies. Si la personne utilisant l\'application Paper2Form n\'est pas l\'auteur du formulaire, assurez-vous qu\'elle y a accès en ajoutant son adresse Gmail ou en gardant le formulaire public. De plus, si elle n\'est pas l\'auteur, vous devez copier le lien et le lui envoyer.',
+        es: 'Después de eso, simplemente haga clic en "Enviar" o asegúrese de que los permisos estén configurados. Si la persona que usa la aplicación Paper2Form no es el autor del formulario, asegúrese de que tenga acceso agregando su dirección de Gmail o manteniendo el formulario público. Además, si no es el autor, debe copiar el enlace y enviárselo.',
+        it: 'Dopodiché, clicca semplicemente su "Invia" o assicurati che i permessi siano impostati. Se la persona che utilizza l\'app Paper2Form non è l\'autore del modulo, assicurati che abbia accesso aggiungendo il suo indirizzo Gmail o mantenendo il modulo pubblico. Inoltre, se non è l\'autore, devi copiare il link e inviarglielo.',
+        pt: 'Depois disso, basta clicar em "Enviar" ou garantir que as permissões estejam definidas. Se a pessoa usando o aplicativo Paper2Form não for o autor do formulário, certifique-se de que ela tenha acesso adicionando seu endereço Gmail ou mantendo o formulário público. Além disso, se ela não for o autor, você precisa copiar o link e enviá-lo para ela.'
+    },
+
+    // Step 2
     tutorial_step2_title: {
-        en: 'Connect Your Forms', de: 'Formulare verbinden', fr: 'Connectez vos formulaires', es: 'Conecte sus formularios', it: 'Collega i tuoi moduli', pt: 'Conecte seus formulários'
+        en: 'Import Form', de: 'Formular importieren', fr: 'Importer le formulaire', es: 'Importar formulario', it: 'Importa modulo', pt: 'Importar formulário'
     },
-    tutorial_step2_desc: {
-        en: 'Link your Google or Microsoft account to access your forms securely.',
-        de: 'Verbinden Sie Ihr Google- oder Microsoft-Konto, um sicher auf Ihre Formulare zuzugreifen.',
-        fr: 'Liez votre compte Google ou Microsoft pour accéder à vos formulaires en toute sécurité.',
-        es: 'Vincule su cuenta de Google o Microsoft para acceder a sus formularios de forma segura.',
-        it: 'Collega il tuo account Google o Microsoft per accedere ai tuoi moduli in modo sicuro.',
-        pt: 'Vincule sua conta Google ou Microsoft para acessar seus formulários com segurança.'
+    tutorial_step2_p1: {
+        en: 'In the Paper2Form app, you need to login with your Google Account two times. First with the Google Authentication dialogue and then in the WebView.',
+        de: 'In der Paper2Form App müssen Sie sich zweimal mit Ihrem Google-Konto anmelden. Zuerst über den Google-Authentifizierungsdialog und dann in der WebView.',
+        fr: 'Dans l\'application Paper2Form, vous devez vous connecter avec votre compte Google deux fois. D\'abord avec la boîte de dialogue d\'authentification Google, puis dans la WebView.',
+        es: 'En la aplicación Paper2Form, debe iniciar sesión con su cuenta de Google dos veces. Primero con el diálogo de autenticación de Google y luego en la WebView.',
+        it: 'Nell\'app Paper2Form, devi accedere con il tuo account Google due volte. Prima con la finestra di autenticazione Google e poi nella WebView.',
+        pt: 'No aplicativo Paper2Form, você precisa fazer login com sua conta do Google duas vezes. Primeiro com a caixa de diálogo de autenticação do Google e depois na WebView.'
     },
+    tutorial_step2_p2: {
+        en: 'To add the Form we just created, select it by browsing your forms if you\'re the author. If not, paste the link of the form here.',
+        de: 'Um das gerade erstellte Formular hinzuzufügen, wählen Sie es aus Ihren Formularen aus, wenn Sie der Autor sind. Wenn nicht, fügen Sie den Link zum Formular hier ein.',
+        fr: 'Pour ajouter le formulaire que nous venons de créer, sélectionnez-le en parcourant vos formulaires si vous en êtes l\'auteur. Sinon, collez le lien du formulaire ici.',
+        es: 'Para agregar el formulario que acabamos de crear, selecciónelo navegando por sus formularios si es el autor. Si no, pegue el enlace del formulario aquí.',
+        it: 'Per aggiungere il modulo appena creato, selezionalo sfogliando i tuoi moduli se sei l\'autore. In caso contrario, incolla qui il link del modulo.',
+        pt: 'Para adicionar o formulário que acabamos de criar, selecione-o navegando em seus formulários se você for o autor. Se não, cole o link do formulário aqui.'
+    },
+
+    // Step 3
     tutorial_step3_title: {
-        en: 'Scan Your Document', de: 'Dokument scannen', fr: 'Numérisez votre document', es: 'Escanee su documento', it: 'Scansiona il documento', pt: 'Digitalize seu documento'
+        en: 'Scan Document', de: 'Dokument scannen', fr: 'Scanner le document', es: 'Escanear documento', it: 'Scansiona documento', pt: 'Digitalizar documento'
     },
-    tutorial_step3_desc: {
-        en: 'Use your camera to capture any paper document. Our AI handles the rest.',
-        de: 'Verwenden Sie Ihre Kamera, um jedes Papierdokument zu erfassen. Unsere KI erledigt den Rest.',
-        fr: 'Utilisez votre appareil photo pour capturer n\'importe quel document papier. Notre IA s\'occupe du reste.',
-        es: 'Use su cámara para capturar cualquier documento en papel. Nuestra IA se encarga del resto.',
-        it: 'Usa la fotocamera per catturare qualsiasi documento cartaceo. La nostra IA fa il resto.',
-        pt: 'Use sua câmera para capturar qualquer documento em papel. Nossa IA cuida do resto.'
+    tutorial_step3_p1: {
+        en: 'Now you can fill out your form. Manual Fill lets you type in the form by hand. Single Scan is the fastest, it just takes one photo and fills out the form. If your document has multiple pages, or you want to process multiple documents in parallel, you can choose "Scan (Multiple)".',
+        de: 'Jetzt können Sie Ihr Formular ausfüllen. Manuelles Ausfüllen lässt Sie das Formular von Hand eingeben. Einzelscan ist am schnellsten, es nimmt nur ein Foto auf und füllt das Formular aus. Wenn Ihr Dokument mehrere Seiten hat oder Sie mehrere Dokumente parallel verarbeiten möchten, können Sie "Scannen (Mehrere)" wählen.',
+        fr: 'Maintenant, vous pouvez remplir votre formulaire. Le remplissage manuel vous permet de taper dans le formulaire à la main. Le balayage unique est le plus rapide, il prend juste une photo et remplit le formulaire. Si votre document comporte plusieurs pages, ou si vous souhaitez traiter plusieurs documents en parallèle, vous pouvez choisir "Scanner (Multiple)".',
+        es: 'Ahora puede completar su formulario. El llenado manual le permite escribir en el formulario a mano. El escaneo único es el más rápido, solo toma una foto y completa el formulario. Si su documento tiene varias páginas, o desea procesar varios documentos en paralelo, puede elegir "Escanear (Múltiple)".',
+        it: 'Ora puoi compilare il tuo modulo. Compilazione manuale ti consente di digitare nel modulo a mano. Scansione singola è la più veloce, scatta solo una foto e compila il modulo. Se il tuo documento ha più pagine, o vuoi elaborare più documenti in parallelo, puoi scegliere "Scansione (Multipla)".',
+        pt: 'Agora você pode preencher seu formulário. O Preenchimento Manual permite digitar no formulário à mão. A Digitalização Única é a mais rápida, tira apenas uma foto e preenche o formulário. Se seu documento tiver várias páginas, ou você quiser processar vários documentos em paralelo, pode escolher "Digitalizar (Múltiplo)".'
     },
+    tutorial_step3_p2: {
+        en: 'Once the photos are processed, you can verify and correct any possible mistakes and then just click on send.',
+        de: 'Sobald die Fotos verarbeitet sind, können Sie mögliche Fehler überprüfen und korrigieren und dann einfach auf Senden klicken.',
+        fr: 'Une fois les photos traitées, vous pouvez vérifier et corriger les éventuelles erreurs, puis cliquer simplement sur envoyer.',
+        es: 'Una vez procesadas las fotos, puede verificar y corregir cualquier posible error y luego simplemente hacer clic en enviar.',
+        it: 'Una volta elaborate le foto, puoi verificare e correggere eventuali errori e poi cliccare semplicemente su invia.',
+        pt: 'Uma vez processadas as fotos, você pode verificar e corrigir quaisquer erros possíveis e então apenas clicar em enviar.'
+    },
+    tutorial_step3_p3: {
+        en: 'The responses will pop up immediately in the Google Sheets table.',
+        de: 'Die Antworten erscheinen sofort in der Google Sheets Tabelle.',
+        fr: 'Les réponses apparaîtront immédiatement dans le tableau Google Sheets.',
+        es: 'Las respuestas aparecerán inmediatamente en la tabla de Google Sheets.',
+        it: 'Le risposte appariranno immediatamente nella tabella di Google Sheets.',
+        pt: 'As respostas aparecerão imediatamente na tabela do Google Sheets.'
+    },
+
+    // Step 4
     tutorial_step4_title: {
-        en: 'Review Field Mapping', de: 'Feldzuordnung prüfen', fr: 'Vérifier le mappage', es: 'Revisar mapeo', it: 'Rivedi mappatura', pt: 'Revisar mapeamento'
+        en: 'The Scans Tab', de: 'Der Scans-Tab', fr: 'L\'onglet Scans', es: 'La pestaña Escaneos', it: 'La scheda Scansioni', pt: 'A aba Digitalizações'
     },
-    tutorial_step4_desc: {
-        en: 'Our AI automatically maps extracted text to your form fields.',
-        de: 'Unsere KI ordnet den extrahierten Text automatisch Ihren Formularfeldern zu.',
-        fr: 'Notre IA associe automatiquement le texte extrait à vos champs de formulaire.',
-        es: 'Nuestra IA mapea automáticamente el texto extraído a los campos de su formulario.',
-        it: 'La nostra IA mappa automaticamente il testo estratto ai campi del modulo.',
-        pt: 'Nossa IA mapeia automaticamente o texto extraído para os campos do formulário.'
+    tutorial_step4_p1: {
+        en: 'The picture will also automatically be added to your scan tab.',
+        de: 'Das Bild wird auch automatisch zu Ihrem Scan-Tab hinzugefügt.',
+        fr: 'L\'image sera également ajoutée automatiquement à votre onglet de scan.',
+        es: 'La imagen también se agregará automáticamente a su pestaña de escaneo.',
+        it: 'L\'immagine verrà anche aggiunta automaticamente alla tua scheda di scansione.',
+        pt: 'A imagem também será adicionada automaticamente à sua aba de digitalização.'
     },
+    tutorial_step4_p2: {
+        en: 'Here you can take pictures when you\'re currently offline for later processing.',
+        de: 'Hier können Sie Bilder machen, wenn Sie gerade offline sind, um sie später zu verarbeiten.',
+        fr: 'Ici, vous pouvez prendre des photos lorsque vous êtes hors ligne pour un traitement ultérieur.',
+        es: 'Aquí puede tomar fotos cuando esté desconectado para procesarlas más tarde.',
+        it: 'Qui puoi scattare foto quando sei offline per l\'elaborazione successiva.',
+        pt: 'Aqui você pode tirar fotos quando estiver offline para processamento posterior.'
+    },
+    tutorial_step4_p3: {
+        en: 'Or you can select images from your gallery to process.',
+        de: 'Oder Sie können Bilder aus Ihrer Galerie zur Verarbeitung auswählen.',
+        fr: 'Ou vous pouvez sélectionner des images de votre galerie à traiter.',
+        es: 'O puede seleccionar imágenes de su galería para procesar.',
+        it: 'O puoi selezionare immagini dalla tua galleria da elaborare.',
+        pt: 'Ou você pode selecionar imagens da sua galeria para processar.'
+    },
+
+    // Step 5
     tutorial_step5_title: {
-        en: 'Submit & Done', de: 'Absenden & Fertig', fr: 'Soumettre et terminé', es: 'Enviar y listo', it: 'Invia e fatto', pt: 'Enviar e pronto'
+        en: 'Settings', de: 'Einstellungen', fr: 'Paramètres', es: 'Configuración', it: 'Impostazioni', pt: 'Configurações'
     },
-    tutorial_step5_desc: {
-        en: 'When satisfied, submit directly to your form. The response is recorded instantly.',
-        de: 'Wenn Sie zufrieden sind, senden Sie direkt an Ihr Formular. Die Antwort wird sofort aufgezeichnet.',
-        fr: 'Une fois satisfait, soumettez directement à votre formulaire. La réponse est enregistrée instantanément.',
-        es: 'Cuando esté satisfecho, envíe directamente a su formulario. La respuesta se registra al instante.',
-        it: 'Quando sei soddisfatto, invia direttamente al modulo. La risposta viene registrata istantaneamente.',
-        pt: 'Quando satisfeito, envie diretamente para seu formulário. A resposta é registrada instantaneamente.'
+    tutorial_step5_p1: {
+        en: 'In the settings, you can choose which server should process your pictures to extract the data. Your data is sent encrypted and only stays on the server for processing as long as needed before it is deleted. Your data is not used for training the AI.',
+        de: 'In den Einstellungen können Sie wählen, welcher Server Ihre Bilder verarbeiten soll, um die Daten zu extrahieren. Ihre Daten werden verschlüsselt gesendet und bleiben nur so lange zur Verarbeitung auf dem Server, wie nötig, bevor sie gelöscht werden. Ihre Daten werden nicht zum Trainieren der KI verwendet.',
+        fr: 'Dans les paramètres, vous pouvez choisir quel serveur doit traiter vos images pour extraire les données. Vos données sont envoyées cryptées et ne restent sur le serveur pour traitement que le temps nécessaire avant d\'être supprimées. Vos données ne sont pas utilisées pour entraîner l\'IA.',
+        es: 'En la configuración, puede elegir qué servidor debe procesar sus imágenes para extraer los datos. Sus datos se envían encriptados y solo permanecen en el servidor para el procesamiento el tiempo necesario antes de ser eliminados. Sus datos no se utilizan para entrenar la IA.',
+        it: 'Nelle impostazioni, puoi scegliere quale server deve elaborare le tue immagini per estrarre i dati. I tuoi dati vengono inviati crittografati e rimangono sul server per l\'elaborazione solo il tempo necessario prima di essere eliminati. I tuoi dati non vengono utilizzati per addestrare l\'IA.',
+        pt: 'Nas configurações, você pode escolher qual servidor deve processar suas imagens para extrair os dados. Seus dados são enviados criptografados e permanecem no servidor para processamento apenas o tempo necessário antes de serem excluídos. Seus dados não são usados para treinar a IA.'
+    },
+    tutorial_step5_p2: {
+        en: 'You can also choose your theme preferences and your language.',
+        de: 'Sie können auch Ihre Themenpräferenzen und Ihre Sprache wählen.',
+        fr: 'Vous pouvez également choisir vos préférences de thème et votre langue.',
+        es: 'También puede elegir sus preferencias de tema y su idioma.',
+        it: 'Puoi anche scegliere le tue preferenze di tema e la tua lingua.',
+        pt: 'Você também pode escolher suas preferências de tema e seu idioma.'
+    },
+    tutorial_step5_p3: {
+        en: 'Under "Performance" you can choose scan quality and resolution. Higher values will mean better results but longer processing time.',
+        de: 'Unter "Leistung" können Sie Scanqualität und Auflösung wählen. Höhere Werte bedeuten bessere Ergebnisse, aber längere Verarbeitungszeit.',
+        fr: 'Sous "Performance", vous pouvez choisir la qualité et la résolution de numérisation. Des valeurs plus élevées signifient de meilleurs résultats mais un temps de traitement plus long.',
+        es: 'Bajo "Rendimiento" puede elegir la calidad y resolución de escaneo. Valores más altos significarán mejores resultados pero mayor tiempo de procesamiento.',
+        it: 'Sotto "Prestazioni" puoi scegliere qualità e risoluzione di scansione. Valori più alti significano risultati migliori ma tempi di elaborazione più lunghi.',
+        pt: 'Em "Desempenho", você pode escolher qualidade e resolução de digitalização. Valores mais altos significam melhores resultados, mas maior tempo de processamento.'
+    },
+
+    // Step 6
+    tutorial_step6_title: {
+        en: 'Subscription', de: 'Abonnement', fr: 'Abonnement', es: 'Suscripción', it: 'Abbonamento', pt: 'Assinatura'
+    },
+    tutorial_step6_p1: {
+        en: 'Choose a subscription that fits your needs. After 5 test scans, you will have to buy a subscription to continue using the app.',
+        de: 'Wählen Sie ein Abonnement, das Ihren Bedürfnissen entspricht. Nach 5 Testscans müssen Sie ein Abonnement kaufen, um die App weiterhin nutzen zu können.',
+        fr: 'Choisissez un abonnement adapté à vos besoins. Après 5 scans de test, vous devrez acheter un abonnement pour continuer à utiliser l\'application.',
+        es: 'Elija una suscripción que se adapte a sus necesidades. Después de 5 escaneos de prueba, tendrá que comprar una suscripción para seguir usando la aplicación.',
+        it: 'Scegli un abbonamento adatto alle tue esigenze. Dopo 5 scansioni di prova, dovrai acquistare un abbonamento per continuare a utilizzare l\'app.',
+        pt: 'Escolha uma assinatura que atenda às suas necessidades. Após 5 digitalizações de teste, você terá que comprar uma assinatura para continuar usando o aplicativo.'
+    },
+    tutorial_step6_p2: {
+        en: 'If you plan on occasionally using the app for single documents, we recommend the Basic plan where you can process 4 documents every day.',
+        de: 'Wenn Sie die App gelegentlich für einzelne Dokumente nutzen möchten, empfehlen wir den Basic-Plan, mit dem Sie 4 Dokumente pro Tag verarbeiten können.',
+        fr: 'Si vous prévoyez d\'utiliser l\'application occasionnellement pour des documents uniques, nous recommandons le plan Basique où vous pouvez traiter 4 documents par jour.',
+        es: 'Si planea usar la aplicación ocasionalmente para documentos individuales, recomendamos el plan Básico donde puede procesar 4 documentos cada día.',
+        it: 'Se prevedi di utilizzare l\'app occasionalmente per singoli documenti, ti consigliamo il piano Base dove puoi elaborare 4 documenti al giorno.',
+        pt: 'Se você planeja usar o aplicativo ocasionalmente para documentos únicos, recomendamos o plano Básico, onde você pode processar 4 documentos por dia.'
+    },
+    tutorial_step6_p3: {
+        en: 'If you plan on using daily with multiple documents, we recommend Premium where you can process 40 documents every day.',
+        de: 'Wenn Sie die App täglich mit mehreren Dokumenten nutzen möchten, empfehlen wir Premium, wo Sie 40 Dokumente pro Tag verarbeiten können.',
+        fr: 'Si vous prévoyez d\'utiliser quotidiennement avec plusieurs documents, nous recommandons Premium où vous pouvez traiter 40 documents par jour.',
+        es: 'Si planea usar diariamente con múltiples documentos, recomendamos Premium donde puede procesar 40 documentos cada día.',
+        it: 'Se prevedi di utilizzare quotidianamente con più documenti, ti consigliamo Premium dove puoi elaborare 40 documenti al giorno.',
+        pt: 'Se você planeja usar diariamente com vários documentos, recomendamos o Premium, onde você pode processar 40 documentos por dia.'
+    },
+    tutorial_step6_p4: {
+        en: 'If you\'re in an office where you need to process many documents from many sources, or you\'re the person many documents need to go through every day, the Business plan is right for you.',
+        de: 'Wenn Sie in einem Büro sind, wo Sie viele Dokumente aus vielen Quellen verarbeiten müssen, oder Sie die Person sind, durch die jeden Tag viele Dokumente gehen müssen, ist der Business-Plan das Richtige für Sie.',
+        fr: 'Si vous êtes dans un bureau où vous devez traiter de nombreux documents provenant de nombreuses sources, ou si vous êtes la personne par qui de nombreux documents doivent passer chaque jour, le plan Affaires est fait pour vous.',
+        es: 'Si está en una oficina donde necesita procesar muchos documentos de muchas fuentes, o es la persona por la que deben pasar muchos documentos todos los días, el plan de Negocios es el adecuado para usted.',
+        it: 'Se sei in un ufficio dove devi elaborare molti documenti da molte fonti, o sei la persona attraverso la quale devono passare molti documenti ogni giorno, il piano Business è giusto per te.',
+        pt: 'Se você está em um escritório onde precisa processar muitos documentos de muitas fontes, ou é a pessoa por quem muitos documentos precisam passar todos os dias, o plano de Negócios é ideal para você.'
+    },
+    tutorial_step6_p5: {
+        en: 'If you plan on digitizing a larger backlog of paper documents, or have infrequent spikes in usage, we recommend the Enterprise plan.',
+        de: 'Wenn Sie planen, einen größeren Rückstand an Papierdokumenten zu digitalisieren oder seltene Nutzungsspitzen haben, empfehlen wir den Enterprise-Plan.',
+        fr: 'Si vous prévoyez de numériser un arriéré important de documents papier, ou si vous avez des pics d\'utilisation peu fréquents, nous recommandons le plan Entreprise.',
+        es: 'Si planea digitalizar una gran acumulación de documentos en papel o tiene picos de uso poco frecuentes, recomendamos el plan Empresarial.',
+        it: 'Se prevedi di digitalizzare un ampio arretrato di documenti cartacei o hai picchi di utilizzo infrequenti, ti consigliamo il piano Enterprise.',
+        pt: 'Se você planeja digitalizar um grande acúmulo de documentos em papel ou tem picos de uso pouco frequentes, recomendamos o plano Empresarial.'
     },
     tutorial_tips_tag: {
         en: 'Tips', de: 'Tipps', fr: 'Conseils', es: 'Consejos', it: 'Suggerimenti', pt: 'Dicas'

@@ -10,129 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <style>
-        /* Expandable Tutorial Steps */
-        .tutorial-step {
-            cursor: pointer;
-        }
-
-        .tutorial-step-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: var(--space-md) var(--space-lg);
-            border-bottom: none;
-        }
-
-        .tutorial-step-title {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-        }
-
-        .tutorial-step-toggle {
-            width: 40px;
-            height: 40px;
-            border: 2px solid var(--black);
-            background: var(--white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            transition: transform 0.3s ease, background 0.2s ease;
-        }
-
-        .tutorial-step.expanded .tutorial-step-toggle {
-            background: var(--yellow);
-            transform: rotate(45deg);
-        }
-
-        .tutorial-step-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.3s ease;
-            padding: 0 var(--space-lg);
-        }
-
-        .tutorial-step.expanded .tutorial-step-body {
-            max-height: 2000px;
-            /* Large enough for any content */
-            padding: 0 var(--space-lg) var(--space-lg);
-        }
-
-        .tutorial-step-content {
-            padding-top: var(--space-md);
-            border-top: 1px dashed var(--black);
-        }
-
-        .tutorial-step-content p {
-            margin-bottom: var(--space-md);
-        }
-
-        .tutorial-screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-md);
-            margin-top: var(--space-md);
-        }
-
-        .tutorial-screenshot {
-            background: var(--light-gray);
-            border: 2px solid var(--black);
-            aspect-ratio: 16/10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-mid);
-            font-size: 0.9rem;
-        }
-
-        .tutorial-screenshot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Color code steps */
-        .tutorial-step:nth-child(1) .tutorial-step-header {
-            background: var(--cyan);
-        }
-
-        .tutorial-step:nth-child(2) .tutorial-step-header {
-            background: var(--yellow);
-        }
-
-        .tutorial-step:nth-child(3) .tutorial-step-header {
-            background: var(--pink);
-        }
-
-        .tutorial-step:nth-child(4) .tutorial-step-header {
-            background: var(--green);
-        }
-
-        .tutorial-step:nth-child(5) .tutorial-step-header {
-            background: var(--sky);
-        }
-
-        .tutorial-step:nth-child(1) .tutorial-step-body {
-            background: var(--cyan);
-        }
-
-        .tutorial-step:nth-child(2) .tutorial-step-body {
-            background: var(--yellow);
-        }
-
-        .tutorial-step:nth-child(3) .tutorial-step-body {
-            background: var(--pink);
-        }
-
-        .tutorial-step:nth-child(4) .tutorial-step-body {
-            background: var(--green);
-        }
-
-        .tutorial-step:nth-child(5) .tutorial-step-body {
-            background: var(--sky);
-        }
+        /* Inline overrides if needed, but style.css should handle it */
     </style>
 </head>
 
@@ -163,7 +41,7 @@
         <div class="container">
             <span class="tag tag-cyan fade-in" data-i18n="tutorial_tag">Learn</span>
             <h1 class="fade-in stagger-1" data-i18n="tutorial_title">Getting <span class="highlight">Started</span></h1>
-            <p class="fade-in stagger-2" data-i18n="tutorial_subtitle">Master Paper2Form in five simple steps. Click
+            <p class="fade-in stagger-2" data-i18n="tutorial_subtitle">Master Paper2Form in simple steps. Click
                 each step to expand.</p>
         </div>
     </section>
@@ -171,31 +49,60 @@
     <!-- Tutorial Content -->
     <section class="section section-bordered">
         <div class="container">
-            <div class="tutorial-steps">
+            <!-- Platform Toggle -->
+            <div class="platform-toggle fade-in stagger-3">
+                <button class="toggle-btn active" id="btn-google" onclick="switchPlatform('google')">
+                    <img src="google.svg" alt="Google Logo">
+                    Google Forms
+                </button>
+                <button class="toggle-btn" id="btn-microsoft" onclick="switchPlatform('microsoft')">
+                    <img src="microsoft.svg" alt="Microsoft Logo">
+                    Microsoft Forms
+                </button>
+            </div>
+
+            <!-- Google Tutorial -->
+            <div id="google-tutorial" class="tutorial-steps">
 
                 <!-- Step 1 -->
                 <div class="tutorial-step fade-in" data-step="1">
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 1</span>
-                            <h3 data-i18n="tutorial_step1_title">Download & Install</h3>
+                            <h3 data-i18n="tutorial_step1_title">Create Form</h3>
                         </div>
                         <div class="tutorial-step-toggle">+</div>
                     </div>
                     <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p data-i18n="tutorial_step1_desc">Get Paper2Form from the App Store or Google Play.
-                                Installation takes just seconds.</p>
-                            <ul class="prose">
-                                <li>Open your device's app store</li>
-                                <li>Search for "Paper2Form"</li>
-                                <li>Tap Install and wait for download</li>
-                                <li>Launch the app and complete onboarding</li>
-                            </ul>
-                            <div class="tutorial-screenshots">
-                                <div class="tutorial-screenshot">📱 Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">📲 Screenshot placeholder</div>
-                            </div>
+                            <p>1. <span data-i18n="tutorial_step1_p1">Go to <a href="https://docs.google.com/forms"
+                                        target="_blank">https://docs.google.com/forms</a>.</span></p>
+
+                            <p>2. <span data-i18n="tutorial_step1_p2">Create a new empty form.</span></p>
+                            <img src="tutorial/g1.png" alt="Create new form" class="tutorial-img landscape">
+
+                            <p>3. <span data-i18n="tutorial_step1_p3">Create fields for the information you need from
+                                    your paper documents. You can recreate all the fields from your physical form here,
+                                    or you can pursue a more generalized unstructured approach. For example, you could
+                                    create a Form for physical mail where one of your fields is "Summary of Content",
+                                    and the AI will automatically summarize the letter you received.</span></p>
+                            <p><span data-i18n="tutorial_step1_p4">For this example, we'll stay with a more structured
+                                    form. We want to digitize the answers to a volunteer registration form, so we create
+                                    a field for every question in the paper form that is relevant to us.</span></p>
+                            <img src="tutorial/g2.png" alt="Create fields" class="tutorial-img landscape">
+                            <img src="tutorial/g3.png" alt="Form fields example" class="tutorial-img landscape">
+
+                            <p>4. <span data-i18n="tutorial_step1_p5">We want to have all documents listed in a table,
+                                    so in the responses tab click on "Link to Sheets" and select either a new or an
+                                    already existing Sheets document.</span></p>
+                            <img src="tutorial/g4.png" alt="Link to Sheets" class="tutorial-img landscape">
+
+                            <p>5. <span data-i18n="tutorial_step1_p6">After that, just click "Send" or ensure
+                                    permissions are set. If the person using the Paper2Form App is not the author of the
+                                    Form, ensure they have access by adding their Gmail address or keeping the form
+                                    public. Also, if they are not the author, you need to copy the link and send it to
+                                    them.</span></p>
+                            <img src="tutorial/g5.png" alt="Send form" class="tutorial-img landscape">
                         </div>
                     </div>
                 </div>
@@ -205,23 +112,28 @@
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 2</span>
-                            <h3 data-i18n="tutorial_step2_title">Connect Your Forms</h3>
+                            <h3 data-i18n="tutorial_step2_title">Import Form</h3>
                         </div>
                         <div class="tutorial-step-toggle">+</div>
                     </div>
                     <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p data-i18n="tutorial_step2_desc">Link your Google or Microsoft account to access your
-                                forms securely.</p>
-                            <ul class="prose">
-                                <li>Navigate to the "Forms" tab</li>
-                                <li>Tap "Add Form" and choose your provider</li>
-                                <li>Authenticate with your account</li>
-                                <li>Select which forms to import</li>
-                            </ul>
-                            <div class="tutorial-screenshots">
-                                <div class="tutorial-screenshot">🔗 Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">✅ Screenshot placeholder</div>
+                            <p>1. <span data-i18n="tutorial_step2_p1">In the Paper2Form app, you need to login with your
+                                    Google Account two times. First with the Google Authentication dialogue and then in
+                                    the WebView.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/g6.png" alt="Google Auth 1" class="tutorial-img portrait">
+                                <img src="tutorial/g7.png" alt="Google Auth 2" class="tutorial-img portrait">
+                                <img src="tutorial/g8.png" alt="Google Auth 3" class="tutorial-img portrait">
+                                <img src="tutorial/g9.png" alt="Google Auth 4" class="tutorial-img portrait">
+                            </div>
+
+                            <p>2. <span data-i18n="tutorial_step2_p2">To add the Form we just created, select it by
+                                    browsing your forms if you're the author. If not, paste the link of the form
+                                    here.</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/g10.png" alt="Browse forms" class="tutorial-img portrait">
+                                <img src="tutorial/g11.png" alt="Select form" class="tutorial-img portrait">
                             </div>
                         </div>
                     </div>
@@ -232,25 +144,29 @@
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 3</span>
-                            <h3 data-i18n="tutorial_step3_title">Scan Your Document</h3>
+                            <h3 data-i18n="tutorial_step3_title">Scan Document</h3>
                         </div>
                         <div class="tutorial-step-toggle">+</div>
                     </div>
                     <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p data-i18n="tutorial_step3_desc">Use your camera to capture any paper document. Our AI
-                                handles the rest.</p>
-                            <ul class="prose">
-                                <li>Tap the camera button</li>
-                                <li>Position your document in frame</li>
-                                <li>Hold steady for auto-capture</li>
-                                <li>Review and confirm the scan</li>
-                            </ul>
-                            <div class="tutorial-screenshots">
-                                <div class="tutorial-screenshot">📷 Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">📄 Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">✨ Screenshot placeholder</div>
+                            <p>1. <span data-i18n="tutorial_step3_p1">Now you can fill out your form. Manual Fill lets
+                                    you type in the form by hand. Single Scan is the fastest, it just takes one photo
+                                    and fills out the form. If your document has multiple pages, or you want to process
+                                    multiple documents in parallel, you can choose "Scan (Multiple)".</span></p>
+                            <div class="screenshot-group">
+                                <img src="tutorial/g12.png" alt="Scan options" class="tutorial-img portrait">
+                                <img src="tutorial/g13.png" alt="Single scan" class="tutorial-img portrait">
+                                <img src="tutorial/g14.png" alt="Scan multiple" class="tutorial-img portrait">
                             </div>
+
+                            <p>2. <span data-i18n="tutorial_step3_p2">Once the photos are processed, you can verify and
+                                    correct any possible mistakes and then just click on send.</span></p>
+                            <img src="tutorial/g15.png" alt="Verify and send" class="tutorial-img portrait">
+
+                            <p>3. <span data-i18n="tutorial_step3_p3">The responses will pop up immediately in the
+                                    Google Sheets table.</span></p>
+                            <img src="tutorial/g16.png" alt="Google Sheets results" class="tutorial-img landscape">
                         </div>
                     </div>
                 </div>
@@ -260,24 +176,22 @@
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 4</span>
-                            <h3 data-i18n="tutorial_step4_title">Review Field Mapping</h3>
+                            <h3 data-i18n="tutorial_step4_title">The Scans Tab</h3>
                         </div>
                         <div class="tutorial-step-toggle">+</div>
                     </div>
                     <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p data-i18n="tutorial_step4_desc">Our AI automatically maps extracted text to your form
-                                fields.</p>
-                            <ul class="prose">
-                                <li>View the extracted text</li>
-                                <li>Check AI-suggested mappings</li>
-                                <li>Tap any field to edit or reassign</li>
-                                <li>Use "Auto-match" for smart suggestions</li>
-                            </ul>
-                            <div class="tutorial-screenshots">
-                                <div class="tutorial-screenshot">🎯 Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">✏️ Screenshot placeholder</div>
-                            </div>
+                            <p>1. <span data-i18n="tutorial_step4_p1">The picture will also automatically be added to
+                                    your scan tab.</span></p>
+
+                            <p>2. <span data-i18n="tutorial_step4_p2">Here you can take pictures when you're currently
+                                    offline for later processing.</span></p>
+                            <img src="tutorial/g17.png" alt="Offline scanning" class="tutorial-img portrait">
+
+                            <p>3. <span data-i18n="tutorial_step4_p3">Or you can select images from your gallery to
+                                    process.</span></p>
+                            <img src="tutorial/g18.png" alt="Gallery selection" class="tutorial-img portrait">
                         </div>
                     </div>
                 </div>
@@ -287,29 +201,80 @@
                     <div class="tutorial-step-header">
                         <div class="tutorial-step-title">
                             <span class="tutorial-step-number">Step 5</span>
-                            <h3 data-i18n="tutorial_step5_title">Submit & Done</h3>
+                            <h3 data-i18n="tutorial_step5_title">Settings</h3>
                         </div>
                         <div class="tutorial-step-toggle">+</div>
                     </div>
                     <div class="tutorial-step-body">
                         <div class="tutorial-step-content">
-                            <p data-i18n="tutorial_step5_desc">When satisfied, submit directly to your form. The
-                                response is recorded instantly.</p>
-                            <ul class="prose">
-                                <li>Tap "Submit to Form"</li>
-                                <li>Select the destination form</li>
-                                <li>Confirm submission</li>
-                                <li>View success confirmation</li>
-                            </ul>
-                            <div class="tutorial-screenshots">
-                                <div class="tutorial-screenshot">✅ Screenshot placeholder</div>
-                                <div class="tutorial-screenshot">🎉 Screenshot placeholder</div>
-                            </div>
+                            <p>1. <span data-i18n="tutorial_step5_p1">In the settings, you can choose which server
+                                    should process your pictures to extract the data. Your data is sent encrypted and
+                                    only stays on the server for processing as long as needed before it is deleted. Your
+                                    data is not used for training the AI.</span></p>
+                            <img src="tutorial/g19.png" alt="Server settings" class="tutorial-img portrait">
+
+                            <p>2. <span data-i18n="tutorial_step5_p2">You can also choose your theme preferences and
+                                    your language.</span></p>
+
+                            <p>3. <span data-i18n="tutorial_step5_p3">Under "Performance" you can choose scan quality
+                                    and resolution. Higher values will mean better results but longer processing
+                                    time.</span></p>
+                            <img src="tutorial/g20.png" alt="Performance settings" class="tutorial-img portrait">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="tutorial-step fade-in" data-step="6">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 6</span>
+                            <h3 data-i18n="tutorial_step6_title">Subscription</h3>
+                        </div>
+                        <div class="tutorial-step-toggle">+</div>
+                    </div>
+                    <div class="tutorial-step-body">
+                        <div class="tutorial-step-content">
+                            <p>1. <span data-i18n="tutorial_step6_p1">Choose a subscription that fits your needs. After
+                                    5 test scans, you will have to buy a subscription to continue using the app.</span>
+                            </p>
+                            <img src="tutorial/g21.png" alt="Subscription options" class="tutorial-img portrait">
+
+                            <p>2. <span data-i18n="tutorial_step6_p2">If you plan on occasionally using the app for
+                                    single documents, we recommend the Basic plan where you can process 4 documents
+                                    every day.</span></p>
+                            <p>3. <span data-i18n="tutorial_step6_p3">If you plan on using daily with multiple
+                                    documents, we recommend Premium where you can process 40 documents every day.</span>
+                            </p>
+                            <p>4. <span data-i18n="tutorial_step6_p4">If you're in an office where you need to process
+                                    many documents from many sources, or you're the person many documents need to go
+                                    through every day, the Business plan is right for you.</span></p>
+                            <p>5. <span data-i18n="tutorial_step6_p5">If you plan on digitizing a larger backlog of
+                                    paper documents, or have infrequent spikes in usage, we recommend the Enterprise
+                                    plan.</span></p>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- Microsoft Tutorial (Placeholder) -->
+            <div id="microsoft-tutorial" class="tutorial-steps" style="display: none;">
+                <div class="tutorial-step fade-in" data-step="1">
+                    <div class="tutorial-step-header">
+                        <div class="tutorial-step-title">
+                            <span class="tutorial-step-number">Step 1</span>
+                            <h3>Coming Soon</h3>
+                        </div>
+                    </div>
+                    <div class="tutorial-step-body" style="max-height: 200px; padding: var(--space-lg);">
+                        <div class="tutorial-step-content">
+                            <p>The Microsoft tutorial is coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -377,20 +342,71 @@
     <script src="main.js"></script>
     <script>
         // Expandable tutorial steps
-        document.querySelectorAll('.tutorial-step').forEach(step => {
-            const header = step.querySelector('.tutorial-step-header');
-            header.addEventListener('click', () => {
-                // Close all other steps
-                document.querySelectorAll('.tutorial-step').forEach(s => {
-                    if (s !== step) s.classList.remove('expanded');
-                });
-                // Toggle current step
-                step.classList.toggle('expanded');
-            });
-        });
+        function initSteps() {
+            document.querySelectorAll('.tutorial-step').forEach(step => {
+                const header = step.querySelector('.tutorial-step-header');
+                // Remove old event listeners to prevent duplicates if re-inited
+                const newHeader = header.cloneNode(true);
+                header.parentNode.replaceChild(newHeader, header);
 
-        // Expand first step by default
-        document.querySelector('.tutorial-step')?.classList.add('expanded');
+                newHeader.addEventListener('click', () => {
+                    const isExpanded = step.classList.contains('expanded');
+                    // Close all others in the SAME container
+                    const container = step.closest('.tutorial-steps');
+                    container.querySelectorAll('.tutorial-step').forEach(s => {
+                        s.classList.remove('expanded');
+                    });
+
+                    if (!isExpanded) {
+                        step.classList.add('expanded');
+                        // Scroll into view after transition
+                        setTimeout(() => {
+                            const headerHeight = document.querySelector('.nav').offsetHeight + 20; // Offset for sticky header + buffer
+                            const elementPosition = step.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth"
+                            });
+                        }, 400); // 400ms matches css transition
+                    }
+                });
+            });
+            // Expand first step by default
+            const visibleContainer = document.querySelector('.tutorial-steps:not([style*="display: none"])');
+            if (visibleContainer) {
+                visibleContainer.querySelector('.tutorial-step')?.classList.add('expanded');
+            }
+        }
+
+        initSteps();
+
+        function switchPlatform(platform) {
+            const googleBtn = document.getElementById('btn-google');
+            const microsoftBtn = document.getElementById('btn-microsoft');
+            const googleTutorial = document.getElementById('google-tutorial');
+            const microsoftTutorial = document.getElementById('microsoft-tutorial');
+
+            if (platform === 'google') {
+                googleBtn.classList.add('active');
+                microsoftBtn.classList.remove('active');
+                googleTutorial.style.display = 'flex';
+                microsoftTutorial.style.display = 'none';
+            } else {
+                microsoftBtn.classList.add('active');
+                googleBtn.classList.remove('active');
+                microsoftTutorial.style.display = 'flex';
+                googleTutorial.style.display = 'none';
+            }
+
+            // Re-init or reset steps expansion for the new view
+            const visibleContainer = document.querySelector('.tutorial-steps:not([style*="display: none"])');
+            if (visibleContainer) {
+                visibleContainer.querySelectorAll('.tutorial-step').forEach(s => s.classList.remove('expanded'));
+                visibleContainer.querySelector('.tutorial-step')?.classList.add('expanded');
+            }
+        }
     </script>
 </body>
 

@@ -928,6 +928,63 @@ p {
 /* ------------------------------------------------
    Tutorial Steps
    ------------------------------------------------ */
+/* ------------------------------------------------
+   Platform Toggle
+   ------------------------------------------------ */
+.platform-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 1rem 2rem;
+    /* Increased padding */
+    border: var(--border-width) solid var(--border);
+    background: var(--white);
+    font-size: 1.2rem;
+    /* Increased font size */
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-base);
+    opacity: 0.6;
+}
+
+.toggle-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background: var(--black);
+    color: var(--white);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.toggle-btn.active:hover {
+    transform: scale(1.05) translateY(-2px);
+}
+
+.toggle-btn img {
+    width: 32px;
+    /* Increased icon size */
+    height: 32px;
+    filter: grayscale(100%);
+    transition: var(--transition-fast);
+}
+
+.toggle-btn.active img {
+    filter: none;
+}
+
+/* ------------------------------------------------
+   Tutorial Steps
+   ------------------------------------------------ */
 .tutorial-steps {
     display: flex;
     flex-direction: column;
@@ -936,11 +993,8 @@ p {
 }
 
 .tutorial-step {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-    align-items: center;
-    padding: var(--space-lg);
+    display: block;
+    /* Changed from grid to block for full width */
     background: var(--white);
     border-bottom: var(--border-width) solid var(--border);
 }
@@ -969,14 +1023,27 @@ p {
     background: var(--pink);
 }
 
-@media (min-width: 768px) {
-    .tutorial-step {
-        grid-template-columns: 1fr 1fr;
-    }
+.tutorial-step:nth-child(6) {
+    background: var(--peach);
+}
 
-    .tutorial-step:nth-child(even) .tutorial-visual {
-        order: -1;
-    }
+.tutorial-step:nth-child(odd) .tutorial-step-header {
+    background: inherit;
+    /* Keep header same color as body context implies */
+}
+
+.tutorial-step-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+}
+
+.tutorial-step-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
 }
 
 .tutorial-step-number {
@@ -987,25 +1054,126 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: var(--space-sm);
     background: var(--black);
     color: var(--white);
     padding: 0.25rem 0.75rem;
 }
 
 .tutorial-step h3 {
-    margin-bottom: var(--space-sm);
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-.tutorial-visual {
-    aspect-ratio: 4/3;
+.tutorial-step-toggle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--black);
     background: var(--white);
-    border: var(--border-width) solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, background 0.2s ease;
 }
+
+.tutorial-step.expanded .tutorial-step-toggle {
+    background: var(--yellow);
+    transform: rotate(45deg);
+}
+
+.tutorial-step-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 var(--space-lg);
+}
+
+.tutorial-step.expanded .tutorial-step-body {
+    max-height: 10000px;
+    /* Large enough for content */
+    padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.tutorial-step-content {
+    padding-top: var(--space-md);
+    border-top: 1px dashed var(--black);
+}
+
+.tutorial-step-content p {
+    margin-bottom: var(--space-md);
+    max-width: 70ch;
+    font-size: 1.1rem;
+}
+
+/* Screenshot Styling */
+.tutorial-img {
+    display: block;
+    margin: var(--space-md) auto var(--space-lg);
+    /* Centered */
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-img.portrait {
+    max-width: 240px;
+    /* Reduced from 300px */
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .tutorial-img.portrait {
+        max-width: 50%;
+        /* Half size on mobile */
+    }
+}
+
+.tutorial-img.landscape {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .tutorial-img.landscape {
+        max-width: 800px;
+    }
+}
+
+.screenshot-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin: var(--space-md) 0 var(--space-lg);
+    justify-content: center;
+    /* Center the group */
+}
+
+.screenshot-group .tutorial-img {
+    margin: 0;
+    /* Remove individual margins */
+    flex: 0 1 auto;
+    /* Don't force growth, keep intrinsic size but allow shrink */
+    max-width: 200px;
+    /* Reduced from 250px (approx 20% smaller) */
+}
+
+@media (max-width: 600px) {
+    .screenshot-group {
+        flex-direction: row;
+        /* Allow side-by-side */
+        gap: var(--space-sm);
+        /* Smaller gap for mobile */
+    }
+
+    .screenshot-group .tutorial-img {
+        max-width: 45%;
+        /* Approx half width to fit 2 per row */
+        height: auto;
+    }
+}
+
 
 /* ------------------------------------------------
    Animations
@@ -1128,4 +1296,54 @@ p {
     .section {
         padding: var(--space-xl) 0;
     }
+}
+
+/* ------------------------------------------------
+   Platform Toggle
+   ------------------------------------------------ */
+.platform-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.75rem 1.5rem;
+    border: var(--border-width) solid var(--border);
+    background: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-base);
+    opacity: 0.6;
+}
+
+.toggle-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background: var(--black);
+    color: var(--white);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.toggle-btn.active:hover {
+    transform: scale(1.05) translateY(-2px);
+}
+
+.toggle-btn img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: var(--transition-fast);
+}
+
+.toggle-btn.active img {
+    filter: none;
 }
