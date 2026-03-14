@@ -615,12 +615,12 @@ const TRANSLATIONS = {
         en: 'Subscription', de: 'Abonnement', fr: 'Abonnement', es: 'Suscripción', it: 'Abbonamento', pt: 'Assinatura'
     },
     tutorial_step6_p1: {
-        en: 'Choose a subscription that fits your needs. After 5 test scans, you will have to buy a subscription to continue using the app.',
-        de: 'Wählen Sie ein Abonnement, das Ihren Bedürfnissen entspricht. Nach 5 Testscans müssen Sie ein Abonnement kaufen, um die App weiterhin nutzen zu können.',
-        fr: 'Choisissez un abonnement adapté à vos besoins. Après 5 scans de test, vous devrez acheter un abonnement pour continuer à utiliser l\'application.',
-        es: 'Elija una suscripción que se adapte a sus necesidades. Después de 5 escaneos de prueba, tendrá que comprar una suscripción para seguir usando la aplicación.',
-        it: 'Scegli un abbonamento adatto alle tue esigenze. Dopo 5 scansioni di prova, dovrai acquistare un abbonamento per continuare a utilizzare l\'app.',
-        pt: 'Escolha uma assinatura que atenda às suas necessidades. Após 5 digitalizações de teste, você terá que comprar uma assinatura para continuar usando o aplicativo.'
+        en: 'Choose a subscription that fits your needs. After 10 test scans, you will have to buy a subscription to continue using the app.',
+        de: 'Wählen Sie ein Abonnement, das Ihren Bedürfnissen entspricht. Nach 10 Testscans müssen Sie ein Abonnement kaufen, um die App weiterhin nutzen zu können.',
+        fr: 'Choisissez un abonnement adapté à vos besoins. Après 10 scans de test, vous devrez acheter un abonnement pour continuer à utiliser l\'application.',
+        es: 'Elija una suscripción que se adapte a sus necesidades. Después de 10 escaneos de prueba, tendrá que comprar una suscripción para seguir usando la aplicación.',
+        it: 'Scegli un abbonamento adatto alle tue esigenze. Dopo 10 scansioni di prova, dovrai acquistare un abbonamento per continuare a utilizzare l\'app.',
+        pt: 'Escolha uma assinatura que atenda às suas necessidades. Após 10 digitalizações de teste, você terá que comprar uma assinatura para continuar usando o aplicativo.'
     },
     tutorial_step6_p2: {
         en: 'If you plan on occasionally using the app for single documents, we recommend the Basic plan where you can process 4 documents every day.',
@@ -846,12 +846,12 @@ const TRANSLATIONS = {
         en: 'How does the free version work?', de: 'Wie funktioniert die kostenlose Version?', fr: 'Comment fonctionne la version gratuite?', es: '¿Cómo funciona la versión gratuita?', it: 'Come funziona la versione gratuita?', pt: 'Como funciona a versão gratuita?'
     },
     pricing_faq1_a: {
-        en: 'You get 5 free scans to test the app. Upgrade anytime for more daily scans.',
-        de: 'Sie erhalten 5 kostenlose Scans zum Testen der App. Upgraden Sie jederzeit für mehr tägliche Scans.',
-        fr: 'Vous obtenez 5 scans gratuits pour tester l\'application. Passez à la version supérieure à tout moment pour plus de scans quotidiens.',
-        es: 'Obtiene 5 escaneos gratuitos para probar la aplicación. Actualice en cualquier momento para obtener más escaneos diarios.',
-        it: 'Ottieni 5 scansioni gratuite per testare l\'app. Aggiorna in qualsiasi momento per più scansioni giornaliere.',
-        pt: 'Você recebe 5 digitalizações gratuitas para testar o aplicativo. Faça upgrade a qualquer momento para mais digitalizações diárias.'
+        en: 'You get 10 free scans to test the app. Upgrade anytime for more daily scans.',
+        de: 'Sie erhalten 10 kostenlose Scans zum Testen der App. Upgraden Sie jederzeit für mehr tägliche Scans.',
+        fr: 'Vous obtenez 10 scans gratuits pour tester l\'application. Passez à la version supérieure à tout moment pour plus de scans quotidiens.',
+        es: 'Obtiene 10 escaneos gratuitos para probar la aplicación. Actualice en cualquier momento para obtener más escaneos diarios.',
+        it: 'Ottieni 10 scansioni gratuite per testare l\'app. Aggiorna in qualsiasi momento per più scansioni giornaliere.',
+        pt: 'Você recebe 10 digitalizações gratuitas para testar o aplicativo. Faça upgrade a qualquer momento para mais digitalizações diárias.'
     },
     pricing_faq2_q: {
         en: 'Can I cancel my subscription?', de: 'Kann ich mein Abonnement kündigen?', fr: 'Puis-je annuler mon abonnement?', es: '¿Puedo cancelar mi suscripción?', it: 'Posso annullare il mio abbonamento?', pt: 'Posso cancelar minha assinatura?'

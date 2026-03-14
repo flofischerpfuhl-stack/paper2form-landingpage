@@ -57,18 +57,22 @@
                 <ul>
                     <li><strong>Account Data:</strong> When signing in with Google or Microsoft, we receive basic
                         profile information (email, name) to enable form integration.</li>
-                    <li><strong>Scanned Documents:</strong> Images you scan are processed by our AI service to extract
-                        text. Documents are not permanently stored on our servers.</li>
+                    <li><strong>Scanned Documents:</strong> Images you scan are sent to our AI service
+                        (Google Vertex AI) for text extraction. Documents are deleted from Google's servers
+                        as soon as processing is complete. Scanned images remain stored locally on your device
+                        so you can review or re-process them.</li>
                 </ul>
 
                 <h3>2.2 Automatically Collected</h3>
                 <ul>
                     <li><strong>Device Identifier:</strong> We collect a persistent device ID (Android ID or iOS
-                        Keychain UUID) to manage usage quotas and prevent abuse.</li>
+                        Keychain UUID) and basic system version info to manage usage quotas and prevent abuse.</li>
                     <li><strong>Usage Data:</strong> We track API call counts (daily and total) to enforce subscription
                         limits.</li>
                     <li><strong>Anonymous Authentication:</strong> We use Firebase anonymous sign-in to link your device
                         to a user identifier for quota management.</li>
+                    <li><strong>Local Image Storage:</strong> Scanned images are stored on your device for review
+                        and re-processing. You can delete them at any time from the app.</li>
                 </ul>
 
                 <h2>3. How We Use Your Information</h2>
@@ -87,8 +91,10 @@
                     <li><strong>Regional Processing:</strong> You can choose EU-based servers (europe-west1) for GDPR
                         compliance.</li>
                     <li><strong>No Training:</strong> Your documents are NOT used to train AI models.</li>
-                    <li><strong>Temporary Processing:</strong> Images are processed in real-time and not retained after
-                        analysis.</li>
+                    <li><strong>Server-Side Deletion:</strong> Images are processed in real-time and deleted from
+                        Google's servers as soon as processing is complete. They are not retained after analysis.</li>
+                    <li><strong>Local Retention:</strong> Scanned images remain on your device for review and
+                        re-processing. You can delete them manually at any time.</li>
                 </ul>
 
                 <h2>5. Third-Party Services</h2>
@@ -101,7 +107,6 @@
                     <li><strong>Firebase Authentication:</strong> Anonymous user identification for quota management
                     </li>
                     <li><strong>Cloud Firestore:</strong> Secure storage of usage quotas and device data</li>
-                    <li><strong>Firebase Remote Config:</strong> Feature flags and app configuration</li>
                     <li><strong>Google Sign-In:</strong> OAuth authentication for Google Forms access (<a
                             href="https://policies.google.com/privacy" target="_blank">Privacy</a>)</li>
                     <li><strong>Google Forms API:</strong> Fetching form structure and submitting responses</li>
@@ -114,6 +119,11 @@
                         Microsoft APIs directly; authentication is handled through Microsoft's standard web login (<a
                             href="https://privacy.microsoft.com/" target="_blank">Privacy</a>)</li>
                 </ul>
+
+                <h3>WebView Cookies</h3>
+                <p>When you sign in to Google or Microsoft through the in-app browser (WebView), session cookies
+                    are stored on your device to maintain your login. These cookies are only used for form access
+                    and are cleared when you log out of the respective service within the app.</p>
 
                 <h3>Payment Services</h3>
                 <ul>
@@ -129,11 +139,22 @@
                 <ul>
                     <li><strong>Device Data:</strong> Device ID and usage counts stored in Cloud Firestore</li>
                     <li><strong>OAuth Tokens:</strong> Stored securely on your device only (not on our servers)</li>
-                    <li><strong>Documents:</strong> Never stored on our servers — processed in real-time only</li>
+                    <li><strong>Scanned Images:</strong> Deleted from Google's servers immediately after AI processing.
+                        Stored locally on your device until you choose to delete them.</li>
                     <li><strong>Retention:</strong> Usage data retained while your account is active</li>
                 </ul>
 
-                <h2>7. Your Rights (GDPR)</h2>
+                <h2>7. Lawful Basis for Processing (GDPR)</h2>
+                <p>We process your data on the following legal bases under Article 6 GDPR:</p>
+                <ul>
+                    <li><strong>Contractual Necessity (Art. 6(1)(b)):</strong> Processing your scanned documents
+                        and managing your subscription is necessary to provide the Paper2Form service you signed up
+                        for.</li>
+                    <li><strong>Legitimate Interest (Art. 6(1)(f)):</strong> Collecting device identifiers and usage
+                        counts to prevent abuse and enforce fair usage limits.</li>
+                </ul>
+
+                <h2>8. Your Rights (GDPR)</h2>
                 <p>If you are in the European Union, you have the right to:</p>
                 <ul>
                     <li>Access your personal data</li>
@@ -143,9 +164,9 @@
                     <li>Withdraw consent at any time</li>
                     <li>Object to processing</li>
                 </ul>
-                <p>To exercise these rights, contact us at the email below.</p>
+                <p>To exercise these rights, contact our data protection contact at the email below.</p>
 
-                <h2>8. Security</h2>
+                <h2>9. Security</h2>
                 <ul>
                     <li>All data transmitted via TLS 1.3 encryption</li>
                     <li>OAuth tokens stored in secure device storage (Keychain/Keystore)</li>
@@ -153,17 +174,17 @@
                     <li>Firebase Security Rules protect Firestore data</li>
                 </ul>
 
-                <h2>9. Children's Privacy</h2>
+                <h2>10. Children's Privacy</h2>
                 <p>Paper2Form is not intended for children under 13. We do not knowingly collect personal information
                     from children under 13.</p>
 
-                <h2>10. Changes to This Policy</h2>
+                <h2>11. Changes to This Policy</h2>
                 <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via
                     the app or our website.</p>
 
-                <h2>11. Contact</h2>
-                <p>Questions about this Privacy Policy? Email us at <a
-                        href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a></p>
+                <h2>12. Contact & Data Protection</h2>
+                <p>Questions about this Privacy Policy or your personal data? Contact our data protection contact
+                    at <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a></p>
 
             </div>
         </div>
