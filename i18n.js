@@ -315,53 +315,45 @@ const TRANSLATIONS = {
         it: 'Inizia subito importando uno dei nostri modelli di moduli predefiniti direttamente nel tuo account Microsoft o Google. Una volta importati, puoi utilizzarli immediatamente in Paper2Form.',
         pt: 'Comece rapidamente importando um dos nossos modelos de formulários pré-construídos diretamente para sua conta Microsoft ou Google. Uma vez importados, você pode usá-los imediatamente no Paper2Form.'
     },
-    templates_ms_title: {
-        en: 'Microsoft Forms Templates',
-        de: 'Microsoft Forms Vorlagen',
-        fr: 'Modèles Microsoft Forms',
-        es: 'Plantillas de Microsoft Forms',
-        it: 'Modelli Microsoft Forms',
-        pt: 'Modelos do Microsoft Forms'
+    templates_ms_card1_title: {
+        en: 'Standard Template',
+        de: 'Standard-Vorlage',
+        fr: 'Modèle standard',
+        es: 'Plantilla estándar',
+        it: 'Modello standard',
+        pt: 'Modelo padrão'
     },
-    templates_ms_desc: {
-        en: 'A generic template with commonly used fields like Name, Date, Notes, and Checkboxes. Click the button to duplicate it into your own Microsoft account.',
-        de: 'Eine generische Vorlage mit häufig verwendeten Feldern wie Name, Datum, Notizen und Kontrollkästchen. Klicken Sie auf die Schaltfläche, um sie in Ihr eigenes Microsoft-Konto zu duplizieren.',
-        fr: 'Un modèle générique avec des champs couramment utilisés tels que le nom, la date, les notes et les cases à cocher. Cliquez sur le bouton pour le dupliquer dans votre propre compte Microsoft.',
-        es: 'Una plantilla genérica con campos de uso común como Nombre, Fecha, Notas y Casillas de verificación. Haga clic en el botón para duplicarla en su propia cuenta de Microsoft.',
-        it: 'Un modello generico con campi di uso comune come Nome, Data, Note e Caselle di controllo. Clicca sul pulsante per duplicarlo nel tuo account Microsoft.',
-        pt: 'Um modelo genérico com campos comumente usados como Nome, Data, Notas e Caixas de seleção. Clique no botão para duplicá-lo em sua própria conta Microsoft.'
+    templates_ms_card1_desc: {
+        en: 'A generic template with commonly used fields like Name, Date, Notes, and Checkboxes.',
+        de: 'Eine generische Vorlage mit häufig verwendeten Feldern wie Name, Datum, Notizen und Kontrollkästchen.',
+        fr: 'Un modèle générique avec des champs couramment utilisés tels que le nom, la date, les notes et les cases à cocher.',
+        es: 'Una plantilla genérica con campos de uso común como Nombre, Fecha, Notas y Casillas de verificación.',
+        it: 'Un modello generico con campi di uso comune come Nome, Data, Note e Caselle di controllo.',
+        pt: 'Um modelo genérico com campos comumente usados como Nome, Data, Notas e Caixas de seleção.'
     },
-    templates_ms_btn: {
-        en: 'Import MS Template',
-        de: 'MS-Vorlage importieren',
-        fr: 'Importer le modèle MS',
-        es: 'Importar plantilla MS',
-        it: 'Importa modello MS',
-        pt: 'Importar modelo MS'
+    templates_btn_import: {
+        en: 'Import Template',
+        de: 'Vorlage kopieren',
+        fr: 'Importer le modèle',
+        es: 'Importar plantilla',
+        it: 'Importa modello',
+        pt: 'Importar modelo'
     },
-    templates_google_title: {
-        en: 'Google Forms Templates',
-        de: 'Google Forms Vorlagen',
-        fr: 'Modèles Google Forms',
-        es: 'Plantillas de Google Forms',
-        it: 'Modelli Google Forms',
-        pt: 'Modelos do Google Forms'
+    templates_google_card1_title: {
+        en: 'Standard Template',
+        de: 'Standard-Vorlage',
+        fr: 'Modèle standard',
+        es: 'Plantilla estándar',
+        it: 'Modello standard',
+        pt: 'Modelo padrão'
     },
-    templates_google_desc: {
-        en: 'A Google Forms equivalent of our standard template. Clicking the import button will prompt you to create a copy directly in your Google Drive.',
-        de: 'Ein Google Forms-Äquivalent unserer Standardvorlage. Ein Klick auf den Importieren-Button fordert Sie auf, direkt in Ihrem Google Drive eine Kopie zu erstellen.',
-        fr: 'Un équivalent Google Forms de notre modèle standard. En cliquant sur le bouton d\'importation, vous serez invité à créer une copie directement dans votre Google Drive.',
-        es: 'Un equivalente en Google Forms de nuestra plantilla estándar. Al hacer clic en el botón de importación, se le solicitará que cree una copia directamente en su Google Drive.',
-        it: 'Un equivalente a Google Forms del nostro modello standard. Cliccando sul pulsante di importazione ti verrà richiesto di creare una copia direttamente nel tuo Google Drive.',
-        pt: 'Um equivalente no Google Forms do nosso modelo padrão. Ao clicar no botão de importação, você será solicitado a criar uma cópia diretamente no seu Google Drive.'
-    },
-    templates_google_btn: {
-        en: 'Import Google Template',
-        de: 'Google-Vorlage importieren',
-        fr: 'Importer le modèle Google',
-        es: 'Importar plantilla Google',
-        it: 'Importa modello Google',
-        pt: 'Importar modelo Google'
+    templates_google_card1_desc: {
+        en: 'A Google Forms equivalent of our standard template with commonly used fields.',
+        de: 'Eine Google Forms-Entsprechung unserer Standardvorlage mit häufig verwendeten Feldern.',
+        fr: 'Un équivalent Google Forms de notre modèle standard avec des champs couramment utilisés.',
+        es: 'Un equivalente de Google Forms de nuestra plantilla estándar con campos de uso común.',
+        it: 'Un equivalente Google Forms del nostro modello standard con campi di uso comune.',
+        pt: 'Um equivalente do Google Forms do nosso modelo padrão com campos comumente usados.'
     },
 
     // Privacy Page

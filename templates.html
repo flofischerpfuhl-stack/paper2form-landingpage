@@ -90,58 +90,53 @@
                 </button>
             </div>
 
-            <!-- Microsoft Forms Card -->
-            <div id="microsoft-template" class="feature-card template-card fade-in">
-                <div class="feature-icon" style="background: var(--sky);">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                        </path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
+            <!-- Microsoft Forms List -->
+            <div id="microsoft-template" class="features-grid fade-in">
+                <!-- Card 1 -->
+                <div class="feature-card template-card">
+                    <div class="feature-icon" style="background: var(--sky);">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="templates_ms_card1_title">Standard Template</h3>
+                    <p data-i18n="templates_ms_card1_desc">A generic template with commonly used fields like Name, Date,
+                        Notes, and Checkboxes.</p>
+                    <div class="template-actions">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1AzSDFFTFZEQTM1VDJWMVBYMUExTkRPQS4u&sharetoken=TEMPLATE_TOKEN_HERE"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
                 </div>
-                <h3 data-i18n="templates_ms_title">Microsoft Forms Templates</h3>
-                <p data-i18n="templates_ms_desc">A generic template with commonly used fields like Name, Date,
-                    Notes, and Checkboxes. Click the button to duplicate it into your own Microsoft account.</p>
-
-                <div class="template-preview" style="margin-top: var(--space-md);">
-                    <iframe
-                        src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1AzSDFFTFZEQTM1VDJWMVBYMUExTkRPQS4u&embed=true"
-                        loading="lazy" title="Microsoft Form Preview"></iframe>
-                </div>
-
-                <div class="template-actions">
-                    <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1AzSDFFTFZEQTM1VDJWMVBYMUExTkRPQS4u&sharetoken=TEMPLATE_TOKEN_HERE"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
-                        data-i18n="templates_ms_btn">Import MS Template</a>
-                </div>
+                <!-- Additional Microsoft templates will be added here -->
             </div>
 
-            <!-- Google Forms Card -->
-            <div id="google-template" class="feature-card template-card fade-in" style="display: none;">
-                <div class="feature-icon" style="background: var(--green);">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
-                        <line x1="9" y1="3" x2="9" y2="18"></line>
-                        <line x1="15" y1="6" x2="15" y2="21"></line>
-                    </svg>
+            <!-- Google Forms List -->
+            <div id="google-template" class="features-grid fade-in" style="display: none;">
+                <!-- Card 1 -->
+                <div class="feature-card template-card">
+                    <div class="feature-icon" style="background: var(--green);">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                            <line x1="9" y1="3" x2="9" y2="18"></line>
+                            <line x1="15" y1="6" x2="15" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="templates_google_card1_title">Standard Template</h3>
+                    <p data-i18n="templates_google_card1_desc">A Google Forms equivalent of our standard template with
+                        commonly used fields.</p>
+                    <div class="template-actions">
+                        <a href="https://docs.google.com/forms/d/1FAIpQLSe-PLACEHOLDER/copy" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
                 </div>
-                <h3 data-i18n="templates_google_title">Google Forms Templates</h3>
-                <p data-i18n="templates_google_desc">A Google Forms equivalent of our standard template. Clicking
-                    the import button will prompt you to create a copy directly in your Google Drive.</p>
-
-                <div class="template-preview" style="margin-top: var(--space-md);">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-PLACEHOLDER/viewform?embedded=true"
-                        loading="lazy" title="Google Form Preview"></iframe>
-                </div>
-
-                <div class="template-actions">
-                    <a href="https://docs.google.com/forms/d/1FAIpQLSe-PLACEHOLDER/copy" target="_blank"
-                        rel="noopener noreferrer" class="btn btn-primary"
-                        style="width: 100%; background: var(--black); border-color: var(--black);"
-                        data-i18n="templates_google_btn">Import Google Template</a>
-                </div>
+                <!-- Additional Google templates will be added here -->
             </div>
 
         </div>
