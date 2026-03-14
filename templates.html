@@ -57,24 +57,6 @@
                 <li><a href="index.html#download" class="btn btn-primary" data-i18n="nav_cta">Get the App</a></li>
             </ul>
 
-            <div class="lang-selector">
-                <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Select Language">
-                    <span id="currentLang">EN</span>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </button>
-                <div class="lang-dropdown" id="langDropdown">
-                    <a href="#" class="lang-option" data-lang="en">English</a>
-                    <a href="#" class="lang-option" data-lang="de">Deutsch</a>
-                    <a href="#" class="lang-option" data-lang="es">Español</a>
-                    <a href="#" class="lang-option" data-lang="fr">Français</a>
-                    <a href="#" class="lang-option" data-lang="it">Italiano</a>
-                    <a href="#" class="lang-option" data-lang="pt">Português</a>
-                </div>
-            </div>
-
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
@@ -82,8 +64,7 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header section-sm"
-        style="padding-top: 120px; text-align: center; background: linear-gradient(180deg, var(--peach) 0%, var(--white) 100%);">
+    <section class="page-header">
         <div class="container">
             <h1 class="fade-in" data-i18n="templates_hero_title">Ready-to-use Templates</h1>
             <p class="fade-in stagger-1" style="margin: 0 auto; max-width: 600px;" data-i18n="templates_hero_desc">
@@ -91,7 +72,7 @@
                 Google account. Once imported, you can immediately use them in Paper2Form.
             </p>
         </div>
-    </header>
+    </section>
 
     <!-- Templates Split Layout -->
     <section class="section section-bordered">
@@ -157,45 +138,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <!-- Keep footer content consistent with index.html -->
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo" style="margin-bottom: var(--space-sm);">
-                        <img src="logo.svg" alt="Paper2Form">
-                        <span>Paper2Form</span>
-                    </a>
-                    <p data-i18n="footer_desc" style="max-width: 300px; font-size: 0.9rem;">The fastest way to digitize
-                        offline forms into structured online data.</p>
+            <div class="footer-bottom">
+                <span data-i18n="footer_copyright">© 2026 Paper2Form. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="privacy.html" class="footer-link" data-i18n="footer_privacy">Privacy</a>
+                    <a href="terms.html" class="footer-link" data-i18n="footer_terms">Terms</a>
+                    <a href="imprint.html" class="footer-link" data-i18n="footer_imprint">Imprint</a>
                 </div>
-
-                <div class="footer-links">
-                    <h4 data-i18n="footer_product">Product</h4>
-                    <ul>
-                        <li><a href="index.html#features" data-i18n="footer_features">Features</a></li>
-                        <li><a href="tutorial.html" data-i18n="footer_tutorial">Tutorial</a></li>
-                        <li><a href="pricing.html" data-i18n="footer_pricing">Pricing</a></li>
-                        <li><a href="templates.html" data-i18n="footer_templates">Templates</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4 data-i18n="footer_legal">Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-                        <li><a href="terms.html" data-i18n="footer_terms">Terms of Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4 data-i18n="footer_contact">Contact</h4>
-                    <ul>
-                        <li><a href="mailto:contact@paper2form.app">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom"
-                style="border-top: 1px solid var(--border); padding-top: var(--space-md); text-align: center; color: var(--gray-mid); font-size: 0.875rem;">
-                <p>&copy; 2025 Paper2Form. All rights reserved.</p>
             </div>
         </div>
     </footer>
