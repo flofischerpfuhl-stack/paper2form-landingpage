@@ -14,6 +14,9 @@ const TRANSLATIONS = {
     nav_pricing: {
         en: 'Pricing', de: 'Preise', fr: 'Tarifs', es: 'Precios', it: 'Prezzi', pt: 'Preços'
     },
+    nav_templates: {
+        en: 'Templates', de: 'Vorlagen', fr: 'Modèles', es: 'Plantillas', it: 'Modelli', pt: 'Modelos'
+    },
     nav_cta: {
         en: 'Get the App', de: 'App holen', fr: 'Télécharger', es: 'Obtener App', it: 'Scarica App', pt: 'Baixar App'
     },
@@ -293,6 +296,72 @@ const TRANSLATIONS = {
         es: '© 2026 Paper2Form. Todos los derechos reservados.',
         it: '© 2026 Paper2Form. Tutti i diritti riservati.',
         pt: '© 2026 Paper2Form. Todos os direitos reservados.'
+    },
+
+    // Templates Page
+    templates_hero_title: {
+        en: 'Ready-to-use Templates',
+        de: 'Gebrauchsfertige Vorlagen',
+        fr: 'Modèles prêts à l\'emploi',
+        es: 'Plantillas listas para usar',
+        it: 'Modelli pronti all\'uso',
+        pt: 'Modelos prontos para uso'
+    },
+    templates_hero_desc: {
+        en: 'Get started quickly by importing one of our pre-built form templates directly into your Microsoft or Google account. Once imported, you can immediately use them in Paper2Form.',
+        de: 'Legen Sie schnell los, indem Sie eine unserer vorgefertigten Formularvorlagen direkt in Ihr Microsoft- oder Google-Konto importieren. Nach dem Import können Sie sie sofort in Paper2Form verwenden.',
+        fr: 'Commencez rapidement en important l\'un de nos modèles de formulaires prédéfinis directement dans votre compte Microsoft ou Google. Une fois importés, vous pouvez les utiliser immédiatement dans Paper2Form.',
+        es: 'Comience rápidamente importando una de nuestras plantillas de formularios prediseñadas directamente a su cuenta de Microsoft o Google. Una vez importadas, puede usarlas inmediatamente en Paper2Form.',
+        it: 'Inizia subito importando uno dei nostri modelli di moduli predefiniti direttamente nel tuo account Microsoft o Google. Una volta importati, puoi utilizzarli immediatamente in Paper2Form.',
+        pt: 'Comece rapidamente importando um dos nossos modelos de formulários pré-construídos diretamente para sua conta Microsoft ou Google. Uma vez importados, você pode usá-los imediatamente no Paper2Form.'
+    },
+    templates_ms_title: {
+        en: 'Microsoft Forms Templates',
+        de: 'Microsoft Forms Vorlagen',
+        fr: 'Modèles Microsoft Forms',
+        es: 'Plantillas de Microsoft Forms',
+        it: 'Modelli Microsoft Forms',
+        pt: 'Modelos do Microsoft Forms'
+    },
+    templates_ms_desc: {
+        en: 'A generic template with commonly used fields like Name, Date, Notes, and Checkboxes. Click the button to duplicate it into your own Microsoft account.',
+        de: 'Eine generische Vorlage mit häufig verwendeten Feldern wie Name, Datum, Notizen und Kontrollkästchen. Klicken Sie auf die Schaltfläche, um sie in Ihr eigenes Microsoft-Konto zu duplizieren.',
+        fr: 'Un modèle générique avec des champs couramment utilisés tels que le nom, la date, les notes et les cases à cocher. Cliquez sur le bouton pour le dupliquer dans votre propre compte Microsoft.',
+        es: 'Una plantilla genérica con campos de uso común como Nombre, Fecha, Notas y Casillas de verificación. Haga clic en el botón para duplicarla en su propia cuenta de Microsoft.',
+        it: 'Un modello generico con campi di uso comune come Nome, Data, Note e Caselle di controllo. Clicca sul pulsante per duplicarlo nel tuo account Microsoft.',
+        pt: 'Um modelo genérico com campos comumente usados como Nome, Data, Notas e Caixas de seleção. Clique no botão para duplicá-lo em sua própria conta Microsoft.'
+    },
+    templates_ms_btn: {
+        en: 'Import MS Template',
+        de: 'MS-Vorlage importieren',
+        fr: 'Importer le modèle MS',
+        es: 'Importar plantilla MS',
+        it: 'Importa modello MS',
+        pt: 'Importar modelo MS'
+    },
+    templates_google_title: {
+        en: 'Google Forms Templates',
+        de: 'Google Forms Vorlagen',
+        fr: 'Modèles Google Forms',
+        es: 'Plantillas de Google Forms',
+        it: 'Modelli Google Forms',
+        pt: 'Modelos do Google Forms'
+    },
+    templates_google_desc: {
+        en: 'A Google Forms equivalent of our standard template. Clicking the import button will prompt you to create a copy directly in your Google Drive.',
+        de: 'Ein Google Forms-Äquivalent unserer Standardvorlage. Ein Klick auf den Importieren-Button fordert Sie auf, direkt in Ihrem Google Drive eine Kopie zu erstellen.',
+        fr: 'Un équivalent Google Forms de notre modèle standard. En cliquant sur le bouton d\'importation, vous serez invité à créer une copie directement dans votre Google Drive.',
+        es: 'Un equivalente en Google Forms de nuestra plantilla estándar. Al hacer clic en el botón de importación, se le solicitará que cree una copia directamente en su Google Drive.',
+        it: 'Un equivalente a Google Forms del nostro modello standard. Cliccando sul pulsante di importazione ti verrà richiesto di creare una copia direttamente nel tuo Google Drive.',
+        pt: 'Um equivalente no Google Forms do nosso modelo padrão. Ao clicar no botão de importação, você será solicitado a criar uma cópia diretamente no seu Google Drive.'
+    },
+    templates_google_btn: {
+        en: 'Import Google Template',
+        de: 'Google-Vorlage importieren',
+        fr: 'Importer le modèle Google',
+        es: 'Importar plantilla Google',
+        it: 'Importa modello Google',
+        pt: 'Importar modelo Google'
     },
 
     // Privacy Page
