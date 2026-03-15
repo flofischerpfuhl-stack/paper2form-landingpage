@@ -298,6 +298,30 @@ const TRANSLATIONS = {
         pt: '© 2026 Paper2Form. Todos os direitos reservados.'
     },
 
+    // Beta Popup
+    beta_title: {
+        en: 'Closed Beta', de: 'Geschlossene Beta', fr: 'Bêta fermée', es: 'Beta cerrada', it: 'Beta chiusa', pt: 'Beta fechada'
+    },
+    beta_apple_msg: {
+        en: 'The app is currently in a closed beta. To participate, please send an email to <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> with a request to join.',
+        de: 'Die App befindet sich derzeit in einer geschlossenen Beta-Phase. Um teilzunehmen, senden Sie bitte eine E-Mail an <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> mit der Bitte um Teilnahme.',
+        fr: 'L\'application est actuellement en version bêta fermée. Pour participer, veuillez envoyer un e-mail à <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> pour demander à rejoindre.',
+        es: 'La aplicación se encuentra actualmente en una beta cerrada. Para participar, envíe un correo electrónico a <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> con una solicitud para unirse.',
+        it: 'L\'app è attualmente in beta chiusa. Per partecipare, invia un\'e-mail a <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> richiedendo di partecipare.',
+        pt: 'O aplicativo está atualmente em uma versão beta fechada. Para participar, envie um e-mail para <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> com um pedido para participar.'
+    },
+    beta_google_msg: {
+        en: 'The app is currently in a closed beta. To participate, please send an email to <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> with a request to join. You can then install the app at: <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.',
+        de: 'Die App befindet sich derzeit in einer geschlossenen Beta-Phase. Um teilzunehmen, senden Sie bitte eine E-Mail an <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> mit der Bitte um Teilnahme. Danach können Sie die App hier installieren: <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.',
+        fr: 'L\'application est actuellement en version bêta fermée. Pour participer, veuillez envoyer un e-mail à <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> pour demander à rejoindre. Vous pourrez ensuite installer l\'application sur : <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.',
+        es: 'La aplicación se encuentra actualmente en una beta cerrada. Para participar, envíe un correo electrónico a <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> con una solicitud para unirse. Luego puede instalar la aplicación en: <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.',
+        it: 'L\'app è attualmente in beta chiusa. Per partecipare, invia un\'e-mail a <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> richiedendo di partecipare. Potrai quindi installare l\'app su: <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.',
+        pt: 'O aplicativo está atualmente em uma versão beta fechada. Para participar, envie um e-mail para <a href="mailto:paper2form.delivery519@passmail.net">paper2form.delivery519@passmail.net</a> com um pedido para participar. Você poderá então instalar o aplicativo em: <a href="https://play.google.com/store/apps/details?id=com.flofischerpfuhl.paper2form" target="_blank" style="text-decoration: underline;">Google Play Store</a>.'
+    },
+    beta_close_btn: {
+        en: 'Close', de: 'Schließen', fr: 'Fermer', es: 'Cerrar', it: 'Chiudi', pt: 'Fechar'
+    },
+
     // Templates Page
     templates_hero_title: {
         en: 'Ready-to-use Templates',

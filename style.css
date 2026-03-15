@@ -983,6 +983,77 @@ p {
 }
 
 /* ------------------------------------------------
+   Modal System — Brutalist
+   ------------------------------------------------ */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.9);
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--white);
+    border: var(--border-width) solid var(--black);
+    padding: var(--space-xl);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 10px 10px 0px 0px var(--black);
+    animation: modalSlide 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-content h2 {
+    margin-bottom: var(--space-lg);
+    background: var(--pink);
+    display: inline-block;
+    padding: 0 0.4em;
+    font-size: 2rem;
+    transform: rotate(-1deg);
+}
+
+.modal-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+.modal-body a {
+    color: var(--blue);
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.modal-body a:hover {
+    background: var(--cyan);
+}
+
+@keyframes modalSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ------------------------------------------------
    Tutorial Steps
    ------------------------------------------------ */
 .tutorial-steps {

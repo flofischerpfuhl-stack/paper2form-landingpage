@@ -86,4 +86,64 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof initI18n === 'function') {
         initI18n();
     }
+
+    // Initialize Beta Modal
+    initBetaModal();
 });
+
+/* ------------------------------------------------
+   Beta Modal Logic
+   ------------------------------------------------ */
+function initBetaModal() {
+    const modal = document.getElementById('beta-modal');
+    const modalBody = document.getElementById('modal-body');
+    const closeModal = document.getElementById('close-modal');
+    const appleBtn = document.getElementById('store-apple');
+    const googleBtn = document.getElementById('store-google');
+
+    if (!modal || !modalBody || !closeModal || !appleBtn || !googleBtn) return;
+
+    function showBetaModal(platform) {
+        const lang = document.documentElement.lang || 'en';
+        const msgKey = platform === 'apple' ? 'beta_apple_msg' : 'beta_google_msg';
+
+        if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[msgKey]) {
+            const translations = TRANSLATIONS[msgKey];
+            const message = translations[lang] || translations['en'];
+            modalBody.innerHTML = message;
+        }
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    appleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showBetaModal('apple');
+    });
+
+    googleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showBetaModal('google');
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}

@@ -87,51 +87,781 @@
 
             <!-- Platform Toggle -->
             <div class="platform-toggle fade-in stagger-2" style="margin-bottom: var(--space-xl);">
-                <button class="toggle-btn active" id="btn-microsoft" onclick="switchPlatform('microsoft')">
-                    <img src="microsoft.svg" alt="Microsoft Logo">
-                    Microsoft Forms
-                </button>
-                <button class="toggle-btn" id="btn-google" onclick="switchPlatform('google')">
+                <button class="toggle-btn active" id="btn-google" onclick="switchPlatform('google')">
                     <img src="google.svg" alt="Google Logo">
                     Google Forms
+                </button>
+                <button class="toggle-btn" id="btn-microsoft" onclick="switchPlatform('microsoft')">
+                    <img src="microsoft.svg" alt="Microsoft Logo">
+                    Microsoft Forms
                 </button>
             </div>
 
             <!-- Microsoft Forms List -->
-            <div id="microsoft-template" class="template-grid fade-in">
-                <!-- Card 1 -->
+            <div id="microsoft-template" class="template-grid" style="display: none;">
+
+                <!-- 02_invoice -->
                 <div class="feature-card template-card" style="padding: var(--space-sm);">
                     <div class="template-preview">
                         <iframe
-                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1AzSDFFTFZEQTM1VDJWMVBYMUExTkRPQS4u&embed=true"
-                            loading="lazy" title="Microsoft Form Preview"></iframe>
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUODJFQ1FOMTVHMDA2VkZQWlBKR0lZSDQ3Ti4u&embed=true"
+                            loading="lazy" title="02_invoice Preview"></iframe>
                     </div>
                     <div class="template-actions" style="padding-top: 0;">
-                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1AzSDFFTFZEQTM1VDJWMVBYMUExTkRPQS4u&sharetoken=dVWamWEqDv7ACKXdK5dZ"
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUODJFQ1FOMTVHMDA2VkZQWlBKR0lZSDQ3Ti4u&sharetoken=slkeKhhXMy7f6WdBba87"
                             target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
                             data-i18n="templates_btn_import">Import Template</a>
                     </div>
                 </div>
-                <!-- Additional Microsoft templates will be added here -->
-            </div>
-
-            <!-- Google Forms List -->
-            <div id="google-template" class="template-grid fade-in" style="display: none;">
-                <!-- Card 1 -->
+                <!-- 03_purchase_order -->
                 <div class="feature-card template-card" style="padding: var(--space-sm);">
                     <div class="template-preview">
                         <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSdDsYcPdziR8tFCWSZ1-QeymQfItowmrFynyBMBN_WFMYN9WQ/viewform?embedded=true"
-                            loading="lazy" title="Google Form Preview"></iframe>
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMU5ZMUhWRDY2Q05NOUpINVpaQTA0OVhYTi4u&embed=true"
+                            loading="lazy" title="03_purchase_order Preview"></iframe>
                     </div>
                     <div class="template-actions" style="padding-top: 0;">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDsYcPdziR8tFCWSZ1-QeymQfItowmrFynyBMBN_WFMYN9WQ/copy"
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMU5ZMUhWRDY2Q05NOUpINVpaQTA0OVhYTi4u&sharetoken=HgNFHQ97OGRXbx4kEBgc"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 04_letter_digitization -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMVRYNUhEMTdaOU5WVVpNSkxFMTY5Sk1ESC4u&embed=true"
+                            loading="lazy" title="04_letter_digitization Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMVRYNUhEMTdaOU5WVVpNSkxFMTY5Sk1ESC4u&sharetoken=D12qbYLF22WLWklPnQst"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 05_patient_registration -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQUdCRjZVRE1DUzNZQ1FEWEFWOFhRUEk2Ry4u&embed=true"
+                            loading="lazy" title="05_patient_registration Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQUdCRjZVRE1DUzNZQ1FEWEFWOFhRUEk2Ry4u&sharetoken=fgZHE9jfD11p80oDzIGh"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 06_medical_history -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMUNXRzFRMjZYQTFHQUtVTTZTR0pVMlhRSi4u&embed=true"
+                            loading="lazy" title="06_medical_history Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMUNXRzFRMjZYQTFHQUtVTTZTR0pVMlhRSi4u&sharetoken=9axdcfYxuMH4LECvl6qF"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 07_prescription -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUODE1S09VOVJSQ1YyMkwzRlUyNUtMQUFZRi4u&embed=true"
+                            loading="lazy" title="07_prescription Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUODE1S09VOVJSQ1YyMkwzRlUyNUtMQUFZRi4u&sharetoken=xJPDJVE3CR4Cv7HDI7xv"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 08_referral_form -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQVpKR1pRNlhRR1BUMjg4MThTUzVPUlZVUC4u&embed=true"
+                            loading="lazy" title="08_referral_form Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQVpKR1pRNlhRR1BUMjg4MThTUzVPUlZVUC4u&sharetoken=NnMVQGDLuUx2p5Z20umX"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 09_legal_client_intake -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQ0QzQ0c1Qk1GWURWWVlQMUVEODJKTjJDRi4u&embed=true"
+                            loading="lazy" title="09_legal_client_intake Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQ0QzQ0c1Qk1GWURWWVlQMUVEODJKTjJDRi4u&sharetoken=VksyVSxLaseAqQ4lJi5e"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 10_nda_summary -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQkVTSEdZWDJQUVE3STBUT0JFT01SSkk4NC4u&embed=true"
+                            loading="lazy" title="10_nda_summary Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQkVTSEdZWDJQUVE3STBUT0JFT01SSkk4NC4u&sharetoken=KDMnvFV4djK4QlBbaXj6"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 11_contract_summary -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUOE1ITDA2STROOVdSUkdZQUVNRFpQOE0xNC4u&embed=true"
+                            loading="lazy" title="11_contract_summary Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUOE1ITDA2STROOVdSUkdZQUVNRFpQOE0xNC4u&sharetoken=FwsAG5oj63wf5Ra2ujfY"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 12_incident_report -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQTBBTTRYTlpZOE00TUQ1NDdZMVU4VjRYMy4u&embed=true"
+                            loading="lazy" title="12_incident_report Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQTBBTTRYTlpZOE00TUQ1NDdZMVU4VjRYMy4u&sharetoken=0X6k4k6h83TC1nmukmAj"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 13_job_application -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMTFCN0laRk9VQkswWkpESTcwMEMxVDJOMy4u&embed=true"
+                            loading="lazy" title="13_job_application Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMTFCN0laRk9VQkswWkpESTcwMEMxVDJOMy4u&sharetoken=1TLWWJ1UDaBvhRjpkRRG"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 14_leave_request -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN0ZSSFVGNFg1QjdJVTU1UDE0SDNKNUtTVi4u&embed=true"
+                            loading="lazy" title="14_leave_request Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN0ZSSFVGNFg1QjdJVTU1UDE0SDNKNUtTVi4u&sharetoken=aXjVwUkJSYAZ6PdcWmaP"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 15_expense_report -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUOExLRlY4NFhFOFQ0Q04yOUE2UTJRMDhWTi4u&embed=true"
+                            loading="lazy" title="15_expense_report Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUOExLRlY4NFhFOFQ0Q04yOUE2UTJRMDhWTi4u&sharetoken=56SWkQRxdtlG4voeyIie"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 16_timesheet -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQ0M2NlBIS0pZU1EyTklFWDQ1VzRLTzlDNS4u&embed=true"
+                            loading="lazy" title="16_timesheet Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQ0M2NlBIS0pZU1EyTklFWDQ1VzRLTzlDNS4u&sharetoken=q5dxbnZpTIM3sTKv9T7t"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 17_bank_transfer -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN05KVTZCSVlZWlBWUlRXQlNKSUkyWjhKOC4u&embed=true"
+                            loading="lazy" title="17_bank_transfer Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN05KVTZCSVlZWlBWUlRXQlNKSUkyWjhKOC4u&sharetoken=qoO2XXBIe1N4QdBy8und"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 18_insurance_claim -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMTdDN1VWMFIzRTFRM0NVNkZSRjdZSEhSMi4u&embed=true"
+                            loading="lazy" title="18_insurance_claim Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMTdDN1VWMFIzRTFRM0NVNkZSRjdZSEhSMi4u&sharetoken=l9hREOusBb5GhIdqDHP7"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 19_customs_declaration -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMk44QzA3NlhRQ1FTWlMwNlBRMzNMQ1hCTS4u&embed=true"
+                            loading="lazy" title="19_customs_declaration Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMk44QzA3NlhRQ1FTWlMwNlBRMzNMQ1hCTS4u&sharetoken=ceKkx2gxBKJhlPydwnHJ"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 20_packing_list -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMzJPV1VZU0I4RFdFVDY0UUxGRjdWNkFSMS4u&embed=true"
+                            loading="lazy" title="20_packing_list Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMzJPV1VZU0I4RFdFVDY0UUxGRjdWNkFSMS4u&sharetoken=KljRtUg6FX2A4TcdTCKI"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 21_goods_receipt -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1lBOEhTTVlDWVgxWUQ0Q0UySFM4RVRHUS4u&embed=true"
+                            loading="lazy" title="21_goods_receipt Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUN1lBOEhTTVlDWVgxWUQ0Q0UySFM4RVRHUS4u&sharetoken=uOYImhmvMJhYbZZN8MLQ"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 22_bill_of_lading -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExURUQ3VDBTTTRXTTZMQjdOTTcwUzJaSkM1My4u&embed=true"
+                            loading="lazy" title="22_bill_of_lading Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExURUQ3VDBTTTRXTTZMQjdOTTcwUzJaSkM1My4u&sharetoken=xR8IQDQA91yABCmYnG15"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 23_quality_inspection -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQk1SREdXNU9ZNjYxQ0RKTkVJWEdLQlc5QS4u&embed=true"
+                            loading="lazy" title="23_quality_inspection Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQk1SREdXNU9ZNjYxQ0RKTkVJWEdLQlc5QS4u&sharetoken=sJjRMeXDIL7PKWeBF3WV"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 24_vehicle_inspection -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUNDdJNEZMRk1PRUg5MENQR05HQ1dGV1JMSS4u&embed=true"
+                            loading="lazy" title="24_vehicle_inspection Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUNDdJNEZMRk1PRUg5MENQR05HQ1dGV1JMSS4u&sharetoken=qbxLaqRfJtEihuMDQLF5"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 25_meeting_minutes -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMkxMSjlVSEUxMEJMN0REQjhMR0dLU1ZFMC4u&embed=true"
+                            loading="lazy" title="25_meeting_minutes Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUMkxMSjlVSEUxMEJMN0REQjhMR0dLU1ZFMC4u&sharetoken=N2cUMpAT4Tcevk0k1Idt"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 26_return_rma -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUNEQ4OUg1WlhJR1ZZUEtGSUpESzU3TThZVi4u&embed=true"
+                            loading="lazy" title="26_return_rma Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUNEQ4OUg1WlhJR1ZZUEtGSUpESzU3TThZVi4u&sharetoken=bSOyZE5Fw2LozHneTvQs"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 27_employee_onboarding -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQVM3RjdTTTVHQ0Y3VTBBM0VDVkZJWlhIWi4u&embed=true"
+                            loading="lazy" title="27_employee_onboarding Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://forms.cloud.microsoft/Pages/ShareFormPage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGz2BExUQVM3RjdTTTVHQ0Y3VTBBM0VDVkZJWlhIWi4u&sharetoken=qIGxcJA0cGOyjCl47vSI"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Forms List -->
+            <div id="google-template" class="template-grid">
+                <!-- 01_delivery_note -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSepd8sueFT9DE1QNglR4A--ZFK5GB_Re3k4zAonTnRkNU4J2A/viewform?embedded=true"
+                            loading="lazy" title="01_delivery_note Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSepd8sueFT9DE1QNglR4A--ZFK5GB_Re3k4zAonTnRkNU4J2A/copy"
                             target="_blank" rel="noopener noreferrer" class="btn btn-primary"
                             style="width: 100%; background: var(--black); border-color: var(--black);"
                             data-i18n="templates_btn_import">Import Template</a>
                     </div>
                 </div>
-                <!-- Additional Google templates will be added here -->
+                <!-- 02_invoice -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSfMm2WYkV9_eDq-ZyLmTsziw40aftY171HzYzEL_CnKtid4Ew/viewform?embedded=true"
+                            loading="lazy" title="02_invoice Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMm2WYkV9_eDq-ZyLmTsziw40aftY171HzYzEL_CnKtid4Ew/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 03_purchase_order -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSclDixYpXoHTRIA1-_zj1mFbrM31ZRSR93AfBtYTJoP31q6jA/viewform?embedded=true"
+                            loading="lazy" title="03_purchase_order Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSclDixYpXoHTRIA1-_zj1mFbrM31ZRSR93AfBtYTJoP31q6jA/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 04_packing_list -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScrBxW1JwRB06auE9JqDOnMQxZMYA3rkpULWgBsZp0YLbgLuw/viewform?embedded=true"
+                            loading="lazy" title="04_packing_list Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrBxW1JwRB06auE9JqDOnMQxZMYA3rkpULWgBsZp0YLbgLuw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 05_bill_of_lading -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeUtK6n2BLEKeyRV1WOTOqxACJhrUlysM3cWfYB_IWqnFolJw/viewform?embedded=true"
+                            loading="lazy" title="05_bill_of_lading Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtK6n2BLEKeyRV1WOTOqxACJhrUlysM3cWfYB_IWqnFolJw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 06_goods_receipt -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSd8BfgkbLLBCYy-io12iBCvVp46LVZ73GPH-UONxLr8Umn4Kg/viewform?embedded=true"
+                            loading="lazy" title="06_goods_receipt Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8BfgkbLLBCYy-io12iBCvVp46LVZ73GPH-UONxLr8Umn4Kg/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 07_letter_digitization -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeozL90DbH5caZcaScmQ3IO3_8fiW2QnvgrmWs8GUCiLMDWdA/viewform?embedded=true"
+                            loading="lazy" title="07_letter_digitization Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeozL90DbH5caZcaScmQ3IO3_8fiW2QnvgrmWs8GUCiLMDWdA/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 08_patient_registration -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe3TialOvQ9t8s01wJarKmaJKc7uEIA14zBoDWZSms2WGsKxQ/viewform?embedded=true"
+                            loading="lazy" title="08_patient_registration Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3TialOvQ9t8s01wJarKmaJKc7uEIA14zBoDWZSms2WGsKxQ/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 09_medical_history -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSfqqAfyfvnmFgI7Wh5yQX-aknIA7-DgSFpTMRdi5hD8WJS10Q/viewform?embedded=true"
+                            loading="lazy" title="09_medical_history Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqqAfyfvnmFgI7Wh5yQX-aknIA7-DgSFpTMRdi5hD8WJS10Q/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 10_prescription -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeLpxl8Ua3NCHXALZ4vrlrrO7jMJ7VZ9-AAV0zzugCN3zW6jg/viewform?embedded=true"
+                            loading="lazy" title="10_prescription Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLpxl8Ua3NCHXALZ4vrlrrO7jMJ7VZ9-AAV0zzugCN3zW6jg/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 11_referral_form -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSczCzDARgwsP5B7OudLQHGLeY-1WjMWhSF19K7ZlDIy_2vFkw/viewform?embedded=true"
+                            loading="lazy" title="11_referral_form Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSczCzDARgwsP5B7OudLQHGLeY-1WjMWhSF19K7ZlDIy_2vFkw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 12_informed_consent -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSehQL1GLanAeTh3A-328QY1am7lb6pbnakH_7mzC590jUF42A/viewform?embedded=true"
+                            loading="lazy" title="12_informed_consent Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehQL1GLanAeTh3A-328QY1am7lb6pbnakH_7mzC590jUF42A/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 13_legal_client_intake -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe0f1ZD6YcrCWB6BsznScJ-4jwIR1xzPykYvJXIsGeCRNuwjw/viewform?embedded=true"
+                            loading="lazy" title="13_legal_client_intake Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0f1ZD6YcrCWB6BsznScJ-4jwIR1xzPykYvJXIsGeCRNuwjw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 14_incident_report -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeMZExmcxhQy8CkrD0EittcETHZYl0yELexO4rPsyG4jYsx0A/viewform?embedded=true"
+                            loading="lazy" title="14_incident_report Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMZExmcxhQy8CkrD0EittcETHZYl0yELexO4rPsyG4jYsx0A/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 15_nda_summary -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSfj4bFMHXFBs2L98Uu29xuSfBtCr2y0viFhpMDJt3GUGfZZaw/viewform?embedded=true"
+                            loading="lazy" title="15_nda_summary Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfj4bFMHXFBs2L98Uu29xuSfBtCr2y0viFhpMDJt3GUGfZZaw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 16_contract_summary -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeG37aGltgyNVWpt0dSCiPXvjX4ASMVdPUokBHdHjZ0qU7QNQ/viewform?embedded=true"
+                            loading="lazy" title="16_contract_summary Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeG37aGltgyNVWpt0dSCiPXvjX4ASMVdPUokBHdHjZ0qU7QNQ/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 17_job_application -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSfCQHjNYmlhSavMBXliDWBoEb4TErNyd8xyGsa2D4X0Skbz0g/viewform?embedded=true"
+                            loading="lazy" title="17_job_application Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCQHjNYmlhSavMBXliDWBoEb4TErNyd8xyGsa2D4X0Skbz0g/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 18_employee_onboarding -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdcP8g-lt2y0r2nHL2-lApcL5rrYdhR94gTKBwIWAnqTewpgw/viewform?embedded=true"
+                            loading="lazy" title="18_employee_onboarding Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcP8g-lt2y0r2nHL2-lApcL5rrYdhR94gTKBwIWAnqTewpgw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 19_leave_request -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSedYu1y5p43f2IvTPtbrLyiL-Gnr58H1nkc4Xa8n1WnNrfHrw/viewform?embedded=true"
+                            loading="lazy" title="19_leave_request Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSedYu1y5p43f2IvTPtbrLyiL-Gnr58H1nkc4Xa8n1WnNrfHrw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 20_expense_report -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdjciH1VwkifiRbM1bTrfCET35XYJTVSyMdKdIDV38gPcaQjA/viewform?embedded=true"
+                            loading="lazy" title="20_expense_report Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjciH1VwkifiRbM1bTrfCET35XYJTVSyMdKdIDV38gPcaQjA/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 21_timesheet -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSffL12rBBMYgJo5Ub5KMjPfC92VekIkPdI7kALUOP-w6fNfAA/viewform?embedded=true"
+                            loading="lazy" title="21_timesheet Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSffL12rBBMYgJo5Ub5KMjPfC92VekIkPdI7kALUOP-w6fNfAA/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 22_bank_transfer -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScfYB9edTf2Owh7IperiNqk2BR0zDr3HUtshxa58SYh1oSQlw/viewform?embedded=true"
+                            loading="lazy" title="22_bank_transfer Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScfYB9edTf2Owh7IperiNqk2BR0zDr3HUtshxa58SYh1oSQlw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 23_insurance_claim -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScuVsLfjOe3lGX1M4csVlDQmB9Dqmuivxfc6sq7mgwqN9D1Nw/viewform?embedded=true"
+                            loading="lazy" title="23_insurance_claim Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScuVsLfjOe3lGX1M4csVlDQmB9Dqmuivxfc6sq7mgwqN9D1Nw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 24_customs_declaration -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScfZvMTmhO67mmSWgkfjVPiA6ffqKkC963QadbZvhjUALmBXQ/viewform?embedded=true"
+                            loading="lazy" title="24_customs_declaration Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScfZvMTmhO67mmSWgkfjVPiA6ffqKkC963QadbZvhjUALmBXQ/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 25_quality_inspection -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSctYWhxQGyWJU6VIwBT4zkEpAMfxUKlara2rqmLLemumAlb-w/viewform?embedded=true"
+                            loading="lazy" title="25_quality_inspection Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSctYWhxQGyWJU6VIwBT4zkEpAMfxUKlara2rqmLLemumAlb-w/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 26_vehicle_inspection -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSd7ay4tUUo9wWU5tnlOaWoHt1zOdkCrd8928npYla1RwJTfuQ/viewform?embedded=true"
+                            loading="lazy" title="26_vehicle_inspection Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7ay4tUUo9wWU5tnlOaWoHt1zOdkCrd8928npYla1RwJTfuQ/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 27_meeting_minutes -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScKr3LCGpACFBQZRGB3VOhd1ipGT_iW29COxttLE2art0BNPg/viewform?embedded=true"
+                            loading="lazy" title="27_meeting_minutes Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScKr3LCGpACFBQZRGB3VOhd1ipGT_iW29COxttLE2art0BNPg/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 28_return_rma -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe86cqLvTwCmVWlXOZebzqYzBkyb3DTJ6_H5ZHpcMkLtrToHw/viewform?embedded=true"
+                            loading="lazy" title="28_return_rma Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe86cqLvTwCmVWlXOZebzqYzBkyb3DTJ6_H5ZHpcMkLtrToHw/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 29_audit_checklist -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeA8uWd7UqgdQ01MPauOu3QwrJ23kHry9DUpcHLReiJbvK-AA/viewform?embedded=true"
+                            loading="lazy" title="29_audit_checklist Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA8uWd7UqgdQ01MPauOu3QwrJ23kHry9DUpcHLReiJbvK-AA/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
+                <!-- 30_real_estate_viewing -->
+                <div class="feature-card template-card" style="padding: var(--space-sm);">
+                    <div class="template-preview">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe356zR0teOPqfZnfp5UgdCwvyheQdvmMbYhhOeQHI5NJFHXQ/viewform?embedded=true"
+                            loading="lazy" title="30_real_estate_viewing Preview"></iframe>
+                    </div>
+                    <div class="template-actions" style="padding-top: 0;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe356zR0teOPqfZnfp5UgdCwvyheQdvmMbYhhOeQHI5NJFHXQ/copy"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            style="width: 100%; background: var(--black); border-color: var(--black);"
+                            data-i18n="templates_btn_import">Import Template</a>
+                    </div>
+                </div>
             </div>
 
         </div>
