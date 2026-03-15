@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paper2form.com/sitemap.xml
