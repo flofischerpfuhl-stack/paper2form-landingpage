@@ -98,14 +98,13 @@ function initBetaModal() {
     const modal = document.getElementById('beta-modal');
     const modalBody = document.getElementById('modal-body');
     const closeModal = document.getElementById('close-modal');
-    const appleBtn = document.getElementById('store-apple');
     const googleBtn = document.getElementById('store-google');
 
-    if (!modal || !modalBody || !closeModal || !appleBtn || !googleBtn) return;
+    if (!modal || !modalBody || !closeModal || !googleBtn) return;
 
-    function showBetaModal(platform) {
+    function showBetaModal() {
         const lang = document.documentElement.lang || 'en';
-        const msgKey = platform === 'apple' ? 'beta_apple_msg' : 'beta_google_msg';
+        const msgKey = 'beta_google_msg';
 
         if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[msgKey]) {
             const translations = TRANSLATIONS[msgKey];
@@ -117,14 +116,9 @@ function initBetaModal() {
         document.body.style.overflow = 'hidden';
     }
 
-    appleBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        showBetaModal('apple');
-    });
-
     googleBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        showBetaModal('google');
+        showBetaModal();
     });
 
     closeModal.addEventListener('click', () => {
